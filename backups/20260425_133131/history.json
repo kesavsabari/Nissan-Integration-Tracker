@@ -1,0 +1,4002 @@
+[
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B:V2 Finance|Japan",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B:V2 Webhook Notification|Japan",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B:Santander NNE Login|Japan",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B:Santander NNE Api|Japan",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B:HOYU Connector|Japan",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B:V2 Utils|Japan",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:21.868Z",
+    "region": "NML",
+    "item": "Batch B",
+    "market": "Japan",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.075Z",
+    "region": "NML",
+    "item": "Batch B:V2 Finance|Japan",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.075Z",
+    "region": "NML",
+    "item": "Batch B:V2 Webhook Notification|Japan",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.075Z",
+    "region": "NML",
+    "item": "Batch B:Santander NNE Login|Japan",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.075Z",
+    "region": "NML",
+    "item": "Batch B:Santander NNE Api|Japan",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.075Z",
+    "region": "NML",
+    "item": "Batch B:HOYU Connector|Japan",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.075Z",
+    "region": "NML",
+    "item": "Batch B:V2 Utils|Japan",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:44:07.074Z",
+    "region": "NML",
+    "item": "Batch B",
+    "market": "Japan",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WRSFE10|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WR3FE11|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F:Leads V2|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch F",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:SCV Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:Nissan Europe ESB|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:CEBIP|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.569Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Login|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:KR CRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:LMT MS Dynamics Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:SICOP Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:AutoCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Opportunity Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Opportunity Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:EU Adobe Campaign Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:EU Adobe Campaign Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CDR Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CDR Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:Workato Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:Workato Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan MyNissan|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LoginServices|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LocationServices|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServices|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinanceSimulation|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinancialServices|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan GuestServices|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM DataAuthoring|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM PaceAuthorization|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO PIM",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Data|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Authorization|Indonesia",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Americas",
+    "market": "Indonesia",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Data|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Authorization|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Americas",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM DataAuthoring|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM PaceAuthorization|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO PIM",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan MyNissan|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LoginServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LocationServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinanceSimulation|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinancialServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan GuestServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "MO Japan",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:KR CRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:LMT MS Dynamics Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:SICOP Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:AutoCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Opportunity Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Opportunity Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:EU Adobe Campaign Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:EU Adobe Campaign Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CDR Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:CDR Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:Workato Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H:Workato Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch H",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:SCV Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:Nissan Europe ESB|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:CEBIP|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch G",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WRSFE10|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WR3FE11|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F:Leads V2|Hong Kong",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:56.568Z",
+    "region": "ASEAN",
+    "item": "Batch F",
+    "market": "Hong Kong",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WRSFE10|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WR3FE11|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Leads V2|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:SCV Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:Nissan Europe ESB|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:CEBIP|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Store|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Login|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan MyNissan|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LoginServices|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LocationServices|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServices|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinanceSimulation|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinancialServices|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan GuestServices|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM DataAuthoring|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM PaceAuthorization|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO PIM",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Data|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Authorization|Indonesia",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Americas",
+    "market": "Indonesia",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Data|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Americas:UserRecognition Authorization|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Americas",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM DataAuthoring|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO PIM:PIM PaceAuthorization|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO PIM",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan MyNissan|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LoginServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan LocationServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan OwnerServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinanceSimulation|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan FinancialServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan:Japan GuestServices|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "MO Japan",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:KR CRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:LMT MS Dynamics Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:SICOP Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:AutoCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Opportunity Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Opportunity Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:EU Adobe Campaign Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:EU Adobe Campaign Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:CA Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:CDR Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:CDR Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:Workato Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H:Workato Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch H",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:SCV Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:Nissan Europe ESB|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:CEBIP|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:NNA Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:MS Dynamics Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:ZohoCRM Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:Salesforce Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:SugarCRM Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G:VegaCRM Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch G",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:NCI Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WRSFE10|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Lead Mgmt WR3FE11|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Datadise Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:MS Dynamics Yana Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Store|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Adobe Campaign Login|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F:Leads V2|Hong Kong",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-25T09:36:46.060Z",
+    "region": "ASEAN",
+    "item": "Batch F",
+    "market": "Hong Kong",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan MyNissan|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LoginServices|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LocationServices|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServices|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinanceSimulation|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinancialServices|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan GuestServices|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:KR CRM Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:LMT MS Dynamics Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:SICOP Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:AutoCRM Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:CA Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:CA Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch H",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:NE-IE Token Management|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:NE-IE RegistrationFee|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:SFCC Token|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:SFCC Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Finance|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Inventory|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Payment|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Accounts|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm BTO|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm TradeIn|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Products|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Assets|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Orders|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Dealers|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D:V2 Ecommerce|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch D",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:SCV Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:Nissan Europe ESB|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:CEBIP|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:ZohoCRM Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:ZohoCRM Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:Salesforce Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:Salesforce Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:SugarCRM Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:SugarCRM Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:VegaCRM Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G:VegaCRM Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch G",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:NCI Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:NCI Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Lead Mgmt WRSFE10|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Lead Mgmt WR3FE11|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Datadise Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Datadise Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:MS Dynamics Yana Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:MS Dynamics Yana Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Adobe Campaign Store|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Adobe Campaign Login|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F:Leads V2|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch F",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:nodeSQSConnector|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:LeadsLog|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Honeypot|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:ConfiguratorPrice|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Configurator|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Account Profile|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Accessories|Italy",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E",
+    "market": "Italy",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:nodeSQSConnector|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:LeadsLog|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Honeypot|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:ConfiguratorPrice|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Configurator|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Account Profile|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E:Accessories|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "Batch E",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan MyNissan|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LoginServices|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.261Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LocationServices|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServices|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinanceSimulation|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinancialServices|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan GuestServices|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "MO Japan",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:KR CRM Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:LMT MS Dynamics Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:SICOP Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:AutoCRM Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:CA Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:CA Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch H",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:SCV Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:Nissan Europe ESB|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:CEBIP|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:ZohoCRM Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:ZohoCRM Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:Salesforce Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:Salesforce Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:SugarCRM Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:SugarCRM Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:VegaCRM Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G:VegaCRM Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch G",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:NCI Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:NCI Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Lead Mgmt WRSFE10|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Lead Mgmt WR3FE11|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Datadise Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Datadise Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:MS Dynamics Yana Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:MS Dynamics Yana Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Adobe Campaign Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Adobe Campaign Login|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F:Leads V2|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch F",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:NE-IE Token Management|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:NE-IE RegistrationFee|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:SFCC Token|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:SFCC Store|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Finance|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Inventory|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Payment|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Accounts|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm BTO|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm TradeIn|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Products|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Assets|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Orders|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Dealers|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D:V2 Ecommerce|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch D",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:Tradein Autohausen|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:Tradein UK|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:NMA Autograb|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:FranceBee2Link|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:Personalisation|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:Generative Search|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:V2 Trade-in|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:V2 Bookings|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C:V2 Status|Germany",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:11.260Z",
+    "region": "EUR",
+    "item": "Batch C",
+    "market": "Germany",
+    "from": "done",
+    "to": "none"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:SCV Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:Nissan Europe ESB|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:CEBIP|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:ZohoCRM Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:ZohoCRM Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:Salesforce Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:Salesforce Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:SugarCRM Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:SugarCRM Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:VegaCRM Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.026Z",
+    "region": "EUR",
+    "item": "Batch G:VegaCRM Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:NCI Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:NCI Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Lead Mgmt WRSFE10|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Lead Mgmt WR3FE11|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Datadise Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Datadise Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:MS Dynamics Yana Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:MS Dynamics Yana Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Adobe Campaign Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Adobe Campaign Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F:Leads V2|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch F",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:NE-IE Token Management|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:NE-IE RegistrationFee|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:SFCC Token|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:SFCC Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Finance|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Inventory|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Payment|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Accounts|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm BTO|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm TradeIn|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Products|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Assets|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Orders|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:Ecomm Dealers|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D:V2 Ecommerce|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch D",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:nodeSQSConnector|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:LeadsLog|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:Honeypot|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:ConfiguratorPrice|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:Configurator|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:Account Profile|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E:Accessories|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch E",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:KR CRM Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:LMT MS Dynamics Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:SICOP Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:AutoCRM Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Login|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Store|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan MyNissan|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LoginServices|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LocationServices|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServices|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinanceSimulation|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinancialServices|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan GuestServices|Italy",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan",
+    "market": "Italy",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan MyNissan|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LoginServices|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan LocationServices|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServicesVehicles|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan OwnerServices|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinanceSimulation|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan FinancialServices|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan:Japan GuestServices|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "MO Japan",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:KR CRM Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:LMT MS Dynamics Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:SICOP Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:AutoCRM Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Opportunity Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:EU Adobe Campaign Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CA Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:CDR Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H:Workato Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch H",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:SCV Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:Nissan Europe ESB|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:CEBIP|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:NNA Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Store|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  },
+  {
+    "timestamp": "2026-04-24T21:12:01.025Z",
+    "region": "EUR",
+    "item": "Batch G:MS Dynamics Login|Germany",
+    "market": "Germany",
+    "from": "none",
+    "to": "done"
+  }
+]
