@@ -1,0 +1,603 @@
+{
+  "infiniti-asean": {},
+  "infiniti-eur": {},
+  "infiniti-global": {},
+  "infiniti-israel": {},
+  "infiniti-latam": {},
+  "infiniti-me": {},
+  "infiniti-na": {},
+  "infiniti-nibu": {},
+  "insc-1777055272": {},
+  "nissan-ami": {},
+  "nissan-amieo": {},
+  "nissan-asean": {
+    "Batch F|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Leads V2|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Adobe Campaign Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Adobe Campaign Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:MS Dynamics Yana Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:MS Dynamics Yana Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Datadise Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Datadise Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Lead Mgmt WR3FE11|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Lead Mgmt WRSFE10|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:NCI Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:NCI Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:VegaCRM Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:VegaCRM Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SugarCRM Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SugarCRM Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Salesforce Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Salesforce Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:ZohoCRM Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:ZohoCRM Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:MS Dynamics Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:MS Dynamics Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:NNA Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:NNA Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:CEBIP|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Nissan Europe ESB|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SCV Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Login|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:AutoCRM Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:SICOP Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:LMT MS Dynamics Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:KR CRM Store|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan GuestServices|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan FinancialServices|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan FinanceSimulation|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan OwnerServices|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan OwnerServicesVehicles|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan LocationServices|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan LoginServices|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan MyNissan|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM PaceAuthorization|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM DataAuthoring|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Authorization|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Data|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Authorization|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Data|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM PaceAuthorization|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM DataAuthoring|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan GuestServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan FinancialServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan FinanceSimulation|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan OwnerServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan OwnerServicesVehicles|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan LocationServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan LoginServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan MyNissan|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:VegaCRM Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:VegaCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SugarCRM Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SugarCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Salesforce Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Salesforce Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:ZohoCRM Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:ZohoCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:MS Dynamics Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:MS Dynamics Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:NNA Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:NNA Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:CEBIP|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Nissan Europe ESB|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SCV Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Leads V2|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Adobe Campaign Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Adobe Campaign Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:MS Dynamics Yana Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:MS Dynamics Yana Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Datadise Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Datadise Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Lead Mgmt WR3FE11|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Lead Mgmt WRSFE10|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:NCI Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:NCI Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:AutoCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:SICOP Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:LMT MS Dynamics Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:KR CRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    }
+  },
+  "nissan-eur": {},
+  "nissan-insc": {},
+  "nissan-latam": {},
+  "nissan-na": {},
+  "nissan-nibu": {},
+  "nissan-nmef": {},
+  "nissan-nml": {},
+  "nissan-nsam": {}
+}

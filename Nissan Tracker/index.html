@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nissan Integration Tracker</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header>
+    <div class="header-left">
+      <span class="logo">NISSAN</span>
+      <span class="header-divider"></span>
+      <span class="header-title">Integration Tracker</span>
+    </div>
+    
+    <div class="header-nav">
+      <button class="nav-link active" data-action="set-view" data-value="dashboard">Dashboard</button>
+      <span class="nav-sep">|</span>
+      <button class="nav-link" data-action="set-view" data-value="summary">Summary</button>
+      <span class="nav-sep">|</span>
+      <button class="nav-link" data-action="set-view" data-value="activity">Activity</button>
+      <span class="nav-sep">|</span>
+      <button class="nav-link" data-action="toggle-theme" id="theme-toggle" title="Toggle Light/Dark Mode">🌑</button>
+    </div>
+
+    <div class="legend">
+      <span class="legend-item"><span class="pip pip-done"></span>Done</span>
+      <span class="legend-item"><span class="pip pip-progress"></span>In Progress</span>
+      <span class="legend-item"><span class="pip pip-blocked"></span>Blocked</span>
+      <span class="legend-item"><span class="pip pip-none"></span>Not Started</span>
+    </div>
+  </header>
+
+  <main>
+    <div id="dashboard-wrap">
+      <!-- Dashboard View -->
+      <div id="view-dashboard" class="view-content">
+        <div id="dashboard"></div>
+      </div>
+
+      <!-- Summary View -->
+      <div id="view-summary" class="view-content hidden">
+        <div class="summary-action-header" style="max-width:1000px; margin: 20px auto 0; display:flex; justify-content:flex-end; gap:10px;">
+          <button class="btn-ctrl" data-action="export-csv" style="border-color:var(--border); padding: 8px 20px; font-weight:700;">Download Excel</button>
+          <button class="btn-ctrl" data-action="export-pdf" style="border-color:var(--border); padding: 8px 20px; font-weight:700;">Generate PDF</button>
+        </div>
+        <div id="summary-container" class="summary-container"></div>
+      </div>
+
+      <!-- Activity View -->
+      <div id="view-activity" class="view-content hidden">
+        <div id="activity-container" class="summary-container"></div>
+      </div>
+    </div>
+
+    <!-- Filter sidebar -->
+    <aside class="filter-sidebar">
+      <div class="filter-heading">Filter</div>
+
+      <div class="filter-section">
+        <div class="filter-label">Brand</div>
+        <div class="brand-tabs">
+          <button class="brand-tab active" data-brand="Nissan" data-action="set-brand">Nissan</button>
+          <button class="brand-tab" data-brand="INFINITI" data-action="set-brand">Infiniti</button>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">By Status</div>
+        <div class="filter-chips" id="filter-chips"></div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Special</div>
+        <div class="filter-toggles">
+          <label class="filter-toggle">
+            <input type="checkbox" id="toggle-hide-done">
+            <span>Hide Done</span>
+          </label>
+          <label class="filter-toggle">
+            <input type="checkbox" id="toggle-only-blocked">
+            <span>Only Blocked</span>
+          </label>
+          <label class="filter-toggle">
+            <input type="checkbox" id="toggle-only-notes">
+            <span>Only with Notes</span>
+          </label>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Regions</div>
+        <div class="filter-chips" id="region-chips"></div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Batches</div>
+        <div class="filter-chips" id="batch-chips"></div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Search Market</div>
+        <input class="filter-search" id="filter-search" placeholder="Type to search…" autocomplete="off"/>
+      </div>
+
+      <div class="filter-section">
+        <button class="btn-ghost" id="bulk-mode-btn" data-action="toggle-bulk" style="width:100%; border-style:solid; color:var(--text); border-color:var(--dark);">⬚ Bulk Mode</button>
+      </div>
+
+      <button class="filter-reset hidden" id="filter-reset" data-action="reset-filters">↺ Reset Filters</button>
+    </aside>
+  </main>
+
+  <!-- Bulk action bar -->
+  <div id="bulk-bar" class="bulk-bar hidden">
+    <div class="bulk-info">
+      <span id="bulk-count">0</span> cells selected
+    </div>
+    <div class="bulk-actions">
+      <button class="bulk-btn done" data-action="apply-bulk" data-value="done">Done</button>
+      <button class="bulk-btn progress" data-action="apply-bulk" data-value="progress">In Progress</button>
+      <button class="bulk-btn blocked" data-action="apply-bulk" data-value="blocked">Blocked</button>
+      <button class="bulk-btn none" data-action="apply-bulk" data-value="none">Reset</button>
+      <div class="bulk-sep"></div>
+      <button class="bulk-btn-cancel" data-action="toggle-bulk">Cancel</button>
+    </div>
+  </div>
+
+  <!-- Shared overlay -->
+  <div id="panel-overlay" class="panel-overlay hidden" data-action="close-panels"></div>
+
+  <!-- Cell detail panel -->
+  <div id="cell-panel" class="side-panel hidden">
+    <div class="panel-header">
+      <div>
+        <div class="panel-eyebrow">Status Detail</div>
+        <div class="panel-title-row">
+          <span id="cp-integ" class="panel-title-main"></span>
+          <span class="panel-title-sep">·</span>
+          <span id="cp-market" class="panel-title-sub"></span>
+        </div>
+      </div>
+      <button class="panel-close" data-action="close-panels">✕</button>
+    </div>
+    <div class="panel-body">
+      <div class="panel-section-label">Status</div>
+      <div class="cp-status-grid" id="cp-status-grid"></div>
+
+      <div class="panel-section-label">Notes</div>
+      <textarea id="cp-note" class="field-textarea" rows="4" placeholder="Add context…"></textarea>
+
+      <div id="cp-history-section"></div>
+    </div>
+    <div class="panel-footer">
+      <button class="btn-save" data-action="save-cell">Save Changes</button>
+    </div>
+  </div>
+
+  <!-- Integration detail panel -->
+  <div id="integ-panel" class="side-panel hidden">
+    <div class="panel-header">
+      <div>
+        <div class="panel-eyebrow">Integration</div>
+        <input id="ip-name" class="panel-name-input" type="text" placeholder="Name"/>
+      </div>
+      <button class="panel-close" data-action="close-panels">✕</button>
+    </div>
+    <div class="panel-body">
+      <div id="ip-desc-section">
+        <div class="panel-section-label">Description</div>
+        <textarea id="ip-desc" class="field-textarea" rows="3"></textarea>
+      </div>
+
+      <div id="ip-schedule-section">
+        <div class="panel-section-label">Rollout Schedule</div>
+        <div class="schedule-grid">
+          <div class="field-group"><label>INT date</label><input type="date" id="ip-int"/></div>
+          <div class="field-group"><label>planned uat2 date</label><input type="date" id="ip-uat2"/></div>
+          <div class="field-group full"><label>Planned Prod (PO Sign-off)</label><input type="date" id="ip-prod"/></div>
+        </div>
+      </div>
+
+      <div id="ip-subs-section">
+        <div class="panel-section-label">Proxies / Sub-items</div>
+        <textarea id="ip-subs" class="field-textarea" rows="6"></textarea>
+      </div>
+
+      <div id="ip-move-section">
+        <div class="panel-section-label">Move to Batch</div>
+        <div style="display:flex; gap:10px; align-items:center; margin-top:10px;">
+          <select id="ip-move-target" class="field-textarea" style="min-height:40px;"><option value="">Select Target...</option></select>
+          <button class="btn-ghost" data-action="move-integ-action">Move</button>
+        </div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button class="btn-save" data-action="save-integ">Save Changes</button>
+      <button class="btn-danger" data-action="del-integ-panel">Delete</button>
+    </div>
+  </div>
+
+  <!-- Tooltip -->
+  <div id="tooltip" class="tooltip hidden"></div>
+
+  <!-- Scroll to Top -->
+  <button id="scroll-top-btn" class="scroll-top-btn" title="Scroll to Top">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M18 15l-6-6-6 6"/></svg>
+  </button>
+
+  <script src="app.js"></script>
+</body>
+</html>
