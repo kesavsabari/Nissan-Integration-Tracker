@@ -781,8 +781,26 @@ function commitEdit(raw) {
   saveData().then(() => render());
 }
 
-function deleteRegion(id) { if (confirm('Delete?')) { data.regions = data.regions.filter(r => r.id !== id); delete data.statuses[id]; saveData().then(() => render()); } }
-function removeMarket(rid, name) { const r = data.regions.find(reg => reg.id === rid); if (r) { r.markets = r.markets.filter(m => m.name !== name); Object.keys(data.statuses[rid] || {}).forEach(k => { if (k.endsWith(`|${name}`)) delete data.statuses[rid][k]; }); } saveData().then(() => render()); }
+function deleteRegion(id) {
+  const region = data.regions.find(r => r.id === id);
+  const regionName = region ? region.name : id;
+  if (confirm(`Are you sure you want to delete the entire region "${regionName}" and all its associated data?`)) {
+    data.regions = data.regions.filter(r => r.id !== id);
+    delete data.statuses[id];
+    saveData().then(() => render());
+  }
+}
+function removeMarket(rid, name) {
+  if (!confirm(`Are you sure you want to delete the market "${name}"?`)) return;
+  const r = data.regions.find(reg => reg.id === rid);
+  if (r) {
+    r.markets = r.markets.filter(m => m.name !== name);
+    Object.keys(data.statuses[rid] || {}).forEach(k => {
+      if (k.endsWith(`|${name}`)) delete data.statuses[rid][k];
+    });
+  }
+  saveData().then(() => render());
+}
 function removeInteg(name) { if (confirm('Delete?')) { data.integrations = data.integrations.filter(i => i.name !== name); Object.keys(data.statuses).forEach(rid => { Object.keys(data.statuses[rid]).forEach(k => { if (k.startsWith(`${name}|`) || k.startsWith(`${name}:`)) delete data.statuses[rid][k]; }); }); saveData().then(() => render()); } }
 
 function focusInput() {

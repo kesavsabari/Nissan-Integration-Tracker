@@ -4,7 +4,7 @@ const path = require('path');
 const zlib = require('zlib');
 const { promisify } = require('util');
 
-const PORT = 5000;
+const PORT = 5001;
 const DIRECTORY = __dirname;
 const BACKUP_DIR = path.join(DIRECTORY, 'backups');
 
