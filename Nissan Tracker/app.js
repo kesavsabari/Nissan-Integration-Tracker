@@ -213,6 +213,8 @@ function initTheme() {
 
 let activitySearch = '';
 let activityRegion = 'all';
+let activityDateStart = '';
+let activityDateEnd = '';
 
 function renderActivityView() {
   const container = document.getElementById('activity-container'); if (!container) return;
@@ -233,7 +235,12 @@ function renderActivityView() {
       h.item.toLowerCase().includes(activitySearch.toLowerCase()) || 
       h.market.toLowerCase().includes(activitySearch.toLowerCase()) ||
       h.region.toLowerCase().includes(activitySearch.toLowerCase());
-    return matchesRegion && matchesSearch;
+    
+    const hDate = h.timestamp.split('T')[0];
+    const matchesStart = !activityDateStart || hDate >= activityDateStart;
+    const matchesEnd = !activityDateEnd || hDate <= activityDateEnd;
+
+    return matchesRegion && matchesSearch && matchesStart && matchesEnd;
   }).reverse(); // Latest first
 
   const availableRegions = [...brandRegions].sort();
@@ -243,6 +250,12 @@ function renderActivityView() {
   const filterBar = `<div class="activity-filters">
     <input type="text" id="activity-search" placeholder="Search activity…" value="${esc(activitySearch)}" class="activity-input">
     <select id="activity-region-filter" class="activity-select">${regionOptions}</select>
+    <div style="display:flex; align-items:center; gap:8px;">
+      <span style="font-size:12px; color:var(--muted)">From</span>
+      <input type="date" id="activity-date-start" value="${activityDateStart}" class="activity-input" style="width:130px">
+      <span style="font-size:12px; color:var(--muted)">To</span>
+      <input type="date" id="activity-date-end" value="${activityDateEnd}" class="activity-input" style="width:130px">
+    </div>
     <div style="margin-left:auto; font-size:11px; color:var(--muted)">Showing ${filtered.length} entries</div>
   </div>`;
 
@@ -270,6 +283,8 @@ function renderActivityView() {
   // Attach filter events
   document.getElementById('activity-search').oninput = (e) => { activitySearch = e.target.value; renderActivityView(); };
   document.getElementById('activity-region-filter').onchange = (e) => { activityRegion = e.target.value; renderActivityView(); };
+  document.getElementById('activity-date-start').onchange = (e) => { activityDateStart = e.target.value; renderActivityView(); };
+  document.getElementById('activity-date-end').onchange = (e) => { activityDateEnd = e.target.value; renderActivityView(); };
 }
 
 function toggleBatch(regionId, batchName) {
