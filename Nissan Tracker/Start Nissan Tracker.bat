@@ -9,5 +9,5 @@ echo  ---------------------------
 echo  Press Ctrl+C in this window to stop
 echo.
 start "" "http://localhost:5000"
-python server.py
+node server.js
 pause
