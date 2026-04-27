@@ -51,7 +51,23 @@
 
       <!-- Activity View -->
       <div id="view-activity" class="view-content hidden">
-        <div id="activity-container" class="summary-container"></div>
+        <div class="summary-section" style="max-width:1000px; margin: 20px auto 0;">
+          <div class="summary-section-header">
+            <div class="summary-section-title">Global Activity Log</div>
+            <div id="activity-brand-toggle"></div>
+          </div>
+          <div class="activity-filters">
+            <input type="text" id="activity-search" placeholder="Search activity…" class="activity-input">
+            <select id="activity-region-filter" class="activity-select"></select>
+            <div style="display:flex; align-items:center; gap:8px;">
+              <span style="font-size:12px; color:var(--muted)">From</span>
+              <input type="date" id="activity-date-start" class="activity-input" style="width:130px">
+              <span style="font-size:12px; color:var(--muted)">To</span>
+              <input type="date" id="activity-date-end" class="activity-input" style="width:130px">
+            </div>
+          </div>
+          <div id="activity-container" style="padding: 10px 0"></div>
+        </div>
       </div>
     </div>
 
@@ -176,9 +192,17 @@
       <div id="ip-schedule-section">
         <div class="panel-section-label">Rollout Schedule</div>
         <div class="schedule-grid">
-          <div class="field-group"><label>INT date</label><input type="date" id="ip-int"/></div>
-          <div class="field-group"><label>planned uat2 date</label><input type="date" id="ip-uat2"/></div>
-          <div class="field-group full"><label>Planned Prod (PO Sign-off)</label><input type="date" id="ip-prod"/></div>
+          <div class="field-group"><label>Planned Dev Start</label><input type="date" id="ip-dev-start"/></div>
+          <div class="field-group"><label>Actual Dev Start</label><input type="date" id="ip-act-dev-start"/></div>
+          
+          <div class="field-group"><label>Planned Dev End</label><input type="date" id="ip-dev-end"/></div>
+          <div class="field-group"><label>Actual Dev End</label><input type="date" id="ip-act-dev-end"/></div>
+          
+          <div class="field-group"><label>Planned UAT2</label><input type="date" id="ip-uat2"/></div>
+          <div class="field-group"><label>Actual UAT2</label><input type="date" id="ip-act-uat2"/></div>
+          
+          <div class="field-group"><label>Planned Prod</label><input type="date" id="ip-prod"/></div>
+          <div class="field-group"><label>Actual Prod</label><input type="date" id="ip-act-prod"/></div>
         </div>
       </div>
 

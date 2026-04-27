@@ -1,7 +1,7 @@
 [
   {
     "createdAt": "2026-04-24",
-    "description": "V1 Dealer & V2 Dealer (Pilot). Rollout: APAC 25 Mar–20 May 2026 · EU 03–10 Jun 2026 · US 17–24 Jun 2026. Drop-dead: 15 Jul 2026.",
+    "description": "V1 Dealer & V2 Dealer (Pilot). Rollout: APAC 25 Mar\u201320 May 2026 \u00b7 EU 03\u201310 Jun 2026 \u00b7 US 17\u201324 Jun 2026. Drop-dead: 15 Jul 2026.",
     "intDate": "2026-03-25",
     "name": "Dealer",
     "prodDate": "2026-07-15",
@@ -14,7 +14,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Models, Offers, eim2spec Connectors-Pim, One10 Login & Store. INT: 23 Apr 2026 · UAT2: 07 May 2026 · Prod APAC: 26 May 2026.",
+    "description": "Models, Offers, eim2spec Connectors-Pim, One10 Login & Store. INT: 23 Apr 2026 \u00b7 UAT2: 07 May 2026 \u00b7 Prod APAC: 26 May 2026.",
     "intDate": "2026-04-23",
     "name": "Batch A",
     "prodDate": "2026-05-26",
@@ -30,7 +30,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Utils, Finance calculator, HOYU, Santander NNE connectors, Webhook Notification. INT: 06 Jul 2026 · UAT2: 16 Jul 2026 · Prod: 03 Aug 2026.",
+    "description": "Utils, Finance calculator, HOYU, Santander NNE connectors, Webhook Notification. INT: 06 Jul 2026 \u00b7 UAT2: 16 Jul 2026 \u00b7 Prod: 03 Aug 2026.",
     "intDate": "2026-07-06",
     "name": "Batch B",
     "prodDate": "2026-08-03",
@@ -67,7 +67,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Full ecommerce suite. INT: 10 Aug 2026 · UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.",
+    "description": "Full ecommerce suite. INT: 10 Aug 2026 \u00b7 UAT2: 20 Aug 2026 \u00b7 Prod: 07 Sep 2026 \u00b7 Drop-dead: 28 Sep 2026.",
     "intDate": "2026-08-10",
     "name": "Batch D",
     "prodDate": "2026-09-07",
@@ -93,7 +93,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Accessories, Account Profile, Configurator, Honeypot, LeadsLog. INT: 10 Aug 2026 · UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.",
+    "description": "Accessories, Account Profile, Configurator, Honeypot, LeadsLog. INT: 10 Aug 2026 \u00b7 UAT2: 20 Aug 2026 \u00b7 Prod: 07 Sep 2026 \u00b7 Drop-dead: 28 Sep 2026.",
     "intDate": "2026-08-10",
     "name": "Batch E",
     "prodDate": "2026-09-07",
@@ -111,7 +111,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Leads V2, Adobe Campaign, MS Dynamics Yana, Datadise, Lead Management, NCI connectors. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.",
+    "description": "Leads V2, Adobe Campaign, MS Dynamics Yana, Datadise, Lead Management, NCI connectors. INT: 31 Aug 2026 \u00b7 Drop-dead: 19 Oct 2026.",
     "intDate": "2026-08-31",
     "name": "Batch F",
     "prodDate": "2026-09-28",
@@ -133,7 +133,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "CRM connectors: VegaCRM, SugarCRM, Salesforce, ZohoCRM, MS Dynamics, NNA, CEBIP, Nissan Europe ESB, SCV. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.",
+    "description": "CRM connectors: VegaCRM, SugarCRM, Salesforce, ZohoCRM, MS Dynamics, NNA, CEBIP, Nissan Europe ESB, SCV. INT: 31 Aug 2026 \u00b7 Drop-dead: 19 Oct 2026.",
     "intDate": "2026-08-31",
     "name": "Batch G",
     "prodDate": "2026-09-28",
@@ -159,7 +159,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Workato, CDR, CA, EU Adobe Campaign, CA Opportunity, AutoCRM, SICOP, LMT MS Dynamics, KR CRM connectors. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.",
+    "description": "Workato, CDR, CA, EU Adobe Campaign, CA Opportunity, AutoCRM, SICOP, LMT MS Dynamics, KR CRM connectors. INT: 31 Aug 2026 \u00b7 Drop-dead: 19 Oct 2026.",
     "intDate": "2026-08-31",
     "name": "Batch H",
     "prodDate": "2026-09-28",
@@ -184,7 +184,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Japan nlink channels managed by MO/Japan FE team. INT: 09 Mar 2026 ✓ · UAT: 16 Apr 2026 ✓ · Prod: 22 Apr 2026 (Planned) · Drop-dead: 13 May 2026.",
+    "description": "Japan nlink channels managed by MO/Japan FE team. INT: 09 Mar 2026 \u2713 \u00b7 UAT: 16 Apr 2026 \u2713 \u00b7 Prod: 22 Apr 2026 (Planned) \u00b7 Drop-dead: 13 May 2026.",
     "intDate": "2026-03-09",
     "name": "MO Japan",
     "prodDate": "2026-04-22",
@@ -216,7 +216,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "V2-ChannelsAmericas: UserRecognitionAuthorization & UserRecognition-Data managed by CM. INT: 07 May 2026 · Drop-dead: 10 Jun 2026.",
+    "description": "V2-ChannelsAmericas: UserRecognitionAuthorization & UserRecognition-Data managed by CM. INT: 07 May 2026 \u00b7 Drop-dead: 10 Jun 2026.",
     "intDate": "2026-05-07",
     "name": "MO Americas",
     "prodDate": "2026-06-10",
@@ -229,7 +229,7 @@
   },
   {
     "createdAt": "2026-04-24",
-    "description": "Owner Services V2/V3 migration in 3 phases managed by MO team. Phase 1 INT: 15 Apr 2026 ✓.",
+    "description": "Owner Services V2/V3 migration in 3 phases managed by MO team. Phase 1 INT: 15 Apr 2026 \u2713.",
     "intDate": "2026-04-15",
     "name": "MO Owner Svcs",
     "prodDate": "2026-04-30",

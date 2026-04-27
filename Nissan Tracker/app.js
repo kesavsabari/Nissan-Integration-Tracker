@@ -20,19 +20,19 @@ const STATUSES = ['none', 'progress', 'done', 'blocked'];
 const STATUS_LABELS = { none: 'Not Started', progress: 'In Progress', done: 'Done', blocked: 'Blocked' };
 
 const DEFAULT_INTEGRATIONS = [
-  { name:'Dealer', subItems:['V1 Dealer','V2 Dealer'], intDate: '2026-02-05', uat2Date: '2026-03-05', prodDate: '2026-03-25', description:'V1 Dealer & V2 Dealer (Pilot). Rollout: APAC 25 Mar–20 May 2026 · EU 03–10 Jun 2026 · US 17–24 Jun 2026. Drop-dead: 15 Jul 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch A', subItems:['V2 Models','V2 Offers','V2 eim2spec','One10 Login','One10 Store'], intDate: '2026-04-23', uat2Date: '2026-05-07', prodDate: '2026-05-26', description:'Models, Offers, eim2spec Connectors-Pim, One10 Login & Store. INT: 23 Apr 2026 · UAT2: 07 May 2026 · Prod APAC: 26 May 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch B', subItems:['V2 Utils','V2 Finance','HOYU Connector','Santander NNE Api','Santander NNE Login','V2 Webhook Notification'], intDate: '2026-07-06', uat2Date: '2026-07-16', prodDate: '2026-08-03', description:'Utils, Finance calculator, HOYU, Santander NNE connectors, Webhook Notification. INT: 06 Jul 2026 · UAT2: 16 Jul 2026 · Prod: 03 Aug 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch C', subItems:['V2 Status','V2 Bookings','V2 Trade-in','Generative Search','Personalisation','FranceBee2Link','NMA Autograb','Tradein UK','Tradein Autohausen'], intDate: '', uat2Date: '', prodDate: '', description:'Status, Bookings, Trade-in & regional connectors. Relies on Santander NNE (Batch B). No dedicated drop-dead date.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch D', subItems:['V2 Ecommerce','Ecomm Dealers','Ecomm Orders','Ecomm Assets','Ecomm Products','Ecomm TradeIn','Ecomm BTO','Ecomm Accounts','Ecomm Payment','Ecomm Inventory','Ecomm Finance','SFCC Store','SFCC Token','NE-IE RegistrationFee','NE-IE Token Management'], intDate: '2026-08-10', uat2Date: '2026-08-20', prodDate: '2026-09-07', description:'Full ecommerce suite. INT: 10 Aug 2026 · UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch E', subItems:['Accessories','Account Profile','Configurator','ConfiguratorPrice','Honeypot','LeadsLog','nodeSQSConnector'], intDate: '2026-08-10', uat2Date: '2026-08-20', prodDate: '2026-09-07', description:'Accessories, Account Profile, Configurator, Honeypot, LeadsLog. INT: 10 Aug 2026 · UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch F', subItems:['Leads V2','Adobe Campaign Login','Adobe Campaign Store','MS Dynamics Yana Login','MS Dynamics Yana Store','Datadise Login','Datadise Store','Lead Mgmt WR3FE11','Lead Mgmt WRSFE10','NCI Login','NCI Store'], intDate: '2026-08-31', uat2Date: '2026-09-10', prodDate: '2026-09-28', description:'Leads V2, Adobe Campaign, MS Dynamics Yana, Datadise, Lead Management, NCI connectors. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch G', subItems:['VegaCRM Login','VegaCRM Store','SugarCRM Login','SugarCRM Store','Salesforce Login','Salesforce Store','ZohoCRM Login','ZohoCRM Store','MS Dynamics Login','MS Dynamics Store','NNA Login','NNA Store','CEBIP','Nissan Europe ESB','SCV Store'], intDate: '2026-08-31', uat2Date: '2026-09-10', prodDate: '2026-09-28', description:'CRM connectors: VegaCRM, SugarCRM, Salesforce, ZohoCRM, MS Dynamics, NNA, CEBIP, Nissan Europe ESB, SCV. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'Batch H', subItems:['Workato Store','Workato Login','CDR Login','CDR Store','CA Login','CA Store','EU Adobe Campaign Login','EU Adobe Campaign Store','CA Opportunity Login','CA Opportunity Store','AutoCRM Store','SICOP Store','LMT MS Dynamics Store','KR CRM Store'], intDate: '2026-08-31', uat2Date: '2026-09-10', prodDate: '2026-09-28', description:'Workato, CDR, CA, EU Adobe Campaign, CA Opportunity, AutoCRM, SICOP, LMT MS Dynamics, KR CRM connectors. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'MO Japan', subItems:['Japan GuestServices','Japan FinancialServices','Japan FinanceSimulation','Japan OwnerServices','Japan OwnerServicesVehicles','Japan LocationServices','Japan LoginServices','Japan MyNissan'], intDate: '2026-03-09', uat2Date: '2026-04-16', prodDate: '2026-04-22', description:'Japan nlink channels managed by MO/Japan FE team. INT: 09 Mar 2026 ✓ · UAT: 16 Apr 2026 ✓ · Prod: 22 Apr 2026 (Planned) · Drop-dead: 13 May 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'MO PIM', subItems:['PIM PaceAuthorization','PIM DataAuthoring'], intDate: '2026-04-16', uat2Date: '2026-04-23', prodDate: '2026-04-30', description:'PIM Proxy managed by NDI team. V2-ChannelsPIM-PaceAuthorization & DataAuthoring. Drop-dead: 21 May 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'MO Americas', subItems:['UserRecognition Authorization','UserRecognition Data'], intDate: '2026-05-07', uat2Date: '2026-05-13', prodDate: '2026-05-20', description:'V2-ChannelsAmericas: UserRecognitionAuthorization & UserRecognition-Data managed by CM. INT: 07 May 2026 · Drop-dead: 10 Jun 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
-  { name:'MO Owner Svcs', subItems:['V3 Users Nissan','V2 Users Nissan','V2 Users FavoriteDealers','V2 Account Nissan','NE-ESB OwnerServices','NE OwnerServices Connector','NNA OwnerServices WSO2','Owner Services Picklist','SFV3-NE Token','SFV3-NNA Token','SFV3-NE OIDC ESB','SFV3-NNA OIDC WSO2','V2 Connector SMIT','V2 Connector AOPreferenceCentre'], intDate: '2026-04-15', uat2Date: '2026-04-23', prodDate: '2026-04-30', description:'Owner Services V2/V3 migration in 3 phases managed by MO team. Phase 1 INT: 15 Apr 2026 ✓.', createdAt:'2026-04-24', updatedAt:'2026-04-24' }
+  { name:'Dealer', subItems:['V1 Dealer','V2 Dealer'], uat2Date: '2026-03-05', prodDate: '2026-03-25', description:'V1 Dealer & V2 Dealer (Pilot). Rollout: APAC 25 Mar–20 May 2026 · EU 03–10 Jun 2026 · US 17–24 Jun 2026. Drop-dead: 15 Jul 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch A', subItems:['V2 Models','V2 Offers','V2 eim2spec','One10 Login','One10 Store'], uat2Date: '2026-05-07', prodDate: '2026-05-26', description:'Models, Offers, eim2spec Connectors-Pim, One10 Login & Store. UAT2: 07 May 2026 · Prod APAC: 26 May 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch B', subItems:['V2 Utils','V2 Finance','HOYU Connector','Santander NNE Api','Santander NNE Login','V2 Webhook Notification'], uat2Date: '2026-07-16', prodDate: '2026-08-03', description:'Utils, Finance calculator, HOYU, Santander NNE connectors, Webhook Notification. UAT2: 16 Jul 2026 · Prod: 03 Aug 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch C', subItems:['V2 Status','V2 Bookings','V2 Trade-in','Generative Search','Personalisation','FranceBee2Link','NMA Autograb','Tradein UK','Tradein Autohausen'], uat2Date: '', prodDate: '', description:'Status, Bookings, Trade-in & regional connectors. Relies on Santander NNE (Batch B). No dedicated drop-dead date.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch D', subItems:['V2 Ecommerce','Ecomm Dealers','Ecomm Orders','Ecomm Assets','Ecomm Products','Ecomm TradeIn','Ecomm BTO','Ecomm Accounts','Ecomm Payment','Ecomm Inventory','Ecomm Finance','SFCC Store','SFCC Token','NE-IE RegistrationFee','NE-IE Token Management'], uat2Date: '2026-08-20', prodDate: '2026-09-07', description:'Full ecommerce suite. UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch E', subItems:['Accessories','Account Profile','Configurator','ConfiguratorPrice','Honeypot','LeadsLog','nodeSQSConnector'], uat2Date: '2026-08-20', prodDate: '2026-09-07', description:'Accessories, Account Profile, Configurator, Honeypot, LeadsLog. UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch F', subItems:['Leads V2','Adobe Campaign Login','Adobe Campaign Store','MS Dynamics Yana Login','MS Dynamics Yana Store','Datadise Login','Datadise Store','Lead Mgmt WR3FE11','Lead Mgmt WRSFE10','NCI Login','NCI Store'], uat2Date: '2026-09-10', prodDate: '2026-09-28', description:'Leads V2, Adobe Campaign, MS Dynamics Yana, Datadise, Lead Management, NCI connectors. Drop-dead: 19 Oct 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch G', subItems:['VegaCRM Login','VegaCRM Store','SugarCRM Login','SugarCRM Store','Salesforce Login','Salesforce Store','ZohoCRM Login','ZohoCRM Store','MS Dynamics Login','MS Dynamics Store','NNA Login','NNA Store','CEBIP','Nissan Europe ESB','SCV Store'], uat2Date: '2026-09-10', prodDate: '2026-09-28', description:'CRM connectors: VegaCRM, SugarCRM, Salesforce, ZohoCRM, MS Dynamics, NNA, CEBIP, Nissan Europe ESB, SCV. Drop-dead: 19 Oct 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'Batch H', subItems:['Workato Store','Workato Login','CDR Login','CDR Store','CA Login','CA Store','EU Adobe Campaign Login','EU Adobe Campaign Store','CA Opportunity Login','CA Opportunity Store','AutoCRM Store','SICOP Store','LMT MS Dynamics Store','KR CRM Store'], uat2Date: '2026-09-10', prodDate: '2026-09-28', description:'Workato, CDR, CA, EU Adobe Campaign, CA Opportunity, AutoCRM, SICOP, LMT MS Dynamics, KR CRM connectors. Drop-dead: 19 Oct 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'MO Japan', subItems:['Japan GuestServices','Japan FinancialServices','Japan FinanceSimulation','Japan OwnerServices','Japan OwnerServicesVehicles','Japan LocationServices','Japan LoginServices','Japan MyNissan'], uat2Date: '2026-04-16', prodDate: '2026-04-22', description:'Japan nlink channels managed by MO/Japan FE team. UAT: 16 Apr 2026 ✓ · Prod: 22 Apr 2026 (Planned) · Drop-dead: 13 May 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'MO PIM', subItems:['PIM PaceAuthorization','PIM DataAuthoring'], uat2Date: '2026-04-23', prodDate: '2026-04-30', description:'PIM Proxy managed by NDI team. V2-ChannelsPIM-PaceAuthorization & DataAuthoring. Drop-dead: 21 May 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'MO Americas', subItems:['UserRecognition Authorization','UserRecognition Data'], uat2Date: '2026-05-13', prodDate: '2026-05-20', description:'V2-ChannelsAmericas: UserRecognitionAuthorization & UserRecognition-Data managed by CM. Drop-dead: 10 Jun 2026.', createdAt:'2026-04-24', updatedAt:'2026-04-24' },
+  { name:'MO Owner Svcs', subItems:['V3 Users Nissan','V2 Users Nissan','V2 Users FavoriteDealers','V2 Account Nissan','NE-ESB OwnerServices','NE OwnerServices Connector','NNA OwnerServices WSO2','Owner Services Picklist','SFV3-NE Token','SFV3-NNA Token','SFV3-NE OIDC ESB','SFV3-NNA OIDC WSO2','V2 Connector SMIT','V2 Connector AOPreferenceCentre'], uat2Date: '2026-04-23', prodDate: '2026-04-30', description:'Owner Services V2/V3 migration in 3 phases managed by MO team.', createdAt:'2026-04-24', updatedAt:'2026-04-24' }
 ];
 
 // ── Helpers ───────────────────────────────────────
@@ -115,7 +115,6 @@ async function init() {
     });
   } catch (err) { data = { integrations: DEFAULT_INTEGRATIONS, regions: [], statuses: {}, history: [] }; }
   
-  // Add Throttled Scroll Listener for Scroll to Top Button
   const wrap = document.getElementById('dashboard-wrap');
   const stBtn = document.getElementById('scroll-top-btn');
   if (wrap && stBtn) {
@@ -188,10 +187,8 @@ function setView(viewName) {
   document.querySelectorAll('.nav-link').forEach(b => b.classList.toggle('active', b.dataset.value === viewName));
   const sidebar = document.querySelector('.filter-sidebar');
   if (sidebar) sidebar.style.display = (viewName === 'summary' || viewName === 'activity') ? 'none' : 'flex';
-  
   const wrap = document.getElementById('dashboard-wrap');
   if (wrap) wrap.scrollTo({ top: 0, behavior: 'smooth' });
-  
   render();
 }
 
@@ -219,72 +216,56 @@ let activityDateEnd = '';
 function renderActivityView() {
   const container = document.getElementById('activity-container'); if (!container) return;
   const history = data.history || [];
-  
-  const brandSwitcher = `<div class="brand-tabs" style="margin-bottom: 24px; padding:0">
-    <button class="brand-tab ${activeBrand === 'Nissan' ? 'active' : ''}" data-brand="Nissan" data-action="set-brand">Nissan</button>
-    <button class="brand-tab ${activeBrand === 'INFINITI' ? 'active' : ''}" data-brand="INFINITI" data-action="set-brand">Infiniti</button>
-  </div>`;
-
+  const brandToggle = document.getElementById('activity-brand-toggle');
+  if (brandToggle) {
+    brandToggle.innerHTML = `<div class="brand-tabs" style="padding:0; flex-direction:row; height:32px;">
+      <button class="brand-tab ${activeBrand === 'Nissan' ? 'active' : ''}" data-brand="Nissan" data-action="set-brand" style="padding:4px 12px; font-size:10px;">Nissan</button>
+      <button class="brand-tab ${activeBrand === 'INFINITI' ? 'active' : ''}" data-brand="INFINITI" data-action="set-brand" style="padding:4px 12px; font-size:10px;">Infiniti</button>
+    </div>`;
+  }
   const brandRegions = new Set(data.regions.filter(r => r.brand === activeBrand).map(r => r.name));
-
-  // Filter logic
   const filtered = history.filter(h => {
     if (!brandRegions.has(h.region)) return false;
     const matchesRegion = activityRegion === 'all' || h.region === activityRegion;
-    const matchesSearch = !activitySearch || 
-      h.item.toLowerCase().includes(activitySearch.toLowerCase()) || 
-      h.market.toLowerCase().includes(activitySearch.toLowerCase()) ||
-      h.region.toLowerCase().includes(activitySearch.toLowerCase());
-    
+    const matchesSearch = !activitySearch || h.item.toLowerCase().includes(activitySearch.toLowerCase()) || h.market.toLowerCase().includes(activitySearch.toLowerCase()) || h.region.toLowerCase().includes(activitySearch.toLowerCase());
     const hDate = h.timestamp.split('T')[0];
     const matchesStart = !activityDateStart || hDate >= activityDateStart;
     const matchesEnd = !activityDateEnd || hDate <= activityDateEnd;
-
     return matchesRegion && matchesSearch && matchesStart && matchesEnd;
-  }).reverse(); // Latest first
-
+  });
   const availableRegions = [...brandRegions].sort();
-  const regionOptions = `<option value="all">All Regions</option>` + 
-    availableRegions.map(r => `<option value="${esc(r)}" ${activityRegion === r ? 'selected' : ''}>${esc(r)}</option>`).join('');
-
-  const filterBar = `<div class="activity-filters">
-    <input type="text" id="activity-search" placeholder="Search activity…" value="${esc(activitySearch)}" class="activity-input">
-    <select id="activity-region-filter" class="activity-select">${regionOptions}</select>
-    <div style="display:flex; align-items:center; gap:8px;">
-      <span style="font-size:12px; color:var(--muted)">From</span>
-      <input type="date" id="activity-date-start" value="${activityDateStart}" class="activity-input" style="width:130px">
-      <span style="font-size:12px; color:var(--muted)">To</span>
-      <input type="date" id="activity-date-end" value="${activityDateEnd}" class="activity-input" style="width:130px">
-    </div>
-    <div style="margin-left:auto; font-size:11px; color:var(--muted)">Showing ${filtered.length} entries</div>
-  </div>`;
-
-  const items = filtered.map(h => {
-    const time = new Date(h.timestamp).toLocaleString('en-GB', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
-    return `<div class="activity-row">
-      <div class="activity-time">${time}</div>
-      <div class="activity-desc">
-        <b>${esc(h.region)}</b> · ${esc(h.market)} · <b>${esc(h.item)}</b>
-      </div>
-      <div class="activity-change">
-        <span class="pip pip-${h.from}"></span> <span style="color:var(--muted)">→</span> <span class="pip pip-${h.to}"></span>
-      </div>
-    </div>`;
+  const regionSelect = document.getElementById('activity-region-filter');
+  if (regionSelect) regionSelect.innerHTML = `<option value="all">All Regions</option>` + availableRegions.map(r => `<option value="${esc(r)}" ${activityRegion === r ? 'selected' : ''}>${esc(r)}</option>`).join('');
+  const latestFirst = [...filtered].sort((a, b) => new Date(b.timestamp) - new Date(a.timestamp));
+  const groups = [];
+  latestFirst.forEach(h => {
+    const last = groups[groups.length - 1];
+    const hTime = new Date(h.timestamp).getTime();
+    const canGroup = last && last.region === h.region && Math.abs(last.latestTime - hTime) < 60000;
+    if (canGroup) last.items.push(h);
+    else groups.push({ region: h.region, latestTime: hTime, items: [h] });
+  });
+  const itemsHtml = groups.map(g => {
+    const time = new Date(g.latestTime).toLocaleString('en-GB', { day:'numeric', month:'short', hour:'2-digit', minute:'2-digit' });
+    if (g.items.length === 1) {
+      const h = g.items[0];
+      return `<div class="activity-row"><div class="activity-time">${time}</div><div class="activity-desc"><b>${esc(h.region)}</b> · ${esc(h.market)} · <b>${esc(h.item)}</b></div><div class="activity-change"><span class="pip pip-${h.from}"></span> <span style="color:var(--muted)">→</span> <span class="pip pip-${h.to}"></span></div></div>`;
+    } else {
+      const subItems = g.items.map(h => `<div class="activity-sub-row"><div class="activity-desc">${esc(h.market)} · ${esc(h.item)}</div><div class="activity-change"><span class="pip pip-${h.from}"></span> <span style="color:var(--muted)">→</span> <span class="pip pip-${h.to}"></span></div></div>`).join('');
+      return `<div class="activity-group"><details><summary class="activity-row activity-group-header"><div class="activity-time">${time}</div><div class="activity-desc"><b>${esc(g.region)}</b> · <span class="activity-count">${g.items.length} updates</span></div><div class="activity-toggle-icon">▼</div></summary><div class="activity-group-content">${subItems}</div></details></div>`;
+    }
   }).join('');
-
-  container.innerHTML = brandSwitcher + `<div class="summary-section">
-    <div class="summary-section-header">
-      <div class="summary-section-title">Global Activity Log (${activeBrand})</div>
-    </div>
-    ${filterBar}
-    <div style="padding: 10px 0">${filtered.length ? items : '<div style="text-align:center; padding: 40px; color: var(--muted)">No matching activity found.</div>'}</div>
-  </div>`;
-
-  // Attach filter events
-  document.getElementById('activity-search').oninput = (e) => { activitySearch = e.target.value; renderActivityView(); };
-  document.getElementById('activity-region-filter').onchange = (e) => { activityRegion = e.target.value; renderActivityView(); };
-  document.getElementById('activity-date-start').onchange = (e) => { activityDateStart = e.target.value; renderActivityView(); };
-  document.getElementById('activity-date-end').onchange = (e) => { activityDateEnd = e.target.value; renderActivityView(); };
+  container.innerHTML = filtered.length ? itemsHtml : '<div style="text-align:center; padding: 40px; color: var(--muted)">No matching activity found.</div>';
+  const searchInp = document.getElementById('activity-search');
+  searchInp.oninput = (e) => { activitySearch = e.target.value; renderActivityView(); };
+  searchInp.value = activitySearch;
+  regionSelect.onchange = (e) => { activityRegion = e.target.value; renderActivityView(); };
+  const startInp = document.getElementById('activity-date-start');
+  startInp.onchange = (e) => { activityDateStart = e.target.value; renderActivityView(); };
+  startInp.value = activityDateStart;
+  const endInp = document.getElementById('activity-date-end');
+  endInp.onchange = (e) => { activityDateEnd = e.target.value; renderActivityView(); };
+  endInp.value = activityDateEnd;
 }
 
 function toggleBatch(regionId, batchName) {
@@ -358,14 +339,7 @@ function buildTable(region) {
     const groupHtml = isEditingGroup 
       ? `<input class="inline-input input-group" value="${esc(m.group || '')}" placeholder="Group…"/>`
       : `<div class="market-group-label" data-action="edit-market-group" data-region="${id}" data-market="${esc(m.name)}">${esc(m.group || '·')}</div>`;
-    
-    return `<th class="th-market">
-      <div class="th-market-inner">
-        ${groupHtml}
-        <span class="th-market-name">${esc(m.name)}</span>
-        <button class="btn-del-market" data-action="del-market" data-region="${id}" data-value="${esc(m.name)}">✕</button>
-      </div>
-    </th>`;
+    return `<th class="th-market"><div class="th-market-inner">${groupHtml}<span class="th-market-name">${esc(m.name)}</span><button class="btn-del-market" data-action="del-market" data-region="${id}" data-value="${esc(m.name)}">✕</button></div></th>`;
   }).join('');
   const addMarketTh = isAddMarket ? `<th class="th-add-market" style="padding:6px 10px;min-width:110px"><input class="inline-input input-market" placeholder="Market…"/></th>` : `<th class="th-add-market"><button class="btn-add-col" data-action="add-market" data-region="${id}">＋</button></th>`;
   let rows = '';
@@ -428,25 +402,14 @@ document.body.onclick = e => {
 function exportCSV() {
   const regions = data.regions.filter(r => r.brand === activeBrand);
   let csv = 'Region,Integration,Market,Status,Rollout (Prod)\n';
-  
   regions.forEach(r => {
     const statuses = data.statuses[r.id] || {};
     data.integrations.forEach(integ => {
       const items = [{ name: integ.name, prod: integ.prodDate }];
-      if (integ.subItems) {
-        integ.subItems.forEach(s => items.push({ name: `${integ.name}:${s}`, prod: '' }));
-      }
-
-      items.forEach(item => {
-        r.markets.forEach(m => {
-          const st = getStatusObj(statuses, `${item.name}|${m.name}`).status;
-          const statusLabel = STATUS_LABELS[st] || 'Not Started';
-          csv += `"${r.name}","${item.name}","${m.name}","${statusLabel}","${item.prod || ''}"\n`;
-        });
-      });
+      if (integ.subItems) integ.subItems.forEach(s => items.push({ name: `${integ.name}:${s}`, prod: '' }));
+      items.forEach(item => { r.markets.forEach(m => { const st = getStatusObj(statuses, `${item.name}|${m.name}`).status; const statusLabel = STATUS_LABELS[st] || 'Not Started'; csv += `"${r.name}","${item.name}","${m.name}","${statusLabel}","${item.prod || ''}"\n`; }); });
     });
   });
-
   const blob = new Blob([csv], { type: 'text/csv;charset=utf-8;' });
   const link = document.createElement('a');
   link.href = URL.createObjectURL(blob);
@@ -492,32 +455,14 @@ async function applyBulkStatus(status) {
     if (!data.statuses[regionId]) data.statuses[regionId] = {};
     const existing = getStatusObj(data.statuses[regionId], integName + '|' + marketName);
     logHistory(regionId, integName, marketName, existing.status, status);
-
-    const update = (k, ex, st) => {
-      if (st === 'none' && !ex.note) delete data.statuses[regionId][k];
-      else data.statuses[regionId][k] = { ...ex, status: st, updatedAt: today() };
-    };
-
+    const update = (k, ex, st) => { if (st === 'none' && !ex.note) delete data.statuses[regionId][k]; else data.statuses[regionId][k] = { ...ex, status: st, updatedAt: today() }; };
     update(integName + '|' + marketName, existing, status);
-    
     const batch = data.integrations.find(i => i.name === (integName.includes(':') ? integName.split(':')[0] : integName));
     if (batch && batch.subItems?.length && !integName.includes(':')) {
-      batch.subItems.forEach(s => {
-        const subK = `${integName}:${s}|${marketName}`;
-        const subEx = getStatusObj(data.statuses[regionId], subK);
-        logHistory(regionId, subK, marketName, subEx.status, status);
-        update(subK, subEx, status);
-      });
+      batch.subItems.forEach(s => { const subK = `${integName}:${s}|${marketName}`; const subEx = getStatusObj(data.statuses[regionId], subK); logHistory(regionId, subK, marketName, subEx.status, status); update(subK, subEx, status); });
     }
   });
-  
-  // Exit bulk mode automatically
-  selectedCells.clear(); 
-  bulkMode = false; 
-  syncBulkBar(); 
-  
-  await saveData(); 
-  render();
+  selectedCells.clear(); bulkMode = false; syncBulkBar(); await saveData(); render();
 }
 
 function openCellPanel(regionId, integName, marketName) {
@@ -525,17 +470,14 @@ function openCellPanel(regionId, integName, marketName) {
   cellState = { regionId, integName, marketName, selectedStatus: obj.status };
   document.getElementById('cp-integ').textContent = integName; document.getElementById('cp-market').textContent = marketName;
   document.getElementById('cp-note').value = obj.note || ''; renderCpStatusGrid(obj.status);
-  
+  const existingHistory = document.getElementById('cp-history-section'); if (existingHistory) existingHistory.remove();
   const historyContainer = document.createElement('div'); historyContainer.id = 'cp-history-section';
   historyContainer.innerHTML = `<div class="panel-section-label" style="margin-top:20px">Recent Changes</div><div id="cp-history-list" class="history-list"></div>`;
-  const body = document.querySelector('#cell-panel .panel-body');
-  const existingHistory = document.getElementById('cp-history-section'); if (existingHistory) existingHistory.remove();
-  body.appendChild(historyContainer);
+  document.querySelector('#cell-panel .panel-body').appendChild(historyContainer);
   const list = document.getElementById('cp-history-list');
   const relevantHistory = (data.history || []).filter(h => h.item === integName && h.market === marketName).slice(0, 5);
-  if (relevantHistory.length === 0) { list.innerHTML = `<div class="history-empty">No changes recorded yet.</div>`; } 
-  else { list.innerHTML = relevantHistory.map(h => `<div class="history-item"><div class="history-meta"><span class="history-time">${new Date(h.timestamp).toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</span></div><div class="history-change"><span class="pip pip-${h.from}"></span><span class="history-arrow">→</span><span class="pip pip-${h.to}"></span></div></div>`).join(''); }
-
+  if (relevantHistory.length === 0) list.innerHTML = `<div class="history-empty">No changes recorded yet.</div>`;
+  else list.innerHTML = relevantHistory.map(h => `<div class="history-item"><div class="history-meta"><span class="history-time">${new Date(h.timestamp).toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</span></div><div class="history-change"><span class="pip pip-${h.from}"></span><span class="history-arrow">→</span><span class="pip pip-${h.to}"></span></div></div>`).join('');
   document.getElementById('panel-overlay').classList.remove('hidden'); document.getElementById('cell-panel').classList.remove('hidden');
 }
 
@@ -552,24 +494,11 @@ function renderCpStatusGrid(selected) {
 function saveCellPanel() {
   if (!cellState) return; const { regionId, integName, marketName, selectedStatus } = cellState; const note = document.getElementById('cp-note').value.trim();
   if (!data.statuses[regionId]) data.statuses[regionId] = {}; const key = `${integName}|${marketName}`;
-  const existing = getStatusObj(data.statuses[regionId], key);
-  logHistory(regionId, integName, marketName, existing.status, selectedStatus);
-
-  const update = (k, ex, st, nt) => {
-    if (st === 'none' && !nt) delete data.statuses[regionId][k];
-    else data.statuses[regionId][k] = { status: st, note: nt, updatedAt: today() };
-  };
-
+  const existing = getStatusObj(data.statuses[regionId], key); logHistory(regionId, integName, marketName, existing.status, selectedStatus);
+  const update = (k, ex, st, nt) => { if (st === 'none' && !nt) delete data.statuses[regionId][k]; else data.statuses[regionId][k] = { status: st, note: nt, updatedAt: today() }; };
   update(key, existing, selectedStatus, note);
-
   const batch = data.integrations.find(i => i.name === integName);
-  if (batch && batch.subItems?.length) {
-    batch.subItems.forEach(s => {
-      const subK = `${integName}:${s}|${marketName}`; const subEx = getStatusObj(data.statuses[regionId], subK);
-      logHistory(regionId, subK, marketName, subEx.status, selectedStatus);
-      update(subK, subEx, selectedStatus, subEx.note);
-    });
-  }
+  if (batch && batch.subItems?.length) { batch.subItems.forEach(s => { const subK = `${integName}:${s}|${marketName}`; const subEx = getStatusObj(data.statuses[regionId], subK); logHistory(regionId, subK, marketName, subEx.status, selectedStatus); update(subK, subEx, selectedStatus, subEx.note); }); }
   saveData().then(() => { closePanels(); render(); });
 }
 
@@ -581,7 +510,14 @@ function openIntegPanel(regionId, integName) {
   document.getElementById('ip-name').value = isSub ? subPart : integ.name;
   document.getElementById('ip-desc').value = integ.description || '';
   document.getElementById('ip-subs').value = (integ.subItems || []).join('\n');
-  document.getElementById('ip-int').value = integ.intDate || ''; document.getElementById('ip-uat2').value = integ.uat2Date || ''; document.getElementById('ip-prod').value = integ.prodDate || '';
+  document.getElementById('ip-dev-start').value = integ.devStart || '';
+  document.getElementById('ip-act-dev-start').value = integ.actDevStart || '';
+  document.getElementById('ip-dev-end').value = integ.devEnd || '';
+  document.getElementById('ip-act-dev-end').value = integ.actDevEnd || '';
+  document.getElementById('ip-uat2').value = integ.uat2Date || '';
+  document.getElementById('ip-act-uat2').value = integ.actUat2Date || '';
+  document.getElementById('ip-prod').value = integ.prodDate || '';
+  document.getElementById('ip-act-prod').value = integ.actProdDate || '';
   document.getElementById('ip-desc-section').style.display = isSub ? 'none' : 'block';
   document.getElementById('ip-schedule-section').style.display = isSub ? 'none' : 'block';
   document.getElementById('ip-subs-section').style.display = isSub ? 'none' : 'block';
@@ -625,7 +561,14 @@ function saveIntegPanel() {
   }
   integ.description = document.getElementById('ip-desc').value.trim();
   integ.subItems = document.getElementById('ip-subs').value.split('\n').map(s => s.trim()).filter(Boolean);
-  integ.intDate = document.getElementById('ip-int').value.trim(); integ.uat2Date = document.getElementById('ip-uat2').value.trim(); integ.prodDate = document.getElementById('ip-prod').value.trim();
+  integ.devStart = document.getElementById('ip-dev-start').value;
+  integ.actDevStart = document.getElementById('ip-act-dev-start').value;
+  integ.devEnd = document.getElementById('ip-dev-end').value;
+  integ.actDevEnd = document.getElementById('ip-act-dev-end').value;
+  integ.uat2Date = document.getElementById('ip-uat2').value.trim();
+  integ.actUat2Date = document.getElementById('ip-act-uat2').value;
+  integ.prodDate = document.getElementById('ip-prod').value.trim();
+  integ.actProdDate = document.getElementById('ip-act-prod').value;
   integ.updatedAt = today(); saveData().then(() => { closePanels(); render(); });
 }
 
@@ -645,62 +588,119 @@ function getGlobalStats() {
   return { percent: total === 0 ? 0 : Math.round((done / total) * 100), done, blocked, overdue: overdueCount, total };
 }
 
+function calculateGlobalBatchProgress(integName) {
+  let total = 0, done = 0;
+  const regions = data.regions.filter(r => r.brand === activeBrand);
+  regions.forEach(r => {
+    const statuses = data.statuses[r.id] || {};
+    const integ = data.integrations.find(i => i.name === integName);
+    if (!integ) return;
+    const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
+    items.forEach(name => { r.markets.forEach(m => { total++; if (getStatusObj(statuses, `${name}|${m.name}`).status === 'done') done++; }); });
+  });
+  return total === 0 ? 0 : Math.round((done / total) * 100);
+}
+
+function getBatchRegionalStatuses(integName) {
+  const regions = data.regions.filter(r => r.brand === activeBrand);
+  return regions.map(r => {
+    const statuses = data.statuses[r.id] || {};
+    const integ = data.integrations.find(i => i.name === integName);
+    if (!integ) return { name: r.name, status: 'none' };
+    
+    const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
+    let hasBlocked = false, allDone = true, hasProgress = false, hasStarted = false;
+    
+    items.forEach(name => {
+      r.markets.forEach(m => {
+        const st = getStatusObj(statuses, `${name}|${m.name}`).status;
+        if (st === 'blocked')  hasBlocked = true;
+        if (st === 'progress') hasProgress = true;
+        if (st !== 'done')     allDone = false;
+        if (st !== 'none')     hasStarted = true;
+      });
+    });
+
+    let finalStatus = 'none';
+    if (hasBlocked) finalStatus = 'blocked';
+    else if (allDone && hasStarted) finalStatus = 'done';
+    else if (hasStarted) finalStatus = 'progress';
+
+    return { name: r.name, status: finalStatus };
+  });
+}
+
 function renderSummaryView() {
   const container = document.getElementById('summary-container'); if (!container) return;
   const stats = getGlobalStats();
-  const brandSwitcher = `<div class="brand-tabs" style="margin-bottom: 24px; padding:0">
+  const brandSwitcher = `<div class="brand-tabs" style="margin-bottom: 24px; padding:0; flex-direction:row; width:fit-content;">
     <button class="brand-tab ${activeBrand === 'Nissan' ? 'active' : ''}" data-brand="Nissan" data-action="set-brand">Nissan</button>
     <button class="brand-tab ${activeBrand === 'INFINITI' ? 'active' : ''}" data-brand="INFINITI" data-action="set-brand">Infiniti</button>
   </div>`;
 
+  // --- Roadmap Section ---
+  const roadmapHtml = data.integrations.map(integ => {
+    const progress = calculateGlobalBatchProgress(integ.name);
+    const regionalStatuses = getBatchRegionalStatuses(integ.name);
+    
+    const milestones = [
+      { label: 'Dev Start', p: integ.devStart, a: integ.actDevStart },
+      { label: 'Dev End',   p: integ.devEnd,   a: integ.actDevEnd },
+      { label: 'UAT2',      p: integ.uat2Date, a: integ.actUat2Date },
+      { label: 'Prod',      p: integ.prodDate, a: integ.actProdDate }
+    ];
+
+    const stepsHtml = milestones.map(m => {
+      const bestDate = m.a || m.p;
+      const isPast = bestDate && new Date(bestDate) < new Date();
+      const statusClass = m.a ? 'completed' : (isPast ? 'current' : '');
+      const dateDisplay = m.a ? `<span style="color:var(--done);font-weight:700;">${formatDate(m.a)}</span>` : formatDate(m.p);
+      return `<div class="roadmap-step ${statusClass}"><div class="roadmap-dot"></div><div class="roadmap-label">${m.label}</div><div class="roadmap-date">${dateDisplay}</div>${m.a ? '<div style="font-size:8px; color:var(--done); font-weight:800; margin-top:-2px">ACTUAL</div>' : ''}</div>`;
+    }).join('');
+
+    const regionsHtml = regionalStatuses.map(rs => `
+      <div class="region-mini-pill ${rs.status}">
+        <b>${esc(rs.name)}</b> ${rs.status.toUpperCase()}
+      </div>
+    `).join('');
+
+    return `
+      <div class="roadmap-card">
+        <div class="roadmap-info">
+          <div class="roadmap-name">${esc(integ.name)}</div>
+          <div class="roadmap-progress-text">${progress}% Global Progress</div>
+        </div>
+        <div class="roadmap-track">
+          <div class="roadmap-main-track">
+            <div class="roadmap-line"></div>
+            <div class="roadmap-line-fill" style="width: ${progress}%"></div>
+            ${stepsHtml}
+          </div>
+          <div class="roadmap-regions">
+            ${regionsHtml}
+          </div>
+        </div>
+      </div>`;
+  }).join('');
   const regionRows = data.regions.filter(r => r.brand === activeBrand).map(r => {
     const statuses = data.statuses[r.id] || {};
     let counts = { done: 0, progress: 0, blocked: 0, none: 0 };
     data.integrations.forEach(integ => {
       const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
-      items.forEach(name => { 
-        r.markets.forEach(m => { 
-          const st = getStatusObj(statuses, `${name}|${m.name}`).status;
-          counts[st]++; 
-        });
-      });
+      items.forEach(name => { r.markets.forEach(m => { const st = getStatusObj(statuses, `${name}|${m.name}`).status; counts[st]++; }); });
     });
-    
     const total = counts.done + counts.progress + counts.blocked + counts.none;
     const getP = (val) => total === 0 ? 0 : (val / total) * 100;
     const rPercent = total === 0 ? 0 : Math.round(getP(counts.done));
-
-    return `<tr>
-      <td class="rpt-name">${esc(r.name)}</td>
-      <td>${r.markets.length}</td>
-      <td class="rpt-progress-cell">
-        <div class="status-stack">
-          <div class="stack-segment done summary-bar" data-width="${getP(counts.done)}" style="width:0%" title="Done: ${counts.done}"></div>
-          <div class="stack-segment progress summary-bar" data-width="${getP(counts.progress)}" style="width:0%" title="In Progress: ${counts.progress}"></div>
-          <div class="stack-segment blocked summary-bar" data-width="${getP(counts.blocked)}" style="width:0%" title="Blocked: ${counts.blocked}"></div>
-          <div class="stack-segment none summary-bar" data-width="${getP(counts.none)}" style="width:0%" title="Not Started: ${counts.none}"></div>
-        </div>
-        <span class="rpt-percent">${rPercent}%</span>
-      </td>
-    </tr>`;
+    return `<tr><td class="rpt-name">${esc(r.name)}</td><td>${r.markets.length}</td><td class="rpt-progress-cell"><div class="status-stack"><div class="stack-segment done summary-bar" data-width="${getP(counts.done)}" style="width:0%" title="Done: ${counts.done}"></div><div class="stack-segment progress summary-bar" data-width="${getP(counts.progress)}" style="width:0%" title="In Progress: ${counts.progress}"></div><div class="stack-segment blocked summary-bar" data-width="${getP(counts.blocked)}" style="width:0%" title="Blocked: ${counts.blocked}"></div><div class="stack-segment none summary-bar" data-width="${getP(counts.none)}" style="width:0%" title="Not Started: ${counts.none}"></div></div><span class="rpt-percent">${rPercent}%</span></td></tr>`;
   }).join('');
-
-  container.innerHTML = brandSwitcher + `<div class="kpi-grid"><div class="kpi-card"><div class="kpi-label">Overall Progress</div><div class="kpi-value">${stats.percent}%</div><div class="kpi-sub">${stats.done} of ${stats.total} items completed</div></div><div class="kpi-card"><div class="kpi-label">Blocked Items</div><div class="kpi-value" style="color:var(--blocked)">${stats.blocked}</div><div class="kpi-sub">Items requiring immediate attention</div></div><div class="kpi-card"><div class="kpi-label">Overdue Milestones</div><div class="kpi-value" style="color:var(--blocked)">${stats.overdue}</div><div class="kpi-sub">Batches past Planned Production date</div></div></div><div class="summary-section" style="margin-top:32px"><div class="summary-section-header"><div class="summary-section-title">Regional Completion Breakdown (${activeBrand})</div></div><table class="region-progress-table"><thead><tr><th>Region</th><th>Markets</th><th>Distribution Status</th></tr></thead><tbody>${regionRows}</tbody></table></div>`;
-
-  // Animate summary bars
-  requestAnimationFrame(() => {
-    container.querySelectorAll('.summary-bar').forEach(bar => {
-      bar.style.width = bar.dataset.width + '%';
-    });
-  });
+  container.innerHTML = brandSwitcher + `<div class="kpi-grid"><div class="kpi-card"><div class="kpi-label">Overall Progress</div><div class="kpi-value">${stats.percent}%</div><div class="kpi-sub">${stats.done} of ${stats.total} items completed</div></div><div class="kpi-card"><div class="kpi-label">Blocked Items</div><div class="kpi-value" style="color:var(--blocked)">${stats.blocked}</div><div class="kpi-sub">Items requiring immediate attention</div></div><div class="kpi-card"><div class="kpi-label">Overdue Milestones</div><div class="kpi-value" style="color:var(--blocked)">${stats.overdue}</div><div class="kpi-sub">Batches past Planned Production date</div></div></div><div class="summary-section" style="margin-top:32px"><div class="summary-section-header"><div class="summary-section-title">Global Batch Roadmaps</div></div><div style="padding: 24px; background: var(--subtle)">${roadmapHtml}</div></div><div class="summary-section" style="margin-top:32px"><div class="summary-section-header"><div class="summary-section-title">Regional Completion Breakdown (${activeBrand})</div></div><table class="region-progress-table"><thead><tr><th>Region</th><th>Markets</th><th>Distribution Status</th></tr></thead><tbody>${regionRows}</tbody></table></div>`;
+  requestAnimationFrame(() => { container.querySelectorAll('.summary-bar').forEach(bar => { bar.style.width = bar.dataset.width + '%'; }); });
 }
 
 function debounce(fn, delay) {
   let timeout;
-  return (...args) => {
-    clearTimeout(timeout);
-    timeout = setTimeout(() => fn.apply(this, args), delay);
-  };
+  return (...args) => { clearTimeout(timeout); timeout = setTimeout(() => fn.apply(this, args), delay); };
 }
 
 const debouncedRender = debounce(() => render(), 150);
@@ -711,8 +711,6 @@ function initFilters() {
   const regionContainer = document.getElementById('region-chips'); regionContainer.innerHTML = '';
   data.regions.filter(r => r.brand === activeBrand).map(r => r.name).filter((v, i, a) => a.indexOf(v) === i).forEach(name => {
     const btn = document.createElement('button'); btn.className = `filter-chip${filterRegions.has(name) ? ' active' : ''}`;
-    
-    // Calculate Region Completion
     const regionsWithName = data.regions.filter(reg => reg.name === name && reg.brand === activeBrand);
     let total = 0, done = 0;
     regionsWithName.forEach(r => {
@@ -723,23 +721,8 @@ function initFilters() {
       });
     });
     const percent = total === 0 ? 0 : Math.round((done / total) * 100);
-
     btn.innerHTML = `<span>${name}</span><span style="font-size:9px; font-weight:700; color:var(--muted); margin-left:auto; background:rgba(0,0,0,0.05); padding:2px 5px; border-radius:4px;">${percent}%</span>`;
-    btn.onclick = () => {
-      if (filterRegions.has(name)) {
-        filterRegions.delete(name);
-        render();
-      } else {
-        filterRegions.add(name);
-        render();
-        // Smooth scroll to the region block
-        setTimeout(() => {
-          const blocks = document.querySelectorAll('.region-block');
-          const target = Array.from(blocks).find(b => b.querySelector('.region-title')?.textContent.trim() === name);
-          if (target) target.scrollIntoView({ behavior: 'smooth', block: 'start' });
-        }, 100);
-      }
-    };
+    btn.onclick = () => { if (filterRegions.has(name)) filterRegions.delete(name); else filterRegions.add(name); render(); };
     regionContainer.appendChild(btn);
   });
   const batchContainer = document.getElementById('batch-chips'); batchContainer.innerHTML = '';
@@ -771,25 +754,15 @@ function syncBulkBar() {
   const bar = document.getElementById('bulk-bar');
   const countEl = document.getElementById('bulk-count');
   const btn = document.getElementById('bulk-mode-btn');
-  
   if (bar) bar.classList.toggle('hidden', !bulkMode || selectedCells.size === 0);
   if (countEl) countEl.textContent = selectedCells.size;
-  
-  if (btn) {
-    btn.textContent = bulkMode ? '✕ Exit Bulk' : '⬚ Bulk Mode';
-  }
+  if (btn) btn.textContent = bulkMode ? '✕ Exit Bulk' : '⬚ Bulk Mode';
 }
 
 function commitEdit(raw) {
   const value = raw?.trim(); if (!editing) return; const { type, regionId, marketName } = editing; editing = null; if (!value && type !== 'edit-market-group') { render(); return; }
   if (type === 'rename') { const r = data.regions.find(reg => reg.id === regionId); if (r) r.name = value; }
-  else if (type === 'edit-market-group') {
-    const r = data.regions.find(reg => reg.id === regionId);
-    if (r) {
-      const m = r.markets.find(m => m.name === marketName);
-      if (m) m.group = value || null;
-    }
-  }
+  else if (type === 'edit-market-group') { const r = data.regions.find(reg => reg.id === regionId); if (r) { const m = r.markets.find(m => m.name === marketName); if (m) m.group = value || null; } }
   else if (type === 'add-region') data.regions.push({ id: slug(value), brand: activeBrand, name: value, markets: [] });
   else if (type === 'add-market') { const r = data.regions.find(reg => reg.id === regionId); if (r && !r.markets.find(m => m.name.toLowerCase() === value.toLowerCase())) r.markets.push({ name: value, group: null }); }
   else if (type === 'add-integ') { if (!data.integrations.find(i => i.name.toLowerCase() === value.toLowerCase())) data.integrations.push({ name: value, subItems: [], description: '', createdAt: today(), updatedAt: today() }); }
@@ -798,31 +771,32 @@ function commitEdit(raw) {
 
 function deleteRegion(id) {
   const region = data.regions.find(r => r.id === id);
-  const regionName = region ? region.name : id;
-  if (confirm(`Are you sure you want to delete the entire region "${regionName}" and all its associated data?`)) {
-    data.regions = data.regions.filter(r => r.id !== id);
-    delete data.statuses[id];
-    saveData().then(() => render());
-  }
+  if (confirm(`Are you sure you want to delete the entire region "${region ? region.name : id}" and all its associated data?`)) { data.regions = data.regions.filter(r => r.id !== id); delete data.statuses[id]; saveData().then(() => render()); }
 }
 function removeMarket(rid, name) {
   if (!confirm(`Are you sure you want to delete the market "${name}"?`)) return;
   const r = data.regions.find(reg => reg.id === rid);
-  if (r) {
-    r.markets = r.markets.filter(m => m.name !== name);
-    Object.keys(data.statuses[rid] || {}).forEach(k => {
-      if (k.endsWith(`|${name}`)) delete data.statuses[rid][k];
-    });
-  }
+  if (r) { r.markets = r.markets.filter(m => m.name !== name); Object.keys(data.statuses[rid] || {}).forEach(k => { if (k.endsWith(`|${name}`)) delete data.statuses[rid][k]; }); }
   saveData().then(() => render());
 }
+function deleteIntegFromPanel() {
+  if (!integState) return;
+  const { integName, isSub } = integState;
+  if (isSub) {
+    const [parentName, subName] = integName.split(':');
+    if (confirm(`Delete sub-item "${subName}" from "${parentName}"?`)) {
+      const parent = data.integrations.find(i => i.name === parentName);
+      if (parent) { parent.subItems = parent.subItems.filter(s => s !== subName); Object.keys(data.statuses).forEach(rid => { Object.keys(data.statuses[rid]).forEach(k => { if (k.startsWith(`${integName}|`)) delete data.statuses[rid][k]; }); }); saveData().then(() => { closePanels(); render(); }); }
+    }
+  } else { removeInteg(integName); closePanels(); }
+}
+
 function removeInteg(name) { if (confirm('Delete?')) { data.integrations = data.integrations.filter(i => i.name !== name); Object.keys(data.statuses).forEach(rid => { Object.keys(data.statuses[rid]).forEach(k => { if (k.startsWith(`${name}|`) || k.startsWith(`${name}:`)) delete data.statuses[rid][k]; }); }); saveData().then(() => render()); } }
 
 function focusInput() {
   requestAnimationFrame(() => {
     const input = document.querySelector('.inline-input'); if (!input) return;
-    input.focus();
-    if (editing?.type === 'rename' || editing?.type === 'edit-market-group') input.select();
+    input.focus(); if (editing?.type === 'rename' || editing?.type === 'edit-market-group') input.select();
     input.onkeydown = e => { if (e.key === 'Enter') commitEdit(input.value); if (e.key === 'Escape') { editing = null; render(); } };
     input.onblur = () => setTimeout(() => { if (editing) commitEdit(input.value); }, 250);
   });
@@ -833,9 +807,10 @@ function showTooltip(e, text, isBatch, integObj) {
   let content = `<div>${esc(text || 'No description.')}</div>`;
   if (isBatch && integObj) {
     const dates = [];
-    if (integObj.intDate)  dates.push({ label: 'INT date', val: integObj.intDate });
+    if (integObj.devStart) dates.push({ label: 'Dev Start', val: integObj.devStart });
+    if (integObj.devEnd)   dates.push({ label: 'Dev End', val: integObj.devEnd });
     if (integObj.uat2Date) dates.push({ label: 'planned uat2 date', val: integObj.uat2Date });
-    if (integObj.prodDate) dates.push({ label: 'Planned Prod (PO Sign-off)', val: integObj.prodDate });
+    if (integObj.prodDate) dates.push({ label: 'Planned Prod', val: integObj.prodDate });
     if (dates.length > 0) { content += `<div class="tt-dates">`; dates.forEach(d => { content += `<div class="tt-date" style="margin-bottom:4px;"><b>${esc(d.label)}</b><br/>${esc(formatDate(d.val))}</div>`; }); content += `</div>`; }
   }
   tt.innerHTML = content; tt.classList.remove('hidden'); tt.style.left = `${e.clientX + 15}px`; tt.style.top = `${e.clientY + 15}px`;
