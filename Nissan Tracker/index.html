@@ -22,6 +22,8 @@
       <span class="nav-sep">|</span>
       <button class="nav-link" data-action="set-view" data-value="activity">Activity</button>
       <span class="nav-sep">|</span>
+      <button class="nav-link" data-action="set-view" data-value="planner">Planner</button>
+      <span class="nav-sep">|</span>
       <button class="nav-link" data-action="toggle-theme" id="theme-toggle" title="Toggle Light/Dark Mode">🌑</button>
     </div>
 
@@ -42,16 +44,27 @@
 
       <!-- Summary View -->
       <div id="view-summary" class="view-content hidden">
-        <div class="summary-action-header" style="max-width:1000px; margin: 20px auto 0; display:flex; justify-content:flex-end; gap:10px;">
+        <div class="summary-action-header" style="max-width:1200px; margin: 20px auto 0; display:flex; justify-content:flex-end; gap:10px;">
           <button class="btn-ctrl" data-action="export-csv" style="border-color:var(--border); padding: 8px 20px; font-weight:700;">Download Excel</button>
           <button class="btn-ctrl" data-action="export-pdf" style="border-color:var(--border); padding: 8px 20px; font-weight:700;">Generate PDF</button>
         </div>
         <div id="summary-container" class="summary-container"></div>
       </div>
 
+      <!-- Planner View -->
+      <div id="view-planner" class="view-content hidden">
+        <div style="max-width:1200px; margin:0 auto; padding:20px;">
+          <div style="display:flex; gap:10px; margin-bottom:20px; align-items:center;">
+            <input type="text" id="planner-search" placeholder="Search phases by name…" class="activity-input" style="flex:1; max-width:400px;">
+            <button id="planner-jump-month" class="btn-ghost" style="display:none;">Jump to Month</button>
+          </div>
+        </div>
+        <div id="planner-container" class="planner-container"></div>
+      </div>
+
       <!-- Activity View -->
       <div id="view-activity" class="view-content hidden">
-        <div class="summary-section" style="max-width:1000px; margin: 20px auto 0;">
+        <div class="summary-section" style="max-width:1200px; margin: 20px auto 0;">
           <div class="summary-section-header">
             <div class="summary-section-title">Global Activity Log</div>
             <div id="activity-brand-toggle"></div>
@@ -71,36 +84,36 @@
       </div>
     </div>
 
-    <!-- Filter sidebar -->
-    <aside class="filter-sidebar">
+    <!-- Dashboard Filter Sidebar -->
+    <aside id="dashboard-filter-sidebar" class="filter-sidebar hidden">
       <div class="filter-heading">Filter</div>
 
       <div class="filter-section">
         <div class="filter-label">Brand</div>
         <div class="brand-tabs">
-          <button class="brand-tab active" data-brand="Nissan" data-action="set-brand">Nissan</button>
-          <button class="brand-tab" data-brand="INFINITI" data-action="set-brand">Infiniti</button>
+          <button class="brand-tab active" data-brand="Nissan" data-action="set-brand" data-sidebar="dashboard">Nissan</button>
+          <button class="brand-tab" data-brand="INFINITI" data-action="set-brand" data-sidebar="dashboard">Infiniti</button>
         </div>
       </div>
 
       <div class="filter-section">
         <div class="filter-label">By Status</div>
-        <div class="filter-chips" id="filter-chips"></div>
+        <div class="filter-chips" id="dashboard-filter-chips"></div>
       </div>
 
       <div class="filter-section">
         <div class="filter-label">Special</div>
         <div class="filter-toggles">
           <label class="filter-toggle">
-            <input type="checkbox" id="toggle-hide-done">
+            <input type="checkbox" id="dashboard-toggle-hide-done" data-sidebar="dashboard">
             <span>Hide Done</span>
           </label>
           <label class="filter-toggle">
-            <input type="checkbox" id="toggle-only-blocked">
+            <input type="checkbox" id="dashboard-toggle-only-blocked" data-sidebar="dashboard">
             <span>Only Blocked</span>
           </label>
           <label class="filter-toggle">
-            <input type="checkbox" id="toggle-only-notes">
+            <input type="checkbox" id="dashboard-toggle-only-notes" data-sidebar="dashboard">
             <span>Only with Notes</span>
           </label>
         </div>
@@ -108,24 +121,81 @@
 
       <div class="filter-section">
         <div class="filter-label">Regions</div>
-        <div class="filter-chips" id="region-chips"></div>
+        <div class="filter-chips" id="dashboard-region-chips"></div>
       </div>
 
       <div class="filter-section">
-        <div class="filter-label">Batches</div>
-        <div class="filter-chips" id="batch-chips"></div>
+        <button class="btn-ghost" id="dashboard-bulk-mode-btn" data-action="toggle-bulk" data-sidebar="dashboard" style="width:100%; border-style:solid; color:var(--text); border-color:var(--dark);">⬚ Bulk Mode</button>
+      </div>
+
+      <button class="filter-reset hidden" id="dashboard-filter-reset" data-action="reset-filters" data-sidebar="dashboard">↺ Reset Filters</button>
+    </aside>
+
+    <!-- Planner Filter Sidebar -->
+    <aside id="planner-filter-sidebar" class="filter-sidebar hidden">
+      <div class="filter-heading">Filter</div>
+
+      <div class="filter-section">
+        <div class="filter-label">Brand</div>
+        <div class="brand-tabs">
+          <button class="brand-tab active" data-brand="Nissan" data-action="set-brand" data-sidebar="planner">Nissan</button>
+          <button class="brand-tab" data-brand="INFINITI" data-action="set-brand" data-sidebar="planner">Infiniti</button>
+        </div>
       </div>
 
       <div class="filter-section">
-        <div class="filter-label">Search Market</div>
-        <input class="filter-search" id="filter-search" placeholder="Type to search…" autocomplete="off"/>
+        <div class="filter-label">By Status</div>
+        <div class="filter-chips" id="planner-filter-chips"></div>
       </div>
 
       <div class="filter-section">
-        <button class="btn-ghost" id="bulk-mode-btn" data-action="toggle-bulk" style="width:100%; border-style:solid; color:var(--text); border-color:var(--dark);">⬚ Bulk Mode</button>
+        <div class="filter-label">Special</div>
+        <div class="filter-toggles">
+          <label class="filter-toggle">
+            <input type="checkbox" id="planner-toggle-hide-done" data-sidebar="planner">
+            <span>Hide Done</span>
+          </label>
+          <label class="filter-toggle">
+            <input type="checkbox" id="planner-toggle-only-blocked" data-sidebar="planner">
+            <span>Only Blocked</span>
+          </label>
+          <label class="filter-toggle">
+            <input type="checkbox" id="planner-toggle-only-notes" data-sidebar="planner">
+            <span>Only with Notes</span>
+          </label>
+        </div>
       </div>
 
-      <button class="filter-reset hidden" id="filter-reset" data-action="reset-filters">↺ Reset Filters</button>
+      <div class="filter-section">
+        <div class="filter-label">Integrations</div>
+        <div class="filter-chips" id="planner-batch-chips"></div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Regions</div>
+        <div class="filter-chips" id="planner-region-chips"></div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Date Range</div>
+        <div style="display:flex; flex-direction:column; gap:8px;">
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:12px; color:var(--muted)">From</span>
+            <input type="date" id="planner-filter-date-start" class="filter-search" style="flex:1;">
+          </div>
+          <div style="display:flex; align-items:center; gap:8px;">
+            <span style="font-size:12px; color:var(--muted)">To</span>
+            <input type="date" id="planner-filter-date-end" class="filter-search" style="flex:1;">
+          </div>
+        </div>
+      </div>
+
+      <div class="filter-section">
+        <div class="filter-label">Search Phase</div>
+        <input class="filter-search" id="planner-filter-search" placeholder="Type to search…" autocomplete="off" data-sidebar="planner"/>
+      </div>
+
+      <button class="filter-reset hidden" id="planner-filter-reset" data-action="reset-filters" data-sidebar="planner">↺ Reset Filters</button>
     </aside>
   </main>
 
@@ -222,6 +292,121 @@
     <div class="panel-footer">
       <button class="btn-save" data-action="save-integ">Save Changes</button>
       <button class="btn-danger" data-action="del-integ-panel">Delete</button>
+    </div>
+  </div>
+
+  <!-- Phase detail panel -->
+  <div id="phase-detail-panel" class="side-panel hidden">
+    <div class="panel-header">
+      <div>
+        <div class="panel-eyebrow">Phase Details</div>
+        <div id="pdp-name" class="panel-title-main" style="font-size:18px; font-weight:800; margin-top:6px; color:var(--text)"></div>
+      </div>
+      <button class="panel-close" data-action="close-panels">✕</button>
+    </div>
+    <div class="panel-body" style="display:flex; flex-direction:column; gap:16px;">
+
+      <!-- Info Row -->
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div style="background:var(--subtle); padding:12px; border-radius:8px;">
+          <div style="font-size:10px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px;">📅 Target Date</div>
+          <div id="pdp-date-val" style="font-size:14px; color:var(--text); font-weight:600;"></div>
+        </div>
+        <div style="background:var(--subtle); padding:12px; border-radius:8px;">
+          <div style="font-size:10px; font-weight:700; color:var(--muted); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px;">🏷️ Brand</div>
+          <div id="pdp-brand" class="pdp-brand-badge"></div>
+        </div>
+      </div>
+
+      <!-- Status & Progress -->
+      <div style="background:var(--subtle); padding:12px; border-radius:8px;">
+        <div style="display:flex; align-items:center; gap:8px; margin-bottom:10px;">
+          <span id="pdp-status" class="phase-status-badge"></span>
+          <span id="pdp-progress" style="font-size:12px; color:var(--text); font-weight:600;"></span>
+        </div>
+        <div id="pdp-progress-bar" class="phase-progress-bar" style="margin:0;">
+          <div id="pdp-progress-fill" class="phase-progress-fill" style="width:0%"></div>
+        </div>
+      </div>
+
+      <!-- Batches & Integrations -->
+      <div>
+        <div style="font-size:12px; font-weight:700; color:var(--text); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:10px;">📦 Batches & Integrations</div>
+        <div id="pdp-integrations" style="background:var(--subtle); padding:12px; border-radius:8px; min-height:50px; display:flex; flex-direction:column; gap:8px;"></div>
+      </div>
+
+      <!-- Regions & Markets -->
+      <div>
+        <div style="font-size:12px; font-weight:700; color:var(--text); text-transform:uppercase; letter-spacing:0.5px; margin-bottom:10px;">🌍 Regions &amp; Markets</div>
+        <div id="pdp-regions" style="background:var(--subtle); padding:12px; border-radius:8px; min-height:50px; display:flex; flex-direction:column; gap:6px;"></div>
+      </div>
+    </div>
+    <div class="panel-footer">
+      <button class="btn-save" id="pdp-edit-btn" data-action="edit-phase-from-detail">Edit Phase</button>
+    </div>
+  </div>
+
+  <!-- Phase panel -->
+  <div id="phase-panel" class="side-panel hidden">
+    <div class="panel-header">
+      <div>
+        <div class="panel-eyebrow">Release Phase</div>
+        <input id="pp-name" class="panel-name-input" type="text" placeholder="Phase name…"/>
+      </div>
+      <button class="panel-close" data-action="close-panels">✕</button>
+    </div>
+    <div class="panel-body">
+      <div style="display:grid; grid-template-columns:1fr 1fr; gap:12px;">
+        <div>
+          <div class="panel-section-label">Brand</div>
+          <select id="pp-brand" class="field-textarea" style="min-height:34px">
+            <option value="Nissan">Nissan</option>
+            <option value="INFINITI">Infiniti</option>
+          </select>
+        </div>
+        <div>
+          <div class="panel-section-label">Date</div>
+          <input type="date" id="pp-date" class="field-textarea" style="min-height:34px;"/>
+        </div>
+        <div>
+          <div class="panel-section-label">Status</div>
+          <select id="pp-status" class="field-textarea" style="min-height:34px">
+            <option value="none">Not Started</option>
+            <option value="progress">In Progress</option>
+            <option value="done">Done</option>
+            <option value="blocked">Blocked</option>
+          </select>
+        </div>
+      </div>
+
+      <div class="panel-section-label" style="margin-top:14px">Integrations</div>
+      <div id="pp-integrations" class="pp-checklist"></div>
+
+      <div class="panel-section-label" style="margin-top:14px">Regions & Markets</div>
+      <div id="pp-regions-pills" style="display:flex; flex-wrap:wrap; gap:6px; margin-bottom:10px; min-height:28px; align-items:flex-start;"></div>
+      <button type="button" class="btn-ghost" id="pp-edit-regions" data-action="edit-regions" style="width:100%; border-style:solid; color:var(--text); border-color:var(--dark); font-size:13px; padding:8px; font-weight:500;">+ Add Regions & Markets</button>
+    </div>
+    <div class="panel-footer">
+      <button class="btn-save" data-action="save-phase">Save Phase</button>
+      <button class="btn-danger" id="pp-del-btn" data-action="del-phase-panel" style="display:none">Delete</button>
+    </div>
+  </div>
+
+  <!-- Region selector modal -->
+  <div id="region-selector-modal" class="modal-overlay hidden" data-action="close-region-modal">
+    <div class="modal-dialog" style="width:500px; max-height:70vh;" data-stop-close="true">
+      <div class="modal-header">
+        <div class="modal-title">Select Regions & Markets</div>
+        <button class="panel-close" data-action="close-region-modal">✕</button>
+      </div>
+      <div class="modal-body">
+        <input type="text" id="region-search" placeholder="Search regions or markets…" class="activity-input" style="width:100%; margin-bottom:12px;">
+        <div id="region-selector-list"></div>
+      </div>
+      <div class="modal-footer">
+        <button class="btn-save" data-action="apply-regions">Apply</button>
+        <button class="btn-ghost" data-action="close-region-modal">Cancel</button>
+      </div>
     </div>
   </div>
 

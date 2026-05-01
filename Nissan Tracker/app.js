@@ -2,17 +2,31 @@ let data = { integrations: [], regions: [], statuses: [], history: [] };
 let editing    = null;
 let cellState  = null;
 let integState = null;
+let phaseState = null;
 let activeBrand = 'Nissan';
-let filterStatuses = new Set();
-let filterRegions  = new Set();
-let filterBatches  = new Set();
-let filterSearch   = '';
-let hideDone      = false;
-let onlyBlocked   = false;
-let onlyNotes     = false;
+let plannerBrand = 'Nissan';
+
+// Dashboard Filter State
+let dashboardFilterStatuses = new Set();
+let dashboardFilterRegions  = new Set();
+let dashboardHideDone      = false;
+let dashboardOnlyBlocked   = false;
+let dashboardOnlyNotes     = false;
+
+// Planner Filter State
+let plannerFilterStatuses = new Set();
+let plannerFilterBatches  = new Set();
+let plannerFilterRegions  = new Set();
+let plannerFilterSearch   = '';
+let plannerFilterDateStart = '';
+let plannerFilterDateEnd   = '';
+let plannerHideDone      = false;
+let plannerOnlyBlocked   = false;
+let plannerOnlyNotes     = false;
+
 let bulkMode      = false;
 let isMouseDown   = false;
-let selectedCells = new Set(); 
+let selectedCells = new Set();
 let expandedBatches = new Set();
 let currentView = 'dashboard';
 
@@ -109,11 +123,13 @@ async function init() {
     if (!data.regions)      data.regions = [];
     if (!data.statuses)     data.statuses = {};
     if (!data.history)      data.history = [];
+    if (!data.phases)       data.phases = [];
+    if (!data.globalStatus) data.globalStatus = {};
     data.regions.forEach(r => {
       if (!r.markets) r.markets = [];
       if (!data.statuses[r.id]) data.statuses[r.id] = {};
     });
-  } catch (err) { data = { integrations: DEFAULT_INTEGRATIONS, regions: [], statuses: {}, history: [] }; }
+  } catch (err) { data = { integrations: DEFAULT_INTEGRATIONS, regions: [], statuses: {}, history: [], phases: [], globalStatus: {} }; }
   
   const wrap = document.getElementById('dashboard-wrap');
   const stBtn = document.getElementById('scroll-top-btn');
@@ -131,7 +147,6 @@ async function init() {
     };
     stBtn.onclick = () => wrap.scrollTo({ top: 0, behavior: 'smooth' });
   }
-  initFilters();
   setView('dashboard');
 }
 
@@ -185,8 +200,22 @@ function setView(viewName) {
   document.querySelectorAll('.view-content').forEach(v => v.classList.add('hidden'));
   const el = document.getElementById(`view-${viewName}`); if (el) el.classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(b => b.classList.toggle('active', b.dataset.value === viewName));
-  const sidebar = document.querySelector('.filter-sidebar');
-  if (sidebar) sidebar.style.display = (viewName === 'summary' || viewName === 'activity') ? 'none' : 'flex';
+
+  // Hide both sidebars
+  const dashboardSidebar = document.getElementById('dashboard-filter-sidebar');
+  const plannerSidebar = document.getElementById('planner-filter-sidebar');
+  if (dashboardSidebar) dashboardSidebar.classList.add('hidden');
+  if (plannerSidebar) plannerSidebar.classList.add('hidden');
+
+  // Show and initialize the correct sidebar
+  if (viewName === 'dashboard') {
+    if (dashboardSidebar) dashboardSidebar.classList.remove('hidden');
+    initDashboardFilters();
+  } else if (viewName === 'planner') {
+    if (plannerSidebar) plannerSidebar.classList.remove('hidden');
+    initPlannerFilters();
+  }
+
   const wrap = document.getElementById('dashboard-wrap');
   if (wrap) wrap.scrollTo({ top: 0, behavior: 'smooth' });
   render();
@@ -303,14 +332,420 @@ function toggleSelectRow(regionId, integName) {
 // ── Rendering Functions ───────────────────────────
 
 function render() {
-  if (currentView === 'summary') { renderSummaryView(); return; }
+  if (currentView === 'summary')  { renderSummaryView();  return; }
   if (currentView === 'activity') { renderActivityView(); return; }
-  const container = document.getElementById('dashboard'); if (!container) return; container.innerHTML = '';
-  data.regions.filter(r => r.brand === activeBrand).filter(r => filterRegions.size === 0 || filterRegions.has(r.name)).forEach(r => container.appendChild(buildRegionBlock(r)));
-  const addCard = document.createElement('div'); addCard.className = 'region-add-card';
-  if (editing?.type === 'add-region') addCard.innerHTML = `<input class="inline-input input-region" placeholder="Region name…" autocomplete="off"/>`;
-  else addCard.innerHTML = `<button class="btn-add-region" data-action="add-region">＋ Add Region</button>`;
-  container.appendChild(addCard); attachEvents(container); focusInput(); initFilters();
+  if (currentView === 'planner')  { renderPlannerView();  return; }
+  renderDashboard();
+}
+
+function renderDashboard() {
+  const container = document.getElementById('dashboard'); if (!container) return;
+  const gs = data.globalStatus || {};
+
+  // Filter integrations based on dashboard filters
+  const filteredIntegrations = data.integrations.filter(integ => {
+    const st = gs[integ.name] || 'none';
+    // Apply status filters
+    if (dashboardFilterStatuses.size > 0 && !dashboardFilterStatuses.has(st)) return false;
+    // Apply special filters
+    if (dashboardHideDone && st === 'done') return false;
+    if (dashboardOnlyBlocked && st !== 'blocked') return false;
+    return true;
+  });
+
+  const totalSubs = filteredIntegrations.reduce((a, i) => a + (i.subItems?.length || 0), 0);
+  const doneCount = filteredIntegrations.filter(i => gs[i.name] === 'done').length;
+  let rows = '';
+  filteredIntegrations.forEach(integ => {
+    const overdue = isOverdue(integ.prodDate, 'none');
+    const subCnt = integ.subItems?.length || 0;
+    const isExp = expandedBatches.has(`cl|${integ.name}`);
+    const st = gs[integ.name] || 'none';
+    rows += `<tr class="cl-row${overdue ? ' cl-row-overdue' : ''}">
+      <td class="cl-status-cell">
+        <button class="cl-status-btn ${st}" data-action="cycle-status" data-integ="${esc(integ.name)}" title="${STATUS_LABELS[st]}"></button>
+      </td>
+      <td class="cl-name-cell">
+        <div class="cl-name-inner">
+          ${subCnt > 0 ? `<button class="btn-toggle" data-action="toggle-cl" data-integ="${esc(integ.name)}">${isExp ? '▼' : '▶'}</button>` : '<span style="width:22px;display:inline-block"></span>'}
+          <span class="cl-integ-name${st === 'done' ? ' cl-done-text' : ''}" data-action="open-integ" data-region="" data-integ="${esc(integ.name)}">${esc(integ.name)}</span>
+          ${overdue ? '<span class="cl-overdue-tag">OVERDUE</span>' : ''}
+        </div>
+      </td>
+      <td class="cl-cell cl-muted">${subCnt > 0 ? subCnt + ' proxies' : '—'}</td>
+      <td class="cl-cell">${integ.uat2Date ? formatDate(integ.uat2Date) : '—'}</td>
+      <td class="cl-cell${overdue ? ' cl-red' : ''}">${integ.prodDate ? formatDate(integ.prodDate) : '—'}</td>
+      <td class="cl-del-cell"><button class="btn-del-integ" data-action="del-integ" data-integ="${esc(integ.name)}">✕</button></td>
+    </tr>`;
+    if (isExp && subCnt > 0) {
+      integ.subItems.forEach(sub => {
+        const subKey = `${integ.name}:${sub}`;
+        const subSt = gs[subKey] || 'none';
+        rows += `<tr class="cl-sub-row">
+          <td class="cl-status-cell"><button class="cl-status-btn ${subSt} cl-status-sm" data-action="cycle-status" data-integ="${esc(subKey)}" title="${STATUS_LABELS[subSt]}"></button></td>
+          <td class="cl-name-cell" colspan="5"><div class="cl-name-inner" style="padding-left:36px"><span class="sub-item-label" data-action="open-integ" data-region="" data-integ="${esc(subKey)}">${esc(sub)}</span></div></td>
+        </tr>`;
+      });
+    }
+  });
+  const addRow = editing?.type === 'add-integ'
+    ? `<tr><td colspan="6" style="padding:8px 16px"><input class="inline-input input-integ" placeholder="New Integration…"/></td></tr>`
+    : `<tr class="row-add"><td colspan="6"><div class="row-add-actions"><button class="btn-add-row" data-action="add-integ">＋ Add Integration</button></div></td></tr>`;
+  const progress = data.integrations.length > 0 ? Math.round((doneCount / data.integrations.length) * 100) : 0;
+  container.innerHTML = `<div class="checklist-wrap">
+    <div class="checklist-header">
+      <div class="checklist-title">Global Integrations</div>
+      <div class="checklist-meta">${doneCount} / ${data.integrations.length} done · ${totalSubs} proxies total</div>
+      <div class="phase-progress-bar" style="margin-top:12px;">
+        <div class="phase-progress-fill" style="width:${progress}%"></div>
+      </div>
+      <div class="phase-progress-label" style="justify-content:flex-start; gap:6px;">
+        <span>${progress}% Complete</span>
+      </div>
+    </div>
+    <table class="checklist-table">
+      <thead><tr>
+        <th class="cl-th" style="width:44px"></th>
+        <th class="cl-th">Integration</th>
+        <th class="cl-th">Proxies</th>
+        <th class="cl-th">UAT2 Date</th>
+        <th class="cl-th">Prod Date</th>
+        <th class="cl-th"></th>
+      </tr></thead>
+      <tbody>${rows}${addRow}</tbody>
+    </table>
+  </div>`;
+  container.onmouseover = e => {
+    const el = e.target.closest('[data-integ]'); if (!el) return;
+    const nm = el.dataset.integ; if (!nm) return;
+    let obj = data.integrations.find(i => i.name === nm);
+    if (!obj && nm.includes(':')) obj = data.integrations.find(i => i.name === nm.split(':')[0]);
+    if (obj) showTooltip(e, obj.description, !nm.includes(':'), obj);
+  };
+  container.onmouseout = hideTooltip;
+  focusInput();
+}
+
+function renderPlannerView() {
+  const container = document.getElementById('planner-container'); if (!container) return;
+  const allPhases = data.phases || [];
+  const phases = allPhases.filter(p => {
+    if ((p.brand || 'Nissan') !== plannerBrand) return false;
+    if (!phasePassesFilter(p)) return false;
+    return true;
+  });
+
+  // Group by month
+  const monthMap = {};
+  phases.forEach(phase => {
+    let key = 'no-date', label = 'No Date';
+    if (phase.date) {
+      const d = new Date(phase.date);
+      key = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}`;
+      label = d.toLocaleDateString('en-GB', { month: 'long', year: 'numeric' });
+    }
+    if (!monthMap[key]) monthMap[key] = { label, phases: [] };
+    monthMap[key].phases.push(phase);
+  });
+  const months = Object.keys(monthMap).sort().map(k => monthMap[k]);
+
+  const buildTile = phase => {
+    const integCount = phase.integrations?.length || 0;
+    const integPills = (phase.integrations || []).map(batchName => {
+    const batch = data.integrations.find(i => i.name === batchName);
+    const subItems = batch?.subItems || [];
+    const itemsText = subItems.length > 0 ? subItems.map(s => esc(s)).join(', ') : 'No items';
+    return `<span class="phase-integ-pill" title="${itemsText}">${esc(batchName)}</span>`;
+  }).join('');
+    const regionTiles = (phase.regions || []).map(pr => {
+      const reg = data.regions.find(r => r.id === pr.regionId); if (!reg) return '';
+      const mTags = (pr.markets || []).map(m => `<span class="phase-market-tag">${esc(m)}</span>`).join('');
+      return `<div class="phase-region-tile"><div class="phase-region-name">${esc(reg.name)}</div><div class="phase-market-tags">${mTags || '<span class="phase-no-mkt">All markets</span>'}</div></div>`;
+    }).join('');
+
+    const phaseStatus = phase.status || 'none';
+    const statusLabel = STATUS_LABELS[phaseStatus] || 'Not Started';
+    let progress = 0;
+    if (phase.integrations?.length > 0) {
+      const doneCount = (phase.integrations || []).filter(iName => {
+        const integ = data.integrations.find(i => i.name === iName);
+        const gs = data.globalStatus || {};
+        return gs[iName] === 'done';
+      }).length;
+      progress = Math.round((doneCount / phase.integrations.length) * 100);
+    }
+
+    return `<div class="phase-tile" data-action="view-phase" data-phase="${phase.id}">
+      <div class="phase-tile-header">
+        <div class="phase-tile-meta">
+          <div class="phase-tile-name">${esc(phase.name)}</div>
+          ${phase.date ? `<div class="phase-tile-date">${formatDate(phase.date)}</div>` : ''}
+        </div>
+        <div class="phase-tile-btns">
+          <button class="phase-edit-btn" data-action="edit-phase" data-phase="${phase.id}">Edit</button>
+          <button class="phase-del-btn" data-action="del-phase" data-phase="${phase.id}">✕</button>
+        </div>
+      </div>
+      <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
+        <span class="phase-status-badge phase-status-${phaseStatus}">${statusLabel}</span>
+        <span style="font-size:11px; color:var(--muted); font-weight:600;">${progress}% Complete</span>
+      </div>
+      <div class="phase-progress-bar">
+        <div class="phase-progress-fill" style="width:${progress}%"></div>
+      </div>
+      <div style="margin-bottom:8px;">
+        <div style="font-size:11px; font-weight:600; color:var(--muted); margin-bottom:6px;">INTEGRATIONS (${integCount})</div>
+        <div class="phase-integ-pills">${integPills || '<span class="phase-no-integ">No integrations</span>'}</div>
+      </div>
+      <div style="margin-bottom:8px;">
+        <div style="font-size:11px; font-weight:600; color:var(--muted); margin-bottom:6px;">REGIONS</div>
+        <div class="phase-regions-row">${regionTiles || '<span class="phase-no-integ">No regions assigned</span>'}</div>
+      </div>
+    </div>`;
+  };
+
+  const monthsHtml = months.length === 0
+    ? `<div class="phases-empty">No phases for ${plannerBrand} yet. Click <b>＋ New Phase</b> to create one.</div>`
+    : months.map(m => `
+        <div class="month-section">
+          <div class="month-header">
+            <span class="month-label">${m.label}</span>
+            <span class="month-count">${m.phases.length} phase${m.phases.length !== 1 ? 's' : ''}</span>
+          </div>
+          <div class="phases-grid">${m.phases.map(buildTile).join('')}</div>
+        </div>`).join('');
+
+  const nissanCount = allPhases.filter(p => (p.brand || 'Nissan') === 'Nissan').length;
+  const infinitiCount = allPhases.filter(p => p.brand === 'INFINITI').length;
+
+  container.innerHTML = `<div class="planner-wrap">
+    <div class="planner-hdr">
+      <div>
+        <div class="planner-title">Release Planner</div>
+        <div class="planner-sub">${phases.length} phase${phases.length !== 1 ? 's' : ''} · ${plannerBrand}</div>
+      </div>
+      <button class="btn-new-phase" data-action="new-phase">＋ New Phase</button>
+    </div>
+    <div class="planner-brand-tabs">
+      <button class="planner-brand-tab ${plannerBrand === 'Nissan' ? 'active' : ''}" data-action="set-planner-brand" data-brand="Nissan">Nissan <span class="planner-brand-count">${nissanCount}</span></button>
+      <button class="planner-brand-tab ${plannerBrand === 'INFINITI' ? 'active' : ''}" data-action="set-planner-brand" data-brand="INFINITI">Infiniti <span class="planner-brand-count">${infinitiCount}</span></button>
+    </div>
+    <div class="planner-months">${monthsHtml}</div>
+  </div>`;
+}
+
+function openPhaseDetail(phaseId) {
+  const phase = (data.phases || []).find(p => p.id === phaseId); if (!phase) return;
+  document.getElementById('pdp-name').textContent = phase.name;
+  const dateVal = document.getElementById('pdp-date-val');
+  if (dateVal) dateVal.textContent = phase.date ? formatDate(phase.date) : 'No date set';
+  const brandEl = document.getElementById('pdp-brand');
+  brandEl.textContent = phase.brand || 'Nissan';
+  brandEl.className = `pdp-brand-badge ${(phase.brand || 'Nissan') === 'INFINITI' ? 'pdp-infiniti' : 'pdp-nissan'}`;
+
+  const phaseStatus = phase.status || 'none';
+  const statusLabel = STATUS_LABELS[phaseStatus] || 'Not Started';
+  const statusEl = document.getElementById('pdp-status');
+  statusEl.textContent = statusLabel;
+  statusEl.className = `phase-status-badge phase-status-${phaseStatus}`;
+
+  let progress = 0;
+  if (phase.integrations?.length > 0) {
+    const doneCount = (phase.integrations || []).filter(iName => {
+      const integ = data.integrations.find(i => i.name === iName);
+      const gs = data.globalStatus || {};
+      return gs[iName] === 'done';
+    }).length;
+    progress = Math.round((doneCount / phase.integrations.length) * 100);
+  }
+  document.getElementById('pdp-progress').textContent = `${progress}% Complete`;
+  document.getElementById('pdp-progress-fill').style.width = `${progress}%`;
+
+  const integHtml = (phase.integrations || []).map(batchName => {
+    const batch = data.integrations.find(i => i.name === batchName);
+    const subItems = batch?.subItems || [];
+    const itemsList = subItems.length > 0
+      ? subItems.map(s => `<span style="font-size:11px; padding:2px 6px; background:var(--white); border:1px solid var(--border); border-radius:4px; display:inline-block;">${esc(s)}</span>`).join(' ')
+      : '<span style="font-size:11px; color:var(--muted); font-style:italic;">No sub-items</span>';
+    return `<div style="margin-bottom:8px;"><div style="font-size:12px; font-weight:600; color:var(--text); margin-bottom:4px;">${esc(batchName)}</div><div style="display:flex; flex-wrap:wrap; gap:4px;">${itemsList}</div></div>`;
+  }).join('');
+  document.getElementById('pdp-integrations').innerHTML = integHtml || '<span style="color:var(--muted);font-size:12px;font-style:italic;">No integrations assigned</span>';
+
+  const regionTiles = (phase.regions || []).map(pr => {
+    const reg = data.regions.find(r => r.id === pr.regionId); if (!reg) return '';
+    const mTags = (pr.markets || []).map(m => `<span class="phase-market-tag">${esc(m)}</span>`).join('');
+    return `<div class="phase-region-tile" style="margin-bottom:8px"><div class="phase-region-name">${esc(reg.name)}</div><div class="phase-market-tags">${mTags || '<span class="phase-no-mkt">All markets</span>'}</div></div>`;
+  }).join('');
+  document.getElementById('pdp-regions').innerHTML = regionTiles || '<span style="color:var(--muted);font-size:12px;font-style:italic">No regions assigned</span>';
+
+  document.getElementById('pdp-edit-btn').dataset.phase = phaseId;
+  document.getElementById('panel-overlay').classList.remove('hidden');
+  document.getElementById('phase-detail-panel').classList.remove('hidden');
+}
+
+function closePhaseDetailPanel() { const el = document.getElementById('phase-detail-panel'); if (el) el.classList.add('hidden'); }
+
+function openPhasePanel(phaseId) {
+  const phase = phaseId ? (data.phases || []).find(p => p.id === phaseId) : null;
+  phaseState = { id: phaseId, regions: phase?.regions || [] };
+  document.getElementById('pp-name').value = phase?.name || '';
+  document.getElementById('pp-date').value = phase?.date || '';
+  document.getElementById('pp-brand').value = phase?.brand || plannerBrand;
+  document.getElementById('pp-status').value = phase?.status || 'none';
+
+  const selInteg = new Set(phase?.integrations || []);
+  document.getElementById('pp-integrations').innerHTML = data.integrations.map(i =>
+    `<label class="pp-cb-label"><input type="checkbox" class="pp-integ-cb" value="${esc(i.name)}" ${selInteg.has(i.name) ? 'checked' : ''}/>
+    <span>${esc(i.name)}</span>${i.prodDate ? `<span class="pp-hint">${formatDate(i.prodDate)}</span>` : ''}</label>`
+  ).join('');
+
+  renderPhaseRegionPills();
+  const delBtn = document.getElementById('pp-del-btn');
+  if (delBtn) delBtn.style.display = phaseId ? 'inline-flex' : 'none';
+  document.getElementById('panel-overlay').classList.remove('hidden');
+  document.getElementById('phase-panel').classList.remove('hidden');
+}
+
+function renderPhaseRegionPills() {
+  const pillsContainer = document.getElementById('pp-regions-pills');
+  const regions = phaseState.regions || [];
+
+  if (regions.length === 0) {
+    pillsContainer.innerHTML = '';
+    return;
+  }
+
+  pillsContainer.innerHTML = regions.map(r => {
+    const region = data.regions.find(reg => reg.id === r.regionId);
+    const marketNames = (r.markets || []).join(', ');
+    return `
+      <div class="region-pill" title="${region?.name}: ${marketNames}">
+        <span>${region?.name}${r.markets?.length ? ` (${r.markets.length})` : ''}</span>
+        <span class="region-pill-close" data-region-id="${r.regionId}" onclick="removeRegionFromPhase('${r.regionId}')">✕</span>
+      </div>
+    `;
+  }).join('');
+}
+
+function removeRegionFromPhase(regionId) {
+  if (!phaseState.regions) phaseState.regions = [];
+  phaseState.regions = phaseState.regions.filter(r => r.regionId !== regionId);
+  renderPhaseRegionPills();
+}
+
+function openRegionModal() {
+  const modal = document.getElementById('region-selector-modal');
+  const listContainer = document.getElementById('region-selector-list');
+  const searchInput = document.getElementById('region-search');
+  if (!modal || !listContainer) return;
+
+  const selectedRegionIds = new Set((phaseState.regions || []).map(r => r.regionId));
+
+  const renderRegionList = (searchTerm = '') => {
+    const filtered = data.regions.filter(r => {
+      const matchName = r.name.toLowerCase().includes(searchTerm.toLowerCase());
+      const matchMarket = r.markets.some(m => m.name.toLowerCase().includes(searchTerm.toLowerCase()));
+      return matchName || matchMarket;
+    });
+
+    listContainer.innerHTML = filtered.map(region => {
+      const isSelected = selectedRegionIds.has(region.id);
+      const marketsList = region.markets.map(m => `
+        <label class="region-selector-market" style="display:block; padding:4px 12px;">
+          <input type="checkbox" class="region-market-check" data-region="${region.id}" value="${esc(m.name)}" ${(phaseState.regions || []).some(r => r.regionId === region.id && r.markets.includes(m.name)) ? 'checked' : ''} />
+          <span>${esc(m.name)}</span>
+        </label>
+      `).join('');
+
+      return `
+        <div class="region-selector-region">
+          <label class="region-selector-title">
+            <input type="checkbox" class="region-region-check" data-region="${region.id}" ${isSelected ? 'checked' : ''} />
+            <span><strong>${esc(region.name)}</strong></span>
+          </label>
+          <div>${marketsList || '<p style="color:var(--muted);font-size:11px;padding:6px 12px 6px 28px;">No markets</p>'}</div>
+        </div>
+      `;
+    }).join('');
+
+    document.querySelectorAll('.region-region-check').forEach(cb => {
+      cb.addEventListener('change', e => {
+        const regionId = e.target.dataset.region;
+        const marketChecks = listContainer.querySelectorAll(`.region-market-check[data-region="${regionId}"]`);
+        if (e.target.checked) {
+          marketChecks.forEach(m => m.disabled = false);
+          marketChecks.forEach(m => m.checked = true);
+        } else {
+          marketChecks.forEach(m => { m.checked = false; m.disabled = false; });
+        }
+      });
+    });
+  };
+
+  renderRegionList();
+  searchInput.value = '';
+  searchInput.oninput = e => renderRegionList(e.target.value);
+
+  modal.classList.remove('hidden');
+}
+
+function closeRegionModal() {
+  const modal = document.getElementById('region-selector-modal');
+  if (modal) modal.classList.add('hidden');
+}
+
+function applyRegionSelection() {
+  const listContainer = document.getElementById('region-selector-list');
+  const regMap = {};
+  listContainer.querySelectorAll('.region-market-check:checked').forEach(cb => {
+    const regionId = cb.dataset.region;
+    if (!regMap[regionId]) regMap[regionId] = [];
+    regMap[regionId].push(cb.value);
+  });
+
+  phaseState.regions = Object.entries(regMap).map(([regionId, markets]) => ({ regionId, markets }));
+  renderPhaseRegionPills();
+  closeRegionModal();
+}
+
+function savePhasePanel() {
+  const name = document.getElementById('pp-name').value.trim(); if (!name) { document.getElementById('pp-name').focus(); return; }
+  const date = document.getElementById('pp-date').value;
+  const brand = document.getElementById('pp-brand').value || plannerBrand;
+  const status = document.getElementById('pp-status').value || 'none';
+  const integrations = [...document.querySelectorAll('.pp-integ-cb:checked')].map(c => c.value);
+  const regions = phaseState.regions || [];
+  if (!data.phases) data.phases = [];
+  if (phaseState?.id) {
+    const p = data.phases.find(p => p.id === phaseState.id);
+    if (p) Object.assign(p, { name, date, brand, status, integrations, regions });
+  } else {
+    data.phases.push({ id: slug('ph'), name, date, brand, status, integrations, regions });
+  }
+  saveData().then(() => { closePanels(); render(); });
+}
+
+function deletePhaseFromPanel() {
+  if (!phaseState?.id || !confirm('Delete this phase?')) return;
+  data.phases = (data.phases || []).filter(p => p.id !== phaseState.id);
+  saveData().then(() => { closePanels(); render(); });
+}
+
+function closePhasePanel() { phaseState = null; const el = document.getElementById('phase-panel'); if (el) el.classList.add('hidden'); }
+
+function cycleDashboardStatus(key) {
+  if (!data.globalStatus) data.globalStatus = {};
+  const cur = data.globalStatus[key] || 'none';
+  const next = STATUSES[(STATUSES.indexOf(cur) + 1) % STATUSES.length];
+  if (next === 'none') delete data.globalStatus[key];
+  else data.globalStatus[key] = next;
+  saveData(); render();
+}
+
+function toggleChecklistBatch(integName) {
+  const key = `cl|${integName}`;
+  if (expandedBatches.has(key)) expandedBatches.delete(key); else expandedBatches.add(key);
+  render();
 }
 
 function buildRegionBlock(region) {
@@ -397,6 +832,22 @@ document.body.onclick = e => {
   else if (action === 'del-integ-panel') deleteIntegFromPanel();
   else if (action === 'export-csv') exportCSV();
   else if (action === 'export-pdf') window.print();
+  else if (action === 'open-integ') openIntegPanel(el.dataset.region || '', el.dataset.integ);
+  else if (action === 'del-integ') removeInteg(el.dataset.integ);
+  else if (action === 'add-integ') { editing = { type: 'add-integ' }; render(); }
+  else if (action === 'toggle-cl') toggleChecklistBatch(el.dataset.integ);
+  else if (action === 'cycle-status') cycleDashboardStatus(el.dataset.integ);
+  else if (action === 'new-phase') openPhasePanel(null);
+  else if (action === 'edit-phase') { e.stopPropagation(); openPhasePanel(el.dataset.phase); }
+  else if (action === 'del-phase') { e.stopPropagation(); if (confirm('Delete this phase?')) { data.phases = (data.phases||[]).filter(p => p.id !== el.dataset.phase); saveData().then(() => render()); } }
+  else if (action === 'save-phase') savePhasePanel();
+  else if (action === 'del-phase-panel') deletePhaseFromPanel();
+  else if (action === 'view-phase') openPhaseDetail(el.dataset.phase);
+  else if (action === 'edit-phase-from-detail') { closePhaseDetailPanel(); openPhasePanel(el.dataset.phase); }
+  else if (action === 'set-planner-brand') { plannerBrand = el.dataset.brand; renderPlannerView(); }
+  else if (action === 'edit-regions') openRegionModal();
+  else if (action === 'close-region-modal') closeRegionModal();
+  else if (action === 'apply-regions') applyRegionSelection();
 };
 
 function exportCSV() {
@@ -705,12 +1156,12 @@ function debounce(fn, delay) {
 
 const debouncedRender = debounce(() => render(), 150);
 
-function initFilters() {
-  const chipContainer = document.getElementById('filter-chips'); if (!chipContainer) return; chipContainer.innerHTML = '';
-  STATUSES.forEach(s => { const btn = document.createElement('button'); btn.className = `filter-chip fc-${s}${filterStatuses.has(s) ? ' active' : ''}`; btn.innerHTML = `<span class="filter-chip-dot ${s}"></span>${STATUS_LABELS[s]}`; btn.onclick = () => { if (filterStatuses.has(s)) filterStatuses.delete(s); else filterStatuses.add(s); render(); }; chipContainer.appendChild(btn); });
-  const regionContainer = document.getElementById('region-chips'); regionContainer.innerHTML = '';
+function initDashboardFilters() {
+  const chipContainer = document.getElementById('dashboard-filter-chips'); if (!chipContainer) return; chipContainer.innerHTML = '';
+  STATUSES.forEach(s => { const btn = document.createElement('button'); btn.className = `filter-chip fc-${s}${dashboardFilterStatuses.has(s) ? ' active' : ''}`; btn.innerHTML = `<span class="filter-chip-dot ${s}"></span>${STATUS_LABELS[s]}`; btn.onclick = () => { if (dashboardFilterStatuses.has(s)) dashboardFilterStatuses.delete(s); else dashboardFilterStatuses.add(s); render(); }; chipContainer.appendChild(btn); });
+  const regionContainer = document.getElementById('dashboard-region-chips'); if (!regionContainer) return; regionContainer.innerHTML = '';
   data.regions.filter(r => r.brand === activeBrand).map(r => r.name).filter((v, i, a) => a.indexOf(v) === i).forEach(name => {
-    const btn = document.createElement('button'); btn.className = `filter-chip${filterRegions.has(name) ? ' active' : ''}`;
+    const btn = document.createElement('button'); btn.className = `filter-chip${dashboardFilterRegions.has(name) ? ' active' : ''}`;
     const regionsWithName = data.regions.filter(reg => reg.name === name && reg.brand === activeBrand);
     let total = 0, done = 0;
     regionsWithName.forEach(r => {
@@ -722,26 +1173,88 @@ function initFilters() {
     });
     const percent = total === 0 ? 0 : Math.round((done / total) * 100);
     btn.innerHTML = `<span>${name}</span><span style="font-size:9px; font-weight:700; color:var(--muted); margin-left:auto; background:rgba(0,0,0,0.05); padding:2px 5px; border-radius:4px;">${percent}%</span>`;
-    btn.onclick = () => { if (filterRegions.has(name)) filterRegions.delete(name); else filterRegions.add(name); render(); };
+    btn.onclick = () => { if (dashboardFilterRegions.has(name)) dashboardFilterRegions.delete(name); else dashboardFilterRegions.add(name); render(); };
     regionContainer.appendChild(btn);
   });
-  const batchContainer = document.getElementById('batch-chips'); batchContainer.innerHTML = '';
-  data.integrations.forEach(integ => { const btn = document.createElement('button'); btn.className = `filter-chip${filterBatches.has(integ.name) ? ' active' : ''}`; btn.textContent = integ.name; btn.onclick = () => { if (filterBatches.has(integ.name)) filterBatches.delete(integ.name); else filterBatches.add(integ.name); render(); }; batchContainer.appendChild(btn); });
-  const setupToggle = (id, key) => { const el = document.getElementById(id); if (el) { el.checked = window[key]; el.onchange = (e) => { window[key] = e.target.checked; render(); }; } };
-  setupToggle('toggle-hide-done', 'hideDone'); setupToggle('toggle-only-blocked', 'onlyBlocked'); setupToggle('toggle-only-notes', 'onlyNotes');
-  const searchEl = document.getElementById('filter-search'); if (searchEl) { searchEl.value = filterSearch; searchEl.oninput = e => { filterSearch = e.target.value.trim(); debouncedRender(); }; }
-  syncResetBtn();
+  const setupToggle = (id, varName) => { const el = document.getElementById(id); if (el) { el.checked = eval(varName); el.onchange = (e) => { eval(`${varName} = ${e.target.checked}`); render(); }; } };
+  setupToggle('dashboard-toggle-hide-done', 'dashboardHideDone');
+  setupToggle('dashboard-toggle-only-blocked', 'dashboardOnlyBlocked');
+  setupToggle('dashboard-toggle-only-notes', 'dashboardOnlyNotes');
+  syncDashboardResetBtn();
 }
 
-function syncResetBtn() { const btn = document.getElementById('filter-reset'); if (btn) { const isFiltered = filterStatuses.size > 0 || filterRegions.size > 0 || filterBatches.size > 0 || filterSearch !== '' || hideDone || onlyBlocked || onlyNotes; btn.classList.toggle('hidden', !isFiltered); } }
-function resetFilters() { filterStatuses.clear(); filterRegions.clear(); filterBatches.clear(); filterSearch = ''; hideDone = false; onlyBlocked = false; onlyNotes = false; render(); }
-function passesFilter(integName, markets, regionId) {
-  if (filterBatches.size > 0 && !filterBatches.has(integName)) return false;
-  if (filterSearch && !integName.toLowerCase().includes(filterSearch.toLowerCase())) return false;
-  if (filterStatuses.size > 0 || hideDone || onlyBlocked || onlyNotes) {
+function initPlannerFilters() {
+  const chipContainer = document.getElementById('planner-filter-chips'); if (!chipContainer) return; chipContainer.innerHTML = '';
+  STATUSES.forEach(s => { const btn = document.createElement('button'); btn.className = `filter-chip fc-${s}${plannerFilterStatuses.has(s) ? ' active' : ''}`; btn.innerHTML = `<span class="filter-chip-dot ${s}"></span>${STATUS_LABELS[s]}`; btn.onclick = () => { if (plannerFilterStatuses.has(s)) plannerFilterStatuses.delete(s); else plannerFilterStatuses.add(s); render(); }; chipContainer.appendChild(btn); });
+  const batchContainer = document.getElementById('planner-batch-chips'); if (!batchContainer) return; batchContainer.innerHTML = '';
+  data.integrations.forEach(integ => { const btn = document.createElement('button'); btn.className = `filter-chip${plannerFilterBatches.has(integ.name) ? ' active' : ''}`; btn.textContent = integ.name; btn.onclick = () => { if (plannerFilterBatches.has(integ.name)) plannerFilterBatches.delete(integ.name); else plannerFilterBatches.add(integ.name); render(); }; batchContainer.appendChild(btn); });
+  const regionContainer = document.getElementById('planner-region-chips'); if (!regionContainer) return; regionContainer.innerHTML = '';
+  data.regions.filter(r => r.brand === plannerBrand).map(r => r.name).filter((v, i, a) => a.indexOf(v) === i).forEach(name => {
+    const btn = document.createElement('button'); btn.className = `filter-chip${plannerFilterRegions.has(name) ? ' active' : ''}`;
+    btn.textContent = name;
+    btn.onclick = () => { if (plannerFilterRegions.has(name)) plannerFilterRegions.delete(name); else plannerFilterRegions.add(name); render(); };
+    regionContainer.appendChild(btn);
+  });
+  const setupToggle = (id, varName) => { const el = document.getElementById(id); if (el) { el.checked = eval(varName); el.onchange = (e) => { eval(`${varName} = ${e.target.checked}`); render(); }; } };
+  setupToggle('planner-toggle-hide-done', 'plannerHideDone');
+  setupToggle('planner-toggle-only-blocked', 'plannerOnlyBlocked');
+  setupToggle('planner-toggle-only-notes', 'plannerOnlyNotes');
+  const searchEl = document.getElementById('planner-filter-search'); if (searchEl) { searchEl.value = plannerFilterSearch; searchEl.oninput = e => { plannerFilterSearch = e.target.value.trim(); debouncedRender(); }; }
+  const startDateEl = document.getElementById('planner-filter-date-start'); if (startDateEl) { startDateEl.value = plannerFilterDateStart; startDateEl.onchange = e => { plannerFilterDateStart = e.target.value; render(); }; }
+  const endDateEl = document.getElementById('planner-filter-date-end'); if (endDateEl) { endDateEl.value = plannerFilterDateEnd; endDateEl.onchange = e => { plannerFilterDateEnd = e.target.value; render(); }; }
+  syncPlannerResetBtn();
+}
+
+function syncDashboardResetBtn() { const btn = document.getElementById('dashboard-filter-reset'); if (btn) { const isFiltered = dashboardFilterStatuses.size > 0 || dashboardFilterRegions.size > 0 || dashboardHideDone || dashboardOnlyBlocked || dashboardOnlyNotes; btn.classList.toggle('hidden', !isFiltered); } }
+function syncPlannerResetBtn() { const btn = document.getElementById('planner-filter-reset'); if (btn) { const isFiltered = plannerFilterStatuses.size > 0 || plannerFilterBatches.size > 0 || plannerFilterRegions.size > 0 || plannerFilterSearch !== '' || plannerFilterDateStart !== '' || plannerFilterDateEnd !== '' || plannerHideDone || plannerOnlyBlocked || plannerOnlyNotes; btn.classList.toggle('hidden', !isFiltered); } }
+
+function resetFilters(sidebar) {
+  if (sidebar === 'dashboard') {
+    dashboardFilterStatuses.clear(); dashboardFilterRegions.clear(); dashboardHideDone = false; dashboardOnlyBlocked = false; dashboardOnlyNotes = false;
+    initDashboardFilters();
+  } else if (sidebar === 'planner') {
+    plannerFilterStatuses.clear(); plannerFilterBatches.clear(); plannerFilterRegions.clear(); plannerFilterSearch = ''; plannerFilterDateStart = ''; plannerFilterDateEnd = ''; plannerHideDone = false; plannerOnlyBlocked = false; plannerOnlyNotes = false;
+    initPlannerFilters();
+  }
+  render();
+}
+function dashboardIntegrationPasses(integName, markets, regionId) {
+  if (dashboardFilterStatuses.size > 0 || dashboardHideDone || dashboardOnlyBlocked || dashboardOnlyNotes) {
     const statuses = data.statuses[regionId] || {};
-    const hasMatch = markets.some(m => { const obj = getStatusObj(statuses, `${integName}|${m.name}`); if (hideDone && obj.status === 'done') return false; if (onlyBlocked && obj.status !== 'blocked') return false; if (onlyNotes && !obj.note?.trim()) return false; if (filterStatuses.size > 0 && !filterStatuses.has(obj.status)) return false; return true; });
+    const hasMatch = markets.some(m => { const obj = getStatusObj(statuses, `${integName}|${m.name}`); if (dashboardHideDone && obj.status === 'done') return false; if (dashboardOnlyBlocked && obj.status !== 'blocked') return false; if (dashboardOnlyNotes && !obj.note?.trim()) return false; if (dashboardFilterStatuses.size > 0 && !dashboardFilterStatuses.has(obj.status)) return false; return true; });
     if (!hasMatch) return false;
+  }
+  if (dashboardFilterRegions.size > 0) {
+    const regionName = data.regions.find(r => r.id === regionId)?.name;
+    if (!regionName || !dashboardFilterRegions.has(regionName)) return false;
+  }
+  return true;
+}
+
+function phasePassesFilter(phase) {
+  if (plannerFilterSearch && !phase.name.toLowerCase().includes(plannerFilterSearch.toLowerCase())) return false;
+  if (plannerFilterStatuses.size > 0 && !plannerFilterStatuses.has(phase.status || 'none')) return false;
+  if (plannerFilterBatches.size > 0) {
+    const hasMatch = (phase.integrations || []).some(integ => plannerFilterBatches.has(integ));
+    if (!hasMatch) return false;
+  }
+  if (plannerFilterRegions.size > 0) {
+    const phaseRegions = new Set((phase.regions || []).map(pr => {
+      const reg = data.regions.find(r => r.id === pr.regionId);
+      return reg?.name;
+    }).filter(Boolean));
+    const hasMatch = [...plannerFilterRegions].some(r => phaseRegions.has(r));
+    if (!hasMatch) return false;
+  }
+  if (plannerFilterDateStart) {
+    const startDate = new Date(plannerFilterDateStart);
+    const phaseDate = new Date(phase.date);
+    if (phaseDate < startDate) return false;
+  }
+  if (plannerFilterDateEnd) {
+    const endDate = new Date(plannerFilterDateEnd);
+    const phaseDate = new Date(phase.date);
+    if (phaseDate > endDate) return false;
   }
   return true;
 }
@@ -820,7 +1333,7 @@ function today()      { return new Date().toISOString().split('T')[0]; }
 function slug(s)      { return s.toLowerCase().replace(/\s+/g,'-') + '-' + Date.now(); }
 function formatDate(d){ if (!d) return '—'; return new Date(d).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}); }
 function esc(str)     { return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
-function closePanels()    { document.getElementById('panel-overlay').classList.add('hidden'); closeCellPanel(); closeIntegPanel(); }
+function closePanels()    { document.getElementById('panel-overlay').classList.add('hidden'); closeCellPanel(); closeIntegPanel(); closePhasePanel(); closePhaseDetailPanel(); }
 function closeCellPanel() { cellState = null;  document.getElementById('cell-panel').classList.add('hidden'); }
 function closeIntegPanel(){ integState = null; document.getElementById('integ-panel').classList.add('hidden'); }
 
