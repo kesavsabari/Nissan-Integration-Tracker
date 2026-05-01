@@ -430,6 +430,7 @@ main { flex: 1; display: flex; overflow: hidden; }
 }
 .filter-reset:hover { border-color: #888; color: var(--text); background: rgba(0,0,0,0.02); }
 .filter-reset.hidden { display: none; }
+.filter-sidebar.hidden { display: none; }
 
 .filter-toggles {
   display: flex;
