@@ -5,7 +5,7 @@ WORKDIR /app
 
 # The project is in the 'Nissan Tracker' subdirectory in the repo
 # Copy the application files
-COPY "Nissan Tracker/" .
+COPY ["Nissan Tracker/", "."]
 
 # Create a data directory for persistent storage
 # and move the initial JSON data files there
