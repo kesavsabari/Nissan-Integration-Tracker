@@ -1,5 +1,9 @@
 {
-  "Batch A": "progress",
-  "Batch A:V1": "progress",
-  "Batch A:V2": "progress"
+  "Batch B": "progress",
+  "Batch B:V2 Utils": "progress",
+  "Batch B:HOYU Connector": "progress",
+  "Batch B:Santander NNE Api": "progress",
+  "Batch B:Santander NNE Login": "progress",
+  "Batch B:V2 Webhook Notification": "progress",
+  "Batch B:V2 Finance": "progress"
 }

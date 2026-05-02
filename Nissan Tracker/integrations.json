@@ -1,15 +1,255 @@
 [
   {
-    "name": "Batch A",
+    "createdAt": "2026-04-24",
+    "description": "V1 Dealer & V2 Dealer (Pilot). Rollout: APAC 25 Mar–20 May 2026 · EU 03–10 Jun 2026 · US 17–24 Jun 2026. Drop-dead: 15 Jul 2026.",
+    "intDate": "2026-03-25",
+    "name": "Dealer",
+    "prodDate": "2026-07-15",
     "subItems": [
-      "V1",
-      "V2"
-    ]
+      "V1 Dealer",
+      "V2 Dealer"
+    ],
+    "uat2Date": "2026-06-03",
+    "updatedAt": "2026-04-24"
   },
   {
-    "name": "Batch B",
+    "createdAt": "2026-04-24",
+    "description": "Models, Offers, eim2spec Connectors-Pim, One10 Login & Store. INT: 23 Apr 2026 · UAT2: 07 May 2026 · Prod APAC: 26 May 2026.",
+    "intDate": "2026-04-23",
+    "name": "Batch A",
+    "prodDate": "2026-05-26",
     "subItems": [
-      "V3"
-    ]
+      "V2 Offers",
+      "V2 eim2spec",
+      "One10 Login",
+      "One10 Store",
+      "V2 Models"
+    ],
+    "uat2Date": "2026-05-07",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Utils, Finance calculator, HOYU, Santander NNE connectors, Webhook Notification. INT: 06 Jul 2026 · UAT2: 16 Jul 2026 · Prod: 03 Aug 2026.",
+    "intDate": "2026-07-06",
+    "name": "Batch B",
+    "prodDate": "2026-08-03",
+    "subItems": [
+      "V2 Utils",
+      "HOYU Connector",
+      "Santander NNE Api",
+      "Santander NNE Login",
+      "V2 Webhook Notification",
+      "V2 Finance"
+    ],
+    "uat2Date": "2026-07-16",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Status, Bookings, Trade-in & regional connectors. Relies on Santander NNE (Batch B). No dedicated drop-dead date.",
+    "intDate": "",
+    "name": "Batch C",
+    "prodDate": "",
+    "subItems": [
+      "V2 Status",
+      "V2 Bookings",
+      "V2 Trade-in",
+      "Generative Search",
+      "Personalisation",
+      "FranceBee2Link",
+      "NMA Autograb",
+      "Tradein UK",
+      "Tradein Autohausen"
+    ],
+    "uat2Date": "",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Full ecommerce suite. INT: 10 Aug 2026 · UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.",
+    "intDate": "2026-08-10",
+    "name": "Batch D",
+    "prodDate": "2026-09-07",
+    "subItems": [
+      "V2 Ecommerce",
+      "Ecomm Dealers",
+      "Ecomm Orders",
+      "Ecomm Assets",
+      "Ecomm Products",
+      "Ecomm TradeIn",
+      "Ecomm BTO",
+      "Ecomm Accounts",
+      "Ecomm Payment",
+      "Ecomm Inventory",
+      "Ecomm Finance",
+      "SFCC Store",
+      "SFCC Token",
+      "NE-IE RegistrationFee",
+      "NE-IE Token Management"
+    ],
+    "uat2Date": "2026-08-20",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Accessories, Account Profile, Configurator, Honeypot, LeadsLog. INT: 10 Aug 2026 · UAT2: 20 Aug 2026 · Prod: 07 Sep 2026 · Drop-dead: 28 Sep 2026.",
+    "intDate": "2026-08-10",
+    "name": "Batch E",
+    "prodDate": "2026-09-07",
+    "subItems": [
+      "Accessories",
+      "Account Profile",
+      "Configurator",
+      "ConfiguratorPrice",
+      "Honeypot",
+      "LeadsLog",
+      "nodeSQSConnector"
+    ],
+    "uat2Date": "2026-08-20",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Leads V2, Adobe Campaign, MS Dynamics Yana, Datadise, Lead Management, NCI connectors. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.",
+    "intDate": "2026-08-31",
+    "name": "Batch F",
+    "prodDate": "2026-09-28",
+    "subItems": [
+      "Leads V2",
+      "Adobe Campaign Login",
+      "Adobe Campaign Store",
+      "MS Dynamics Yana Login",
+      "MS Dynamics Yana Store",
+      "Datadise Login",
+      "Datadise Store",
+      "Lead Mgmt WR3FE11",
+      "Lead Mgmt WRSFE10",
+      "NCI Login",
+      "NCI Store"
+    ],
+    "uat2Date": "2026-09-10",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "CRM connectors: VegaCRM, SugarCRM, Salesforce, ZohoCRM, MS Dynamics, NNA, CEBIP, Nissan Europe ESB, SCV. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.",
+    "intDate": "2026-08-31",
+    "name": "Batch G",
+    "prodDate": "2026-09-28",
+    "subItems": [
+      "VegaCRM Login",
+      "VegaCRM Store",
+      "SugarCRM Login",
+      "SugarCRM Store",
+      "Salesforce Login",
+      "Salesforce Store",
+      "ZohoCRM Login",
+      "ZohoCRM Store",
+      "MS Dynamics Login",
+      "MS Dynamics Store",
+      "NNA Login",
+      "NNA Store",
+      "CEBIP",
+      "Nissan Europe ESB",
+      "SCV Store"
+    ],
+    "uat2Date": "2026-09-10",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Workato, CDR, CA, EU Adobe Campaign, CA Opportunity, AutoCRM, SICOP, LMT MS Dynamics, KR CRM connectors. INT: 31 Aug 2026 · Drop-dead: 19 Oct 2026.",
+    "intDate": "2026-08-31",
+    "name": "Batch H",
+    "prodDate": "2026-09-28",
+    "subItems": [
+      "Workato Store",
+      "Workato Login",
+      "CDR Login",
+      "CDR Store",
+      "CA Login",
+      "CA Store",
+      "EU Adobe Campaign Login",
+      "EU Adobe Campaign Store",
+      "CA Opportunity Login",
+      "CA Opportunity Store",
+      "AutoCRM Store",
+      "SICOP Store",
+      "LMT MS Dynamics Store",
+      "KR CRM Store"
+    ],
+    "uat2Date": "2026-09-10",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Japan nlink channels managed by MO/Japan FE team. INT: 09 Mar 2026 ✓ · UAT: 16 Apr 2026 ✓ · Prod: 22 Apr 2026 (Planned) · Drop-dead: 13 May 2026.",
+    "intDate": "2026-03-09",
+    "name": "MO Japan",
+    "prodDate": "2026-04-22",
+    "subItems": [
+      "Japan GuestServices",
+      "Japan FinancialServices",
+      "Japan FinanceSimulation",
+      "Japan OwnerServices",
+      "Japan OwnerServicesVehicles",
+      "Japan LocationServices",
+      "Japan LoginServices",
+      "Japan MyNissan"
+    ],
+    "uat2Date": "2026-04-16",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "PIM Proxy managed by NDI team. V2-ChannelsPIM-PaceAuthorization & DataAuthoring. Drop-dead: 21 May 2026.",
+    "intDate": "2026-04-16",
+    "name": "MO PIM",
+    "prodDate": "2026-05-21",
+    "subItems": [
+      "PIM PaceAuthorization",
+      "PIM DataAuthoring"
+    ],
+    "uat2Date": "2026-04-23",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "V2-ChannelsAmericas: UserRecognitionAuthorization & UserRecognition-Data managed by CM. INT: 07 May 2026 · Drop-dead: 10 Jun 2026.",
+    "intDate": "2026-05-07",
+    "name": "MO Americas",
+    "prodDate": "2026-06-10",
+    "subItems": [
+      "UserRecognition Authorization",
+      "UserRecognition Data"
+    ],
+    "uat2Date": "2026-05-13",
+    "updatedAt": "2026-04-24"
+  },
+  {
+    "createdAt": "2026-04-24",
+    "description": "Owner Services V2/V3 migration in 3 phases managed by MO team. Phase 1 INT: 15 Apr 2026 ✓.",
+    "intDate": "2026-04-15",
+    "name": "MO Owner Svcs",
+    "prodDate": "2026-04-30",
+    "subItems": [
+      "V3 Users Nissan",
+      "V2 Users Nissan",
+      "V2 Users FavoriteDealers",
+      "V2 Account Nissan",
+      "NE-ESB OwnerServices",
+      "NE OwnerServices Connector",
+      "NNA OwnerServices WSO2",
+      "Owner Services Picklist",
+      "SFV3-NE Token",
+      "SFV3-NNA Token",
+      "SFV3-NE OIDC ESB",
+      "SFV3-NNA OIDC WSO2",
+      "V2 Connector SMIT",
+      "V2 Connector AOPreferenceCentre"
+    ],
+    "uat2Date": "2026-04-23",
+    "updatedAt": "2026-04-24"
   }
 ]

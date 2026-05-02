@@ -27,7 +27,14 @@
       "mcp__Claude_Preview__preview_start",
       "Bash(curl -s -X POST http://localhost:5001/api/data -H 'Content-Type: application/json' -d '{ *)",
       "Bash(git add *)",
-      "Bash(git commit -m ' *)"
+      "Bash(git commit -m ' *)",
+      "Bash(cp \"backups/2026-05-02_1251/integrations.json\" \"integrations.json\")",
+      "Bash(cp \"backups/2026-05-02_1251/regions.json\" \"regions.json\")",
+      "Bash(cp \"backups/2026-05-02_1251/statuses.json\" \"statuses.json\")",
+      "Bash(cp \"backups/2026-05-02_1251/history.json\" \"history.json\")",
+      "Bash(kill -9 1430)",
+      "Bash(git commit -m 'Tighten spacing between content and filter sidebar *)",
+      "Bash(git commit -m 'Remove all emojis for professional appearance *)"
     ]
   }
 }
