@@ -289,7 +289,7 @@ main { flex: 1; display: flex; overflow: hidden; }
   flex: 1;
   overflow-y: auto;
   overflow-x: hidden;
-  padding: 12px 12px;
+  padding: 12px 8px 12px 12px;
   scrollbar-width: thin;
   scrollbar-color: rgba(0,0,0,0.14) transparent;
   scroll-behavior: smooth;
@@ -346,7 +346,7 @@ main { flex: 1; display: flex; overflow: hidden; }
   flex-shrink: 0;
   background: var(--white);
   border-left: 1px solid var(--border);
-  padding: 16px 14px;
+  padding: 16px 12px;
   display: flex;
   flex-direction: column;
   gap: 0;
@@ -1017,7 +1017,7 @@ input[type="date"].activity-input {
 
 /* ── Dashboard Checklist ────────────────────────── */
 .checklist-wrap {
-  width: 100%; margin: 12px;
+  width: 100%; margin: 0;
   background: var(--white); border-radius: 12px;
   border: 1px solid var(--border); overflow: hidden;
   box-shadow: var(--shadow);
