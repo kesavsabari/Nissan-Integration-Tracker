@@ -285,7 +285,7 @@ function renderActivityView() {
       return `<div class="activity-row"><div class="activity-time">${time}</div><div class="activity-desc"><b>${esc(h.region)}</b> · ${esc(h.market)} · <b>${esc(h.item)}</b></div><div class="activity-change"><span class="pip pip-${h.from}"></span> <span style="color:var(--muted)">→</span> <span class="pip pip-${h.to}"></span></div></div>`;
     } else {
       const subItems = g.items.map(h => `<div class="activity-sub-row"><div class="activity-desc">${esc(h.market)} · ${esc(h.item)}</div><div class="activity-change"><span class="pip pip-${h.from}"></span> <span style="color:var(--muted)">→</span> <span class="pip pip-${h.to}"></span></div></div>`).join('');
-      return `<div class="activity-group"><details><summary class="activity-row activity-group-header"><div class="activity-time">${time}</div><div class="activity-desc"><b>${esc(g.region)}</b> · <span class="activity-count">${g.items.length} updates</span></div><div class="activity-toggle-icon">^</div></summary><div class="activity-group-content">${subItems}</div></details></div>`;
+      return `<div class="activity-group"><details><summary class="activity-row activity-group-header"><div class="activity-time">${time}</div><div class="activity-desc"><b>${esc(g.region)}</b> · <span class="activity-count">${g.items.length} updates</span></div><div class="activity-toggle-icon">▼</div></summary><div class="activity-group-content">${subItems}</div></details></div>`;
     }
   }).join('');
   container.innerHTML = filtered.length ? itemsHtml : '<div style="text-align:center; padding: 40px; color: var(--muted)">No matching activity found.</div>';
@@ -371,7 +371,7 @@ function renderDashboard() {
       </td>
       <td class="cl-name-cell">
         <div class="cl-name-inner">
-          ${subCnt > 0 ? `<button class="btn-toggle" data-action="toggle-cl" data-integ="${esc(integ.name)}">${isExp ? '^' : '>'}</button>` : '<span style="width:22px;display:inline-block"></span>'}
+          ${subCnt > 0 ? `<button class="btn-toggle" data-action="toggle-cl" data-integ="${esc(integ.name)}">${isExp ? '▼' : '▶'}</button>` : '<span style="width:22px;display:inline-block"></span>'}
           <span class="cl-integ-name${st === 'done' ? ' cl-done-text' : ''}" data-action="open-integ" data-region="" data-integ="${esc(integ.name)}">${esc(integ.name)}</span>
           ${overdue ? '<span class="cl-overdue-tag">OVERDUE</span>' : ''}
         </div>
@@ -379,7 +379,7 @@ function renderDashboard() {
       <td class="cl-cell cl-muted">${subCnt > 0 ? subCnt + ' proxies' : '—'}</td>
       <td class="cl-cell">${integ.uat2Date ? formatDate(integ.uat2Date) : '—'}</td>
       <td class="cl-cell${overdue ? ' cl-red' : ''}">${integ.prodDate ? formatDate(integ.prodDate) : '—'}</td>
-      <td class="cl-del-cell"><button class="btn-del-integ" data-action="del-integ" data-integ="${esc(integ.name)}">X</button></td>
+      <td class="cl-del-cell"><button class="btn-del-integ" data-action="del-integ" data-integ="${esc(integ.name)}">✕</button></td>
     </tr>`;
     if (isExp && subCnt > 0) {
       integ.subItems.forEach(sub => {
@@ -394,7 +394,7 @@ function renderDashboard() {
   });
   const addRow = editing?.type === 'add-integ'
     ? `<tr><td colspan="6" style="padding:8px 16px"><input class="inline-input input-integ" placeholder="New Integration…"/></td></tr>`
-    : `<tr class="row-add"><td colspan="6"><div class="row-add-actions"><button class="btn-add-row" data-action="add-integ">+ Add Integration</button></div></td></tr>`;
+    : `<tr class="row-add"><td colspan="6"><div class="row-add-actions"><button class="btn-add-row" data-action="add-integ">＋ Add Integration</button></div></td></tr>`;
   const progress = data.integrations.length > 0 ? Math.round((doneCount / data.integrations.length) * 100) : 0;
   container.innerHTML = `<div class="checklist-wrap">
     <div class="checklist-header">
@@ -487,7 +487,7 @@ function renderPlannerView() {
         </div>
         <div class="phase-tile-btns">
           <button class="phase-edit-btn" data-action="edit-phase" data-phase="${phase.id}">Edit</button>
-          <button class="phase-del-btn" data-action="del-phase" data-phase="${phase.id}">Delete</button>
+          <button class="phase-del-btn" data-action="del-phase" data-phase="${phase.id}">✕</button>
         </div>
       </div>
       <div style="display:flex; align-items:center; gap:8px; margin-bottom:8px;">
@@ -509,7 +509,7 @@ function renderPlannerView() {
   };
 
   const monthsHtml = months.length === 0
-    ? `<div class="phases-empty">No phases for ${plannerBrand} yet. Click <b>New Phase</b> to create one.</div>`
+    ? `<div class="phases-empty">No phases for ${plannerBrand} yet. Click <b>＋ New Phase</b> to create one.</div>`
     : months.map(m => `
         <div class="month-section">
           <div class="month-header">
@@ -528,7 +528,7 @@ function renderPlannerView() {
         <div class="planner-title">Release Planner</div>
         <div class="planner-sub">${phases.length} phase${phases.length !== 1 ? 's' : ''} · ${plannerBrand}</div>
       </div>
-      <button class="btn-new-phase" data-action="new-phase">New Phase</button>
+      <button class="btn-new-phase" data-action="new-phase">＋ New Phase</button>
     </div>
     <div class="planner-brand-tabs">
       <button class="planner-brand-tab ${plannerBrand === 'Nissan' ? 'active' : ''}" data-action="set-planner-brand" data-brand="Nissan">Nissan <span class="planner-brand-count">${nissanCount}</span></button>
@@ -625,7 +625,7 @@ function renderPhaseRegionPills() {
     return `
       <div class="region-pill" title="${region?.name}: ${marketNames}">
         <span>${region?.name}${r.markets?.length ? ` (${r.markets.length})` : ''}</span>
-        <span class="region-pill-close" data-region-id="${r.regionId}" onclick="removeRegionFromPhase('${r.regionId}')">X</span>
+        <span class="region-pill-close" data-region-id="${r.regionId}" onclick="removeRegionFromPhase('${r.regionId}')">✕</span>
       </div>
     `;
   }).join('');
@@ -824,9 +824,9 @@ function buildTable(region) {
     const groupHtml = isEditingGroup 
       ? `<input class="inline-input input-group" value="${esc(m.group || '')}" placeholder="Group…"/>`
       : `<div class="market-group-label" data-action="edit-market-group" data-region="${id}" data-market="${esc(m.name)}">${esc(m.group || '·')}</div>`;
-    return `<th class="th-market"><div class="th-market-inner">${groupHtml}<span class="th-market-name">${esc(m.name)}</span><button class="btn-del-market" data-action="del-market" data-region="${id}" data-value="${esc(m.name)}">X</button></div></th>`;
+    return `<th class="th-market"><div class="th-market-inner">${groupHtml}<span class="th-market-name">${esc(m.name)}</span><button class="btn-del-market" data-action="del-market" data-region="${id}" data-value="${esc(m.name)}">✕</button></div></th>`;
   }).join('');
-  const addMarketTh = isAddMarket ? `<th class="th-add-market" style="padding:6px 10px;min-width:110px"><input class="inline-input input-market" placeholder="Market…"/></th>` : `<th class="th-add-market"><button class="btn-add-col" data-action="add-market" data-region="${id}">+</button></th>`;
+  const addMarketTh = isAddMarket ? `<th class="th-add-market" style="padding:6px 10px;min-width:110px"><input class="inline-input input-market" placeholder="Market…"/></th>` : `<th class="th-add-market"><button class="btn-add-col" data-action="add-market" data-region="${id}">＋</button></th>`;
   let rows = '';
   data.integrations.forEach(integ => {
     if (!passesFilter(integ.name, markets, id)) return;
@@ -836,7 +836,7 @@ function buildTable(region) {
     }
   });
   if (editing?.type === 'add-integ') rows += `<tr><td class="td-integ"><div class="td-integ-inner"><input class="inline-input input-integ" placeholder="New Integration…"/></div></td>${markets.map(() => '<td class="td-status"></td>').join('')}<td class="td-status-pad"></td></tr>`;
-  rows += `<tr class="row-add"><td colspan="${markets.length + 2}"><div class="row-add-actions"><button class="btn-add-row" data-action="add-integ">+ Add Global Integration</button></div></td></tr>`;
+  rows += `<tr class="row-add"><td colspan="${markets.length + 2}"><div class="row-add-actions"><button class="btn-add-row" data-action="add-integ">＋ Add Global Integration</button></div></td></tr>`;
   return `<table class="region-table"><thead><tr><th class="th-integ-col"></th>${marketThs}${addMarketTh}</tr></thead><tbody>${rows}</tbody></table>`;
 }
 
@@ -851,7 +851,7 @@ function buildIntegRow(integ, markets, regionId, statuses) {
   const overdue = isOverdue(integ.prodDate, 'none');
   const prodDateStr = integ.prodDate ? `<span class="integ-prod-date ${overdue ? 'overdue' : ''}">(Prod: ${esc(formatDate(integ.prodDate))})</span>` : '';
   const batchProgress = calculateProgress(regionId, integ.name, statuses);
-  return `<tr class="tr-batch-header"><td class="td-integ"><div class="td-integ-inner"><div class="integ-label">${hasSubs ? `<button class="btn-toggle" data-action="toggle-batch" data-region="${regionId}" data-integ="${esc(integ.name)}">${isExpanded ? '^' : '>'}</button>` : ''}<div class="integ-name-wrap"><span class="integ-name-btn ${overdue ? 'overdue-pulse' : ''}" data-action="open-integ" data-region="${regionId}" data-integ="${esc(integ.name)}">${esc(integ.name)}</span>${prodDateStr}<span class="percent-text" style="font-size:9px;">${batchProgress}%</span></div><div class="batch-actions-inline" style="display:flex; gap:4px; margin-left:auto;"><button class="btn-select-all" data-action="select-row" data-region="${regionId}" data-integ="${esc(integ.name)}">Row</button>${(hasSubs && isExpanded) ? `<button class="btn-select-all" data-action="select-batch" data-region="${regionId}" data-integ="${esc(integ.name)}">Batch</button>` : ''}</div></div><button class="btn-del-integ" data-action="del-integ" data-integ="${esc(integ.name)}">X</button></div></td>${statusTds}<td class="td-status-pad"></td></tr>`;
+  return `<tr class="tr-batch-header"><td class="td-integ"><div class="td-integ-inner"><div class="integ-label">${hasSubs ? `<button class="btn-toggle" data-action="toggle-batch" data-region="${regionId}" data-integ="${esc(integ.name)}">${isExpanded ? '▼' : '▶'}</button>` : ''}<div class="integ-name-wrap"><span class="integ-name-btn ${overdue ? 'overdue-pulse' : ''}" data-action="open-integ" data-region="${regionId}" data-integ="${esc(integ.name)}">${esc(integ.name)}</span>${prodDateStr}<span class="percent-text" style="font-size:9px;">${batchProgress}%</span></div><div class="batch-actions-inline" style="display:flex; gap:4px; margin-left:auto;"><button class="btn-select-all" data-action="select-row" data-region="${regionId}" data-integ="${esc(integ.name)}">Row</button>${(hasSubs && isExpanded) ? `<button class="btn-select-all" data-action="select-batch" data-region="${regionId}" data-integ="${esc(integ.name)}">Batch</button>` : ''}</div></div><button class="btn-del-integ" data-action="del-integ" data-integ="${esc(integ.name)}">✕</button></div></td>${statusTds}<td class="td-status-pad"></td></tr>`;
 }
 
 function buildSubItemRow(parentName, subName, markets, regionId, statuses) {
@@ -1329,14 +1329,14 @@ function phasePassesFilter(phase) {
 // ── Utils ─────────────────────────────────────────
 
 function setBrand(brand) { activeBrand = brand; document.querySelectorAll('.brand-tab').forEach(t => t.classList.toggle('active', t.dataset.brand === brand)); render(); }
-function toggleBulkMode() { bulkMode = !bulkMode; if (!bulkMode) selectedCells.clear(); const btn = document.getElementById('bulk-mode-btn'); if (btn) btn.textContent = bulkMode ? 'X Exit Bulk' : '[] Bulk Mode'; syncBulkBar(); render(); }
+function toggleBulkMode() { bulkMode = !bulkMode; if (!bulkMode) selectedCells.clear(); const btn = document.getElementById('bulk-mode-btn'); if (btn) btn.textContent = bulkMode ? '✕ Exit Bulk' : '⬚ Bulk Mode'; syncBulkBar(); render(); }
 function syncBulkBar() {
   const bar = document.getElementById('bulk-bar');
   const countEl = document.getElementById('bulk-count');
   const btn = document.getElementById('bulk-mode-btn');
   if (bar) bar.classList.toggle('hidden', !bulkMode || selectedCells.size === 0);
   if (countEl) countEl.textContent = selectedCells.size;
-  if (btn) btn.textContent = bulkMode ? 'X Exit Bulk' : '[] Bulk Mode';
+  if (btn) btn.textContent = bulkMode ? '✕ Exit Bulk' : '⬚ Bulk Mode';
 }
 
 function commitEdit(raw) {
