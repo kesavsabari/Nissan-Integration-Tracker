@@ -1,4 +1,4 @@
-let data = { integrations: [], regions: [], statuses: [], history: [] };
+let data = { integrations: [], regions: [], statuses: [], history: [], phases: [] };
 let editing    = null;
 let cellState  = null;
 let integState = null;
@@ -12,9 +12,10 @@ let onlyBlocked   = false;
 let onlyNotes     = false;
 let bulkMode      = false;
 let isMouseDown   = false;
-let selectedCells = new Set(); 
+let selectedCells = new Set();
 let expandedBatches = new Set();
 let currentView = 'dashboard';
+let plannerBrand = 'Nissan';
 
 const STATUSES = ['none', 'progress', 'done', 'blocked'];
 const STATUS_LABELS = { none: 'Not Started', progress: 'In Progress', done: 'Done', blocked: 'Blocked' };
@@ -109,11 +110,12 @@ async function init() {
     if (!data.regions)      data.regions = [];
     if (!data.statuses)     data.statuses = {};
     if (!data.history)      data.history = [];
+    if (!data.phases)       data.phases = [];
     data.regions.forEach(r => {
       if (!r.markets) r.markets = [];
       if (!data.statuses[r.id]) data.statuses[r.id] = {};
     });
-  } catch (err) { data = { integrations: DEFAULT_INTEGRATIONS, regions: [], statuses: {}, history: [] }; }
+  } catch (err) { data = { integrations: DEFAULT_INTEGRATIONS, regions: [], statuses: {}, history: [], phases: [] }; }
   
   const wrap = document.getElementById('dashboard-wrap');
   const stBtn = document.getElementById('scroll-top-btn');
@@ -180,13 +182,29 @@ function cycleStatus(regionId, integName, marketName) {
   saveData(); render();
 }
 
+function cycleGlobalStatus(integName) {
+  const regionId = 'global';
+  const marketName = 'Global';
+  if (!data.statuses[regionId]) data.statuses[regionId] = {};
+  const statuses = data.statuses[regionId];
+  const key = `${integName}|${marketName}`;
+  const obj = getStatusObj(statuses, key);
+  const next = STATUSES[(STATUSES.indexOf(obj.status) + 1) % STATUSES.length];
+  
+  logHistory(regionId, integName, marketName, obj.status, next);
+  if (next === 'none' && !obj.note) delete data.statuses[regionId][key];
+  else data.statuses[regionId][key] = { ...obj, status: next, updatedAt: today() };
+  
+  saveData(); render();
+}
+
 function setView(viewName) {
   currentView = viewName;
   document.querySelectorAll('.view-content').forEach(v => v.classList.add('hidden'));
   const el = document.getElementById(`view-${viewName}`); if (el) el.classList.remove('hidden');
   document.querySelectorAll('.nav-link').forEach(b => b.classList.toggle('active', b.dataset.value === viewName));
   const sidebar = document.querySelector('.filter-sidebar');
-  if (sidebar) sidebar.style.display = (viewName === 'summary' || viewName === 'activity') ? 'none' : 'flex';
+  if (sidebar) sidebar.style.display = (viewName === 'summary' || viewName === 'activity' || viewName === 'planner') ? 'none' : 'flex';
   const wrap = document.getElementById('dashboard-wrap');
   if (wrap) wrap.scrollTo({ top: 0, behavior: 'smooth' });
   render();
@@ -198,6 +216,16 @@ function toggleTheme() {
   document.documentElement.setAttribute('data-theme', newTheme);
   localStorage.setItem('theme', newTheme);
   document.getElementById('theme-toggle').textContent = newTheme === 'dark' ? '☀️' : '🌑';
+}
+
+function toggleFilters() {
+  const sidebar = document.querySelector('.filter-sidebar');
+  if (sidebar) {
+    const isHidden = sidebar.style.display === 'none';
+    sidebar.style.display = isHidden ? 'flex' : 'none';
+    const btn = document.getElementById('filter-toggle');
+    if (btn) btn.classList.toggle('active', isHidden);
+  }
 }
 
 function initTheme() {
@@ -257,20 +285,34 @@ function renderActivityView() {
   }).join('');
   container.innerHTML = filtered.length ? itemsHtml : '<div style="text-align:center; padding: 40px; color: var(--muted)">No matching activity found.</div>';
   const searchInp = document.getElementById('activity-search');
-  searchInp.oninput = (e) => { activitySearch = e.target.value; renderActivityView(); };
-  searchInp.value = activitySearch;
-  regionSelect.onchange = (e) => { activityRegion = e.target.value; renderActivityView(); };
+  if (searchInp) {
+    searchInp.oninput = (e) => { activitySearch = e.target.value; renderActivityView(); };
+    searchInp.value = activitySearch;
+  }
+  if (regionSelect) {
+    regionSelect.onchange = (e) => { activityRegion = e.target.value; renderActivityView(); };
+  }
   const startInp = document.getElementById('activity-date-start');
-  startInp.onchange = (e) => { activityDateStart = e.target.value; renderActivityView(); };
-  startInp.value = activityDateStart;
+  if (startInp) {
+    startInp.onchange = (e) => { activityDateStart = e.target.value; renderActivityView(); };
+    startInp.value = activityDateStart;
+  }
   const endInp = document.getElementById('activity-date-end');
-  endInp.onchange = (e) => { activityDateEnd = e.target.value; renderActivityView(); };
-  endInp.value = activityDateEnd;
+  if (endInp) {
+    endInp.onchange = (e) => { activityDateEnd = e.target.value; renderActivityView(); };
+    endInp.value = activityDateEnd;
+  }
 }
 
 function toggleBatch(regionId, batchName) {
   const key = `${regionId}|${batchName}`;
   if (expandedBatches.has(key)) expandedBatches.delete(key); else expandedBatches.add(key);
+  render();
+}
+
+function toggleBatchExpand(integName) {
+  if (expandedBatches.has(integName)) expandedBatches.delete(integName);
+  else expandedBatches.add(integName);
   render();
 }
 
@@ -305,91 +347,147 @@ function toggleSelectRow(regionId, integName) {
 function render() {
   if (currentView === 'summary') { renderSummaryView(); return; }
   if (currentView === 'activity') { renderActivityView(); return; }
+  if (currentView === 'planner') { renderPlannerView(); return; }
+  
   const container = document.getElementById('dashboard'); if (!container) return; container.innerHTML = '';
-  data.regions.filter(r => r.brand === activeBrand).filter(r => filterRegions.size === 0 || filterRegions.has(r.name)).forEach(r => container.appendChild(buildRegionBlock(r)));
+  
+  // Dashboard is now just Batches & Integration Checklist
+  data.integrations.forEach(integ => {
+    if (filterBatches.size > 0 && !filterBatches.has(integ.name)) return;
+    if (filterSearch && !integ.name.toLowerCase().includes(filterSearch.toLowerCase())) return;
+    container.appendChild(buildBatchChecklistCard(integ));
+  });
+
   const addCard = document.createElement('div'); addCard.className = 'region-add-card';
-  if (editing?.type === 'add-region') addCard.innerHTML = `<input class="inline-input input-region" placeholder="Region name…" autocomplete="off"/>`;
-  else addCard.innerHTML = `<button class="btn-add-region" data-action="add-region">＋ Add Region</button>`;
+  if (editing?.type === 'add-integ') addCard.innerHTML = `<input class="inline-input input-integ" placeholder="New Integration…" autocomplete="off"/>`;
+  else addCard.innerHTML = `<button class="btn-add-region" data-action="add-integ">＋ Add Global Integration</button>`;
   container.appendChild(addCard); attachEvents(container); focusInput(); initFilters();
 }
 
-function buildRegionBlock(region) {
+function buildBatchChecklistCard(integ) {
   const el = document.createElement('div'); el.className = 'region-block';
-  const statuses = data.statuses[region.id] || {};
-  let totalItems = 0, doneItems = 0;
-  data.integrations.forEach(integ => {
-    region.markets.forEach(m => {
-      if (integ.subItems?.length) integ.subItems.forEach(s => { totalItems++; if (getStatusObj(statuses, `${integ.name}:${s}|${m.name}`).status === 'done') doneItems++; });
-      else { totalItems++; if (getStatusObj(statuses, `${integ.name}|${m.name}`).status === 'done') doneItems++; }
-    });
+  const isExpanded = expandedBatches.has(integ.name);
+  const globalStatuses = data.statuses['global'] || {};
+  
+  let doneCount = 0;
+  const items = integ.subItems?.length ? integ.subItems : [integ.name];
+  items.forEach(item => {
+    const key = integ.subItems?.length ? `${integ.name}:${item}` : item;
+    if (getStatusObj(globalStatuses, `${key}|Global`).status === 'done') doneCount++;
   });
-  const regionPercent = totalItems === 0 ? 0 : Math.round((doneItems / totalItems) * 100);
-  const nameHtml = (editing?.type === 'rename' && editing.regionId === region.id)
-    ? `<input class="inline-input input-rename" value="${esc(region.name)}"/>`
-    : `<div class="region-badge" data-action="rename" data-region="${region.id}"><span>${esc(region.name)}</span><div class="progress-pill"><div class="progress-fill" style="width:${regionPercent}%"></div></div><span class="percent-text">${regionPercent}%</span></div>`;
-  el.innerHTML = `<div class="region-header"><div class="region-header-left">${nameHtml}<div class="region-meta">${region.markets.length} Markets</div></div><div class="region-controls"><button class="btn-ctrl danger" data-action="del-region" data-region="${region.id}">Delete Region</button></div></div><div class="region-body">${buildTable(region)}</div>`;
+  const percent = Math.round((doneCount / items.length) * 100);
+
+  const headerHtml = `
+    <div class="region-header">
+      <div class="region-header-left">
+        <div class="region-badge" data-action="open-integ" data-integ="${esc(integ.name)}">
+          <span>${esc(integ.name)}</span>
+          <div class="progress-pill"><div class="progress-fill" style="width:${percent}%"></div></div>
+          <span class="percent-text">${percent}%</span>
+        </div>
+        <div class="region-meta">${integ.subItems?.length || 0} Items</div>
+      </div>
+      <div class="region-controls">
+        <button class="btn-ctrl" data-action="toggle-batch-expand" data-integ="${esc(integ.name)}">${isExpanded ? 'Collapse' : 'Expand Checklist'}</button>
+        <button class="btn-ctrl danger" data-action="del-integ" data-integ="${esc(integ.name)}">Delete</button>
+      </div>
+    </div>`;
+
+  let bodyHtml = '';
+  if (isExpanded && integ.subItems?.length) {
+    const rows = integ.subItems.map(sub => {
+      const full = `${integ.name}:${sub}`;
+      const obj = getStatusObj(globalStatuses, `${full}|Global`);
+      return `
+        <div class="checklist-row">
+          <div class="checklist-label" data-action="open-integ" data-integ="${esc(full)}">${esc(sub)}</div>
+          <div class="checklist-status">
+            <button class="status-cell sc-sub ${obj.status}" data-action="cycle-global-status" data-integ="${esc(full)}">${obj.note?.trim() ? '<span class="note-dot"></span>' : ''}</button>
+          </div>
+        </div>`;
+    }).join('');
+    bodyHtml = `<div class="checklist-body">${rows}</div>`;
+  } else if (!integ.subItems?.length) {
+    const obj = getStatusObj(globalStatuses, `${integ.name}|Global`);
+    bodyHtml = `
+      <div class="checklist-body">
+        <div class="checklist-row">
+          <div class="checklist-label">Main Integration</div>
+          <div class="checklist-status">
+            <button class="status-cell ${obj.status}" data-action="cycle-global-status" data-integ="${esc(integ.name)}">${obj.note?.trim() ? '<span class="note-dot"></span>' : ''}</button>
+          </div>
+        </div>
+      </div>`;
+  }
+
+  el.innerHTML = headerHtml + bodyHtml;
   return el;
 }
 
-function buildTable(region) {
-  const { id, markets = [] } = region; const statuses = data.statuses[id] || {};
-  const isAddMarket = editing?.type === 'add-market' && editing.regionId === id;
-  const marketThs = markets.map(m => {
-    const isEditingGroup = editing?.type === 'edit-market-group' && editing.regionId === id && editing.marketName === m.name;
-    const groupHtml = isEditingGroup 
-      ? `<input class="inline-input input-group" value="${esc(m.group || '')}" placeholder="Group…"/>`
-      : `<div class="market-group-label" data-action="edit-market-group" data-region="${id}" data-market="${esc(m.name)}">${esc(m.group || '·')}</div>`;
-    return `<th class="th-market"><div class="th-market-inner">${groupHtml}<span class="th-market-name">${esc(m.name)}</span><button class="btn-del-market" data-action="del-market" data-region="${id}" data-value="${esc(m.name)}">✕</button></div></th>`;
-  }).join('');
-  const addMarketTh = isAddMarket ? `<th class="th-add-market" style="padding:6px 10px;min-width:110px"><input class="inline-input input-market" placeholder="Market…"/></th>` : `<th class="th-add-market"><button class="btn-add-col" data-action="add-market" data-region="${id}">＋</button></th>`;
-  let rows = '';
-  data.integrations.forEach(integ => {
-    if (!passesFilter(integ.name, markets, id)) return;
-    rows += buildIntegRow(integ, markets, id, statuses);
-    if (expandedBatches.has(`${id}|${integ.name}`) && integ.subItems?.length) {
-      integ.subItems.forEach(sub => { rows += buildSubItemRow(integ.name, sub, markets, id, statuses); });
-    }
+function renderPlannerView() {
+  const container = document.getElementById('planner-container'); if (!container) return;
+  container.innerHTML = '';
+  
+  const regions = data.regions.filter(r => r.brand === activeBrand);
+  if (regions.length === 0) {
+    container.innerHTML = '<div style="text-align:center; padding: 40px; color: var(--muted)">No regions found. Add them in the Summary or via Global Settings (if any).</div>';
+    return;
+  }
+
+  regions.forEach(region => {
+    const el = document.createElement('div'); el.className = 'region-block';
+    const phases = region.phases || [];
+    
+    let phasesHtml = phases.map((phase, idx) => {
+      const itemsHtml = (phase.items || []).map(itemName => `
+        <div class="planner-item">
+          <span>${esc(itemName)}</span>
+          <button class="btn-del-market" data-action="remove-item-from-phase" data-region="${region.id}" data-phase="${idx}" data-item="${esc(itemName)}">✕</button>
+        </div>
+      `).join('');
+      
+      return `
+        <div class="planner-phase">
+          <div class="planner-phase-header">
+            <div class="planner-phase-title">${esc(phase.name)}</div>
+            <button class="btn-ctrl danger" data-action="del-phase" data-region="${region.id}" data-phase="${idx}">Delete Phase</button>
+          </div>
+          <div class="planner-phase-items">
+            ${itemsHtml}
+            <button class="btn-add-row" data-action="add-item-to-phase" data-region="${region.id}" data-phase="${idx}">+ Add Integration</button>
+          </div>
+        </div>`;
+    }).join('');
+
+    if (!phases.length) phasesHtml = '<div style="padding: 20px; color: var(--muted); font-style: italic;">No phases planned.</div>';
+
+    el.innerHTML = `
+      <div class="region-header">
+        <div class="region-header-left">
+          <div class="region-badge"><span>${esc(region.name)}</span></div>
+        </div>
+        <div class="region-controls">
+          <button class="btn-ctrl" data-action="add-phase" data-region="${region.id}">+ Add Phase</button>
+        </div>
+      </div>
+      <div class="planner-body">${phasesHtml}</div>`;
+    container.appendChild(el);
   });
-  if (editing?.type === 'add-integ') rows += `<tr><td class="td-integ"><div class="td-integ-inner"><input class="inline-input input-integ" placeholder="New Integration…"/></div></td>${markets.map(() => '<td class="td-status"></td>').join('')}<td class="td-status-pad"></td></tr>`;
-  rows += `<tr class="row-add"><td colspan="${markets.length + 2}"><div class="row-add-actions"><button class="btn-add-row" data-action="add-integ">＋ Add Global Integration</button></div></td></tr>`;
-  return `<table class="region-table"><thead><tr><th class="th-integ-col"></th>${marketThs}${addMarketTh}</tr></thead><tbody>${rows}</tbody></table>`;
-}
-
-function buildIntegRow(integ, markets, regionId, statuses) {
-  const isExpanded = expandedBatches.has(`${regionId}|${integ.name}`);
-  const hasSubs = integ.subItems?.length > 0;
-  const statusTds = markets.map(m => {
-    const eff = getEffectiveStatus(regionId, integ.name, m.name, statuses);
-    const isSel = selectedCells.has(`${regionId}|${integ.name}|${m.name}`);
-    return `<td class="td-status"><button class="status-cell ${eff.status} ${isSel ? 'selected-bulk' : ''} ${eff.isRollup ? 'is-rollup' : ''}" onmousedown="handleCellClick('${regionId}', \`${esc(integ.name)}\`, '${esc(m.name)}')" onmouseenter="handleCellMouseEnter('${regionId}', \`${esc(integ.name)}\`, '${esc(m.name)}')" data-integ="${esc(integ.name)}" data-market="${esc(m.name)}">${eff.note?.trim() ? '<span class="note-dot"></span>' : ''}</button></td>`;
-  }).join('');
-  const overdue = isOverdue(integ.prodDate, 'none');
-  const prodDateStr = integ.prodDate ? `<span class="integ-prod-date ${overdue ? 'overdue' : ''}">(Prod: ${esc(formatDate(integ.prodDate))})</span>` : '';
-  const batchProgress = calculateProgress(regionId, integ.name, statuses);
-  return `<tr class="tr-batch-header"><td class="td-integ"><div class="td-integ-inner"><div class="integ-label">${hasSubs ? `<button class="btn-toggle" data-action="toggle-batch" data-region="${regionId}" data-integ="${esc(integ.name)}">${isExpanded ? '▼' : '▶'}</button>` : ''}<div class="integ-name-wrap"><span class="integ-name-btn ${overdue ? 'overdue-pulse' : ''}" data-action="open-integ" data-region="${regionId}" data-integ="${esc(integ.name)}">${esc(integ.name)}</span>${prodDateStr}<span class="percent-text" style="font-size:9px;">${batchProgress}%</span></div><div class="batch-actions-inline" style="display:flex; gap:4px; margin-left:auto;"><button class="btn-select-all" data-action="select-row" data-region="${regionId}" data-integ="${esc(integ.name)}">Row</button>${(hasSubs && isExpanded) ? `<button class="btn-select-all" data-action="select-batch" data-region="${regionId}" data-integ="${esc(integ.name)}">Batch</button>` : ''}</div></div><button class="btn-del-integ" data-action="del-integ" data-integ="${esc(integ.name)}">✕</button></div></td>${statusTds}<td class="td-status-pad"></td></tr>`;
-}
-
-function buildSubItemRow(parentName, subName, markets, regionId, statuses) {
-  const full = `${parentName}:${subName}`;
-  const statusTds = markets.map(m => {
-    const obj = getStatusObj(statuses, `${full}|${m.name}`);
-    const isSel = selectedCells.has(`${regionId}|${full}|${m.name}`);
-    return `<td class="td-status"><button class="status-cell sc-sub ${obj.status} ${isSel ? 'selected-bulk' : ''}" onmousedown="handleCellClick('${regionId}', \`${esc(full)}\`, '${esc(m.name)}')" onmouseenter="handleCellMouseEnter('${regionId}', \`${esc(full)}\`, '${esc(m.name)}')" data-integ="${esc(full)}" data-market="${esc(m.name)}">${obj.note?.trim() ? '<span class="note-dot"></span>' : ''}</button></td>`;
-  }).join('');
-  return `<tr class="tr-sub-item"><td class="td-integ td-integ-sub"><div class="td-integ-inner" style="padding-left: 48px;"><span class="sub-item-label" data-action="open-integ" data-region="${regionId}" data-integ="${esc(full)}">${esc(subName)}</span><button class="btn-select-all" data-action="select-row" data-region="${regionId}" data-integ="${esc(full)}" title="Select whole row">Row</button></div></td>${statusTds}<td class="td-status-pad"></td></tr>`;
+  attachEvents(container);
 }
 
 // ── Global Events & Modal Actions ─────────────────
 
 document.body.onclick = e => {
   const el = e.target.closest('[data-action]'); if (!el) return;
-  const { action, value, brand, region, integ, market } = el.dataset;
+  const { action, value, brand, region, integ, market, phase, item, sidebar } = el.dataset;
   if      (action === 'set-brand') setBrand(brand);
   else if (action === 'set-view') setView(value);
   else if (action === 'toggle-theme') toggleTheme();
+  else if (action === 'toggle-filters') toggleFilters();
   else if (action === 'toggle-bulk') toggleBulkMode();
   else if (action === 'apply-bulk') applyBulkStatus(value);
-  else if (action === 'reset-filters') resetFilters();
+  else if (action === 'reset-filters') resetFilters(sidebar);
   else if (action === 'close-panels') closePanels();
   else if (action === 'save-cell') saveCellPanel();
   else if (action === 'save-integ') saveIntegPanel();
@@ -397,7 +495,56 @@ document.body.onclick = e => {
   else if (action === 'del-integ-panel') deleteIntegFromPanel();
   else if (action === 'export-csv') exportCSV();
   else if (action === 'export-pdf') window.print();
+  else if (action === 'cycle-global-status') cycleGlobalStatus(integ);
+  else if (action === 'toggle-batch-expand') toggleBatchExpand(integ);
+  else if (action === 'add-phase') addPhase(region);
+  else if (action === 'del-phase') deletePhase(region, phase);
+  else if (action === 'add-item-to-phase') addItemToPhase(region, phase);
+  else if (action === 'remove-item-from-phase') removeItemFromPhase(region, phase, item);
 };
+
+function addPhase(regionId) {
+  const region = data.regions.find(r => r.id === regionId);
+  if (!region) return;
+  const name = prompt("Enter Phase Name (e.g., Phase 1 - Pilot):");
+  if (!name) return;
+  if (!region.phases) region.phases = [];
+  region.phases.push({ name, items: [] });
+  saveData().then(() => render());
+}
+
+function deletePhase(regionId, phaseIdx) {
+  const region = data.regions.find(r => r.id === regionId);
+  if (!region || !region.phases) return;
+  if (confirm(`Delete phase "${region.phases[phaseIdx].name}"?`)) {
+    region.phases.splice(phaseIdx, 1);
+    saveData().then(() => render());
+  }
+}
+
+function addItemToPhase(regionId, phaseIdx) {
+  const region = data.regions.find(r => r.id === regionId);
+  if (!region || !region.phases) return;
+  
+  const allIntegNames = data.integrations.reduce((acc, integ) => {
+    acc.push(integ.name);
+    if (integ.subItems) integ.subItems.forEach(s => acc.push(`${integ.name}:${s}`));
+    return acc;
+  }, []);
+  
+  const itemName = prompt("Enter Integration Name or select from list:\n" + allIntegNames.slice(0, 10).join("\n") + "...");
+  if (!itemName) return;
+  
+  region.phases[phaseIdx].items.push(itemName);
+  saveData().then(() => render());
+}
+
+function removeItemFromPhase(regionId, phaseIdx, itemName) {
+  const region = data.regions.find(r => r.id === regionId);
+  if (!region || !region.phases) return;
+  region.phases[phaseIdx].items = region.phases[phaseIdx].items.filter(i => i !== itemName);
+  saveData().then(() => render());
+}
 
 function exportCSV() {
   const regions = data.regions.filter(r => r.brand === activeBrand);
@@ -422,7 +569,7 @@ function exportCSV() {
 function attachEvents(root) {
   root.onclick = e => {
     const el = e.target.closest('[data-action]'); if (!el) return; e.stopPropagation();
-    const { action, region, integ, market, value } = el.dataset;
+    const { action, region, integ, market, value, phase, item } = el.dataset;
     if      (action === 'open-cell') handleCellClick(region, integ, market);
     else if (action === 'open-integ') openIntegPanel(region, integ);
     else if (action === 'toggle-batch') toggleBatch(region, integ);
@@ -436,6 +583,12 @@ function attachEvents(root) {
     else if (action === 'add-integ') { editing = { type: 'add-integ' }; render(); }
     else if (action === 'del-integ') removeInteg(integ);
     else if (action === 'add-region') { editing = { type: 'add-region' }; render(); }
+    else if (action === 'toggle-batch-expand') toggleBatchExpand(integ);
+    else if (action === 'cycle-global-status') cycleGlobalStatus(integ);
+    else if (action === 'add-phase') addPhase(region);
+    else if (action === 'del-phase') deletePhase(region, phase);
+    else if (action === 'add-item-to-phase') addItemToPhase(region, phase);
+    else if (action === 'remove-item-from-phase') removeItemFromPhase(region, phase, item);
   };
   root.onmouseover = e => {
     const el = e.target.closest('[data-integ]'); if (!el || el.classList.contains('status-cell')) return;
@@ -468,17 +621,30 @@ async function applyBulkStatus(status) {
 function openCellPanel(regionId, integName, marketName) {
   closeIntegPanel(); const statuses = data.statuses[regionId] || {}; const obj = getStatusObj(statuses, `${integName}|${marketName}`);
   cellState = { regionId, integName, marketName, selectedStatus: obj.status };
-  document.getElementById('cp-integ').textContent = integName; document.getElementById('cp-market').textContent = marketName;
-  document.getElementById('cp-note').value = obj.note || ''; renderCpStatusGrid(obj.status);
+  const cpInteg = document.getElementById('cp-integ');
+  const cpMarket = document.getElementById('cp-market');
+  if (cpInteg) cpInteg.textContent = integName;
+  if (cpMarket) cpMarket.textContent = marketName;
+  const cpNote = document.getElementById('cp-note');
+  if (cpNote) cpNote.value = obj.note || ''; 
+  renderCpStatusGrid(obj.status);
+  
   const existingHistory = document.getElementById('cp-history-section'); if (existingHistory) existingHistory.remove();
   const historyContainer = document.createElement('div'); historyContainer.id = 'cp-history-section';
   historyContainer.innerHTML = `<div class="panel-section-label" style="margin-top:20px">Recent Changes</div><div id="cp-history-list" class="history-list"></div>`;
-  document.querySelector('#cell-panel .panel-body').appendChild(historyContainer);
+  const panelBody = document.querySelector('#cell-panel .panel-body');
+  if (panelBody) panelBody.appendChild(historyContainer);
+  
   const list = document.getElementById('cp-history-list');
   const relevantHistory = (data.history || []).filter(h => h.item === integName && h.market === marketName).slice(0, 5);
-  if (relevantHistory.length === 0) list.innerHTML = `<div class="history-empty">No changes recorded yet.</div>`;
-  else list.innerHTML = relevantHistory.map(h => `<div class="history-item"><div class="history-meta"><span class="history-time">${new Date(h.timestamp).toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</span></div><div class="history-change"><span class="pip pip-${h.from}"></span><span class="history-arrow">→</span><span class="pip pip-${h.to}"></span></div></div>`).join('');
-  document.getElementById('panel-overlay').classList.remove('hidden'); document.getElementById('cell-panel').classList.remove('hidden');
+  if (list) {
+    if (relevantHistory.length === 0) list.innerHTML = `<div class="history-empty">No changes recorded yet.</div>`;
+    else list.innerHTML = relevantHistory.map(h => `<div class="history-item"><div class="history-meta"><span class="history-time">${new Date(h.timestamp).toLocaleString('en-GB', {day:'numeric',month:'short',hour:'2-digit',minute:'2-digit'})}</span></div><div class="history-change"><span class="pip pip-${h.from}"></span><span class="history-arrow">→</span><span class="pip pip-${h.to}"></span></div></div>`).join('');
+  }
+  const overlay = document.getElementById('panel-overlay');
+  const cellPanel = document.getElementById('cell-panel');
+  if (overlay) overlay.classList.remove('hidden'); 
+  if (cellPanel) cellPanel.classList.remove('hidden');
 }
 
 function renderCpStatusGrid(selected) {
@@ -821,7 +987,14 @@ function slug(s)      { return s.toLowerCase().replace(/\s+/g,'-') + '-' + Date.
 function formatDate(d){ if (!d) return '—'; return new Date(d).toLocaleDateString('en-GB',{day:'numeric',month:'short',year:'numeric'}); }
 function esc(str)     { return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
 function closePanels()    { document.getElementById('panel-overlay').classList.add('hidden'); closeCellPanel(); closeIntegPanel(); }
-function closeCellPanel() { cellState = null;  document.getElementById('cell-panel').classList.add('hidden'); }
-function closeIntegPanel(){ integState = null; document.getElementById('integ-panel').classList.add('hidden'); }
+function closeCellPanel() { cellState = null;  const cp = document.getElementById('cell-panel'); if (cp) cp.classList.add('hidden'); }
+function closeIntegPanel(){ integState = null; const ip = document.getElementById('integ-panel'); if (ip) ip.classList.add('hidden'); }
+
+init();
+eric'}); }
+function esc(str)     { return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
+function closePanels()    { document.getElementById('panel-overlay').classList.add('hidden'); closeCellPanel(); closeIntegPanel(); }
+function closeCellPanel() { cellState = null;  const cp = document.getElementById('cell-panel'); if (cp) cp.classList.add('hidden'); }
+function closeIntegPanel(){ integState = null; const ip = document.getElementById('integ-panel'); if (ip) ip.classList.add('hidden'); }
 
 init();

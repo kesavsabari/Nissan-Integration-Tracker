@@ -12,7 +12,8 @@ const FILES = {
   integrations: path.join(DIRECTORY, 'integrations.json'),
   regions: path.join(DIRECTORY, 'regions.json'),
   statuses: path.join(DIRECTORY, 'statuses.json'),
-  history: path.join(DIRECTORY, 'history.json')
+  history: path.join(DIRECTORY, 'history.json'),
+  phases: path.join(DIRECTORY, 'phases.json')
 };
 
 let lastBackupTime = 0;

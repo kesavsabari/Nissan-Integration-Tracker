@@ -1,0 +1,43 @@
+# --- Project Context Controls ---
+# Stop the AI from crawling "up" into your main OneDrive/Documents folders
+../
+# Stop indexing the git history (massive token saver)
+.git/
+.gitignore
+
+# --- Dependencies & Build Artifacts ---
+node_modules/
+bower_components/
+dist/
+build/
+bin/
+obj/
+out/
+*.exe
+*.dll
+*.so
+
+# --- Cloud & System Junk (Crucial for OneDrive) ---
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+*.tmp
+*.temp
+.drive/
+.cloud/
+
+# --- Large Data Files (The 1.5M Token Culprits) ---
+*.csv
+*.sql
+*.log
+*.jsonl
+*.gz
+*.zip
+*.7z
+*.pdf
+*.docx
+
+# --- Gemini CLI Specifics ---
+.gemini/
+sessions/
