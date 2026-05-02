@@ -108,7 +108,8 @@ function sendCompressed(req, res, content, contentType) {
 }
 
 const server = http.createServer(async (req, res) => {
-  const url = req.url === '/' ? '/index.html' : req.url;
+  let url = req.url.split('?')[0];
+  url = url === '/' ? '/index.html' : url;
 
   if (url === '/api/data' && req.method === 'GET') {
     const data = {};
