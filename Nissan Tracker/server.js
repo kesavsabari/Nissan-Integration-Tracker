@@ -13,7 +13,8 @@ const FILES = {
   regions: path.join(DIRECTORY, 'regions.json'),
   statuses: path.join(DIRECTORY, 'statuses.json'),
   history: path.join(DIRECTORY, 'history.json'),
-  globalStatus: path.join(DIRECTORY, 'globalStatus.json')
+  globalStatus: path.join(DIRECTORY, 'globalStatus.json'),
+  phases: path.join(DIRECTORY, 'phases.json')
 };
 
 let lastBackupTime = 0;
