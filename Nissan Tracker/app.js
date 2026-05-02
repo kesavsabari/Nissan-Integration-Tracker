@@ -991,10 +991,3 @@ function closeCellPanel() { cellState = null;  const cp = document.getElementByI
 function closeIntegPanel(){ integState = null; const ip = document.getElementById('integ-panel'); if (ip) ip.classList.add('hidden'); }
 
 init();
-eric'}); }
-function esc(str)     { return String(str || '').replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;').replace(/'/g,'&#39;'); }
-function closePanels()    { document.getElementById('panel-overlay').classList.add('hidden'); closeCellPanel(); closeIntegPanel(); }
-function closeCellPanel() { cellState = null;  const cp = document.getElementById('cell-panel'); if (cp) cp.classList.add('hidden'); }
-function closeIntegPanel(){ integState = null; const ip = document.getElementById('integ-panel'); if (ip) ip.classList.add('hidden'); }
-
-init();

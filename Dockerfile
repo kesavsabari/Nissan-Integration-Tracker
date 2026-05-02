@@ -8,9 +8,7 @@ WORKDIR /app
 COPY ["Nissan Tracker/", "."]
 
 # Create a data directory for persistent storage
-# and move the initial JSON data files there
-RUN mkdir -p /app/data && \
-    mv *.json /app/data/ || true
+RUN mkdir -p /app/data
 
 # Set Environment Variables
 ENV PORT=5001
