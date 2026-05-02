@@ -12,7 +12,8 @@ const FILES = {
   integrations: path.join(DIRECTORY, 'integrations.json'),
   regions: path.join(DIRECTORY, 'regions.json'),
   statuses: path.join(DIRECTORY, 'statuses.json'),
-  history: path.join(DIRECTORY, 'history.json')
+  history: path.join(DIRECTORY, 'history.json'),
+  globalStatus: path.join(DIRECTORY, 'globalStatus.json')
 };
 
 let lastBackupTime = 0;
@@ -95,7 +96,7 @@ const server = http.createServer(async (req, res) => {
       if (fs.existsSync(FILES[key])) {
         data[key] = JSON.parse(await readFile(FILES[key], 'utf8'));
       } else {
-        data[key] = key === 'statuses' ? {} : [];
+        data[key] = (key === 'statuses' || key === 'globalStatus') ? {} : [];
       }
     }
     sendCompressed(req, res, JSON.stringify(data), 'application/json');
@@ -111,7 +112,7 @@ const server = http.createServer(async (req, res) => {
         await createBackup();
 
         for (const key in FILES) {
-          if (data[key]) {
+          if (data[key] !== undefined) {
             await writeFile(FILES[key], JSON.stringify(data[key], null, 2), 'utf8');
           }
         }
@@ -119,6 +120,7 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
       } catch (err) {
+        console.error('POST error:', err.message);
         res.writeHead(400);
         res.end(err.message);
       }

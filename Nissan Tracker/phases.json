@@ -1,0 +1,335 @@
+[
+  {
+    "id": "1",
+    "name": "Dealer — APAC Phase 1",
+    "date": "2026-03-25",
+    "brand": "Nissan",
+    "integrations": [
+      "Dealer"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z",
+    "status": "progress"
+  },
+  {
+    "id": "2",
+    "name": "MO Japan — Production",
+    "date": "2026-04-22",
+    "brand": "Nissan",
+    "integrations": [
+      "MO Japan"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "3",
+    "name": "MO PIM — Production",
+    "date": "2026-04-30",
+    "brand": "Nissan",
+    "integrations": [
+      "MO PIM"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "4",
+    "name": "MO Owner Svcs — Phase 1",
+    "date": "2026-04-30",
+    "brand": "Nissan",
+    "integrations": [
+      "MO Owner Svcs"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "5",
+    "name": "Batch A — Launch",
+    "date": "2026-05-26",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch A"
+    ],
+    "regions": [
+      {
+        "regionId": "nissan-asean",
+        "markets": [
+          "Philippines"
+        ]
+      }
+    ],
+    "createdAt": "2026-05-01T00:00:00Z",
+    "status": "none"
+  },
+  {
+    "id": "6",
+    "name": "MO Americas — Release",
+    "date": "2026-05-20",
+    "brand": "Nissan",
+    "integrations": [
+      "MO Americas"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "7",
+    "name": "Batch B — UAT2",
+    "date": "2026-07-16",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch B"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "8",
+    "name": "Batch B — Production",
+    "date": "2026-08-03",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch B"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "9",
+    "name": "Batch C — Planning",
+    "date": "2026-06-01",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch C"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "10",
+    "name": "Batch D — UAT2",
+    "date": "2026-08-20",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch D"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "11",
+    "name": "Batch D — Production",
+    "date": "2026-09-07",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch D"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "12",
+    "name": "Batch E — UAT2",
+    "date": "2026-08-20",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch E"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "13",
+    "name": "Batch E — Production",
+    "date": "2026-09-07",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch E"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "14",
+    "name": "Batch F — UAT2",
+    "date": "2026-09-10",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch F"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "15",
+    "name": "Batch F — Production",
+    "date": "2026-09-28",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch F"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "16",
+    "name": "Batch G — UAT2",
+    "date": "2026-09-10",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch G"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "17",
+    "name": "Batch G — Production",
+    "date": "2026-09-28",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch G"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "18",
+    "name": "Batch H — UAT2",
+    "date": "2026-09-10",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch H"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "19",
+    "name": "Batch H — Production",
+    "date": "2026-09-28",
+    "brand": "Nissan",
+    "integrations": [
+      "Batch H"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "20",
+    "name": "MO Owner Svcs — Phase 2",
+    "date": "2026-05-30",
+    "brand": "Nissan",
+    "integrations": [
+      "MO Owner Svcs"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "21",
+    "name": "MO Owner Svcs — Phase 3",
+    "date": "2026-06-30",
+    "brand": "Nissan",
+    "integrations": [
+      "MO Owner Svcs"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "22",
+    "name": "Regional Rollout — EU",
+    "date": "2026-06-03",
+    "brand": "Nissan",
+    "integrations": [
+      "Dealer"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "23",
+    "name": "Regional Rollout — US",
+    "date": "2026-06-17",
+    "brand": "Nissan",
+    "integrations": [
+      "Dealer"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "24",
+    "name": "Post-Launch Support",
+    "date": "2026-07-01",
+    "brand": "Nissan",
+    "integrations": [],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "25",
+    "name": "Dealer — APAC Phase 1",
+    "date": "2026-04-15",
+    "brand": "INFINITI",
+    "integrations": [
+      "Dealer"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "26",
+    "name": "MO Japan — Release",
+    "date": "2026-05-10",
+    "brand": "INFINITI",
+    "integrations": [
+      "MO Japan"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "27",
+    "name": "Batch A — Launch",
+    "date": "2026-06-12",
+    "brand": "INFINITI",
+    "integrations": [
+      "Batch A"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "28",
+    "name": "Batch B — Production",
+    "date": "2026-08-15",
+    "brand": "INFINITI",
+    "integrations": [
+      "Batch B"
+    ],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "29",
+    "name": "Regional Rollout",
+    "date": "2026-07-01",
+    "brand": "INFINITI",
+    "integrations": [],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  },
+  {
+    "id": "30",
+    "name": "Post-Launch Monitoring",
+    "date": "2026-08-01",
+    "brand": "INFINITI",
+    "integrations": [],
+    "regions": [],
+    "createdAt": "2026-05-01T00:00:00Z"
+  }
+]

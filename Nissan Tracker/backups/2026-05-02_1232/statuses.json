@@ -413,6 +413,21 @@
       "status": "done",
       "note": "",
       "updatedAt": "2026-04-25"
+    },
+    "MO PIM|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-26"
+    },
+    "MO PIM:PIM PaceAuthorization|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-26"
+    },
+    "MO PIM:PIM DataAuthoring|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-26"
     }
   },
   "nissan-nsam": {}

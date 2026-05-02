@@ -75,6 +75,7 @@ function getEffectiveStatus(regionId, integName, marketName, statuses) {
   return { ...selfObj, status: rollupStatus, isRollup: true };
 }
 
+
 function calculateProgress(regionId, integName, statuses) {
   const batch = data.integrations.find(i => i.name === integName);
   const region = data.regions.find(r => r.id === regionId);
@@ -130,7 +131,7 @@ async function init() {
       if (!data.statuses[r.id]) data.statuses[r.id] = {};
     });
   } catch (err) { data = { integrations: DEFAULT_INTEGRATIONS, regions: [], statuses: {}, history: [], phases: [], globalStatus: {} }; }
-  
+
   const wrap = document.getElementById('dashboard-wrap');
   const stBtn = document.getElementById('scroll-top-btn');
   if (wrap && stBtn) {
@@ -152,11 +153,14 @@ async function init() {
 
 async function saveData() {
   try {
-    await fetch('/api/data', {
+    console.log("Saving data with globalStatus:", data.globalStatus);
+    const res = await fetch('/api/data', {
       method: 'POST',
       headers: { 'Content-Type': 'application/json' },
       body: JSON.stringify(data)
     });
+    if (!res.ok) console.error("Save error:", res.status, res.statusText);
+    else console.log("Data saved successfully");
   } catch (err) { console.error("Save failed:", err); }
 }
 
@@ -739,7 +743,53 @@ function cycleDashboardStatus(key) {
   const next = STATUSES[(STATUSES.indexOf(cur) + 1) % STATUSES.length];
   if (next === 'none') delete data.globalStatus[key];
   else data.globalStatus[key] = next;
+
+  // If batch with sub-items, update all sub-items to match
+  const batch = data.integrations.find(i => i.name === key);
+  if (batch && batch.subItems?.length) {
+    batch.subItems.forEach(sub => {
+      const subKey = `${key}:${sub}`;
+      if (next === 'none') delete data.globalStatus[subKey];
+      else data.globalStatus[subKey] = next;
+    });
+  }
+
+  // If sub-item, update parent batch status
+  if (key.includes(':')) {
+    const batchName = key.split(':')[0];
+    updateBatchStatusFromGlobal(batchName);
+  }
+
   saveData(); render();
+}
+
+function updateBatchStatusFromGlobal(batchName) {
+  const batch = data.integrations.find(i => i.name === batchName);
+  if (!batch || !batch.subItems?.length) return;
+
+  if (!data.globalStatus) data.globalStatus = {};
+
+  let hasBlocked = false, hasProgress = false, allDone = true, hasStarted = false;
+
+  // Check all sub-items in global status
+  batch.subItems.forEach(sub => {
+    const subKey = `${batchName}:${sub}`;
+    const st = data.globalStatus[subKey] || 'none';
+    if (st === 'blocked') hasBlocked = true;
+    if (st === 'progress') hasProgress = true;
+    if (st !== 'done') allDone = false;
+    if (st !== 'none') hasStarted = true;
+  });
+
+  // Compute rollup status
+  let rollupStatus = 'none';
+  if (hasBlocked) rollupStatus = 'blocked';
+  else if (allDone) rollupStatus = 'done';
+  else if (hasProgress) rollupStatus = 'progress';
+
+  // Update global status
+  if (rollupStatus === 'none') delete data.globalStatus[batchName];
+  else data.globalStatus[batchName] = rollupStatus;
 }
 
 function toggleChecklistBatch(integName) {
@@ -901,6 +951,7 @@ function attachEvents(root) {
 // ── Core Logic ────────────────────────────────────
 
 async function applyBulkStatus(status) {
+  const affectedBatches = new Set();
   selectedCells.forEach(key => {
     const [regionId, integName, marketName] = key.split('|');
     if (!data.statuses[regionId]) data.statuses[regionId] = {};
@@ -911,8 +962,16 @@ async function applyBulkStatus(status) {
     const batch = data.integrations.find(i => i.name === (integName.includes(':') ? integName.split(':')[0] : integName));
     if (batch && batch.subItems?.length && !integName.includes(':')) {
       batch.subItems.forEach(s => { const subK = `${integName}:${s}|${marketName}`; const subEx = getStatusObj(data.statuses[regionId], subK); logHistory(regionId, subK, marketName, subEx.status, status); update(subK, subEx, status); });
+      affectedBatches.add(integName);
+    } else if (integName.includes(':')) {
+      const batchName = integName.split(':')[0];
+      affectedBatches.add(batchName);
     }
   });
+
+  // Update global status for affected batches
+  affectedBatches.forEach(batchName => updateBatchGlobalStatus(batchName));
+
   selectedCells.clear(); bulkMode = false; syncBulkBar(); await saveData(); render();
 }
 
@@ -950,6 +1009,11 @@ function saveCellPanel() {
   update(key, existing, selectedStatus, note);
   const batch = data.integrations.find(i => i.name === integName);
   if (batch && batch.subItems?.length) { batch.subItems.forEach(s => { const subK = `${integName}:${s}|${marketName}`; const subEx = getStatusObj(data.statuses[regionId], subK); logHistory(regionId, subK, marketName, subEx.status, selectedStatus); update(subK, subEx, selectedStatus, subEx.note); }); }
+
+  // Update batch global status
+  const batchName = integName.includes(':') ? integName.split(':')[0] : integName;
+  updateBatchGlobalStatus(batchName);
+
   saveData().then(() => { closePanels(); render(); });
 }
 
@@ -1233,6 +1297,9 @@ function dashboardIntegrationPasses(integName, markets, regionId) {
 
 function phasePassesFilter(phase) {
   if (plannerFilterSearch && !phase.name.toLowerCase().includes(plannerFilterSearch.toLowerCase())) return false;
+  if (plannerHideDone && phase.status === 'done') return false;
+  if (plannerOnlyBlocked && phase.status !== 'blocked') return false;
+  if (plannerOnlyNotes && !phase.note?.trim()) return false;
   if (plannerFilterStatuses.size > 0 && !plannerFilterStatuses.has(phase.status || 'none')) return false;
   if (plannerFilterBatches.size > 0) {
     const hasMatch = (phase.integrations || []).some(integ => plannerFilterBatches.has(integ));

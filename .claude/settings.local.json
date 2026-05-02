@@ -1,0 +1,33 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__Claude_in_Chrome__tabs_context_mcp",
+      "Bash(curl -s http://localhost:5001)",
+      "Bash(curl -s http://localhost:5001/api/data)",
+      "Bash(node -c app.js)",
+      "Bash(pkill -f \"node server.js\")",
+      "Bash(node server.js)",
+      "Bash(curl -s http://localhost:5001/)",
+      "Bash(grep -v \"^--$\")",
+      "Bash(pkill -9 node)",
+      "Bash(killall node *)",
+      "Bash(tee /tmp/server.log)",
+      "Bash(xargs kill *)",
+      "Bash(node -e \"const fs = require\\('fs'\\); fs.writeFileSync\\('test.json', JSON.stringify\\({test: 'works'}, null, 2\\)\\); console.log\\('Write successful'\\); console.log\\(fs.readFileSync\\('test.json', 'utf8'\\)\\);\")",
+      "Bash(awk '{print $2}')",
+      "Bash(killall -9 node)",
+      "Bash(netstat -tlnp)",
+      "Bash(cd \"C:\\\\\\\\Users\\\\\\\\kesav\\\\\\\\OneDrive\\\\\\\\Documents\\\\\\\\Nissan Tracker\\\\\\\\.claude\\\\\\\\worktrees\\\\\\\\heuristic-albattani-b2afbf\\\\\\\\Nissan Tracker\")",
+      "Bash(curl -X POST http://localhost:5001/api/data -H 'Content-Type: application/json' -d '{\"integrations\":[],\"regions\":[],\"statuses\":{},\"history\":[],\"globalStatus\":{\"Batch A\":\"progress\",\"Batch B\":\"done\"}}')",
+      "Bash(curl -X POST http://localhost:5001/api/data -H 'Content-Type: application/json' -d '{\"integrations\":[],\"regions\":[],\"statuses\":{},\"history\":[],\"globalStatus\":{\"TestBatch\":\"progress\"}}')",
+      "Bash(taskkill /F /IM node.exe)",
+      "Bash(kill -9 1071)",
+      "Bash(curl -s -X POST http://localhost:5001/api/data -H 'Content-Type: application/json' -d '{\"integrations\":[],\"regions\":[],\"statuses\":{},\"history\":[],\"globalStatus\":{\"TestBatch\":\"progress\"}}')",
+      "Bash(kill -9 1403)",
+      "mcp__Claude_Preview__preview_start",
+      "Bash(curl -s -X POST http://localhost:5001/api/data -H 'Content-Type: application/json' -d '{ *)",
+      "Bash(git add *)",
+      "Bash(git commit -m ' *)"
+    ]
+  }
+}

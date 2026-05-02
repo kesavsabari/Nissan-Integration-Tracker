@@ -1,0 +1,6892 @@
+{
+  "infiniti-asean": {
+    "Batch A:V2 Offers|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Taiwan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|China": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Vietnam": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-eur": {
+    "Batch A:V2 Offers|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-global": {
+    "Batch A:V2 Offers|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|INFINITI Global": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-israel": {
+    "Batch A:V2 Offers|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|I-Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|I - Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-latam": {
+    "Batch A:V2 Offers|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-me": {
+    "Batch A:V2 Offers|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Regional I-ME": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Regional I-ME website": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-na": {
+    "Batch A:V2 Offers|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "infiniti-nibu": {
+    "Batch A:V2 Offers|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "insc-1777055272": {
+    "Batch A:V2 Offers|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-ami": {
+    "Batch A:V2 Offers|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Algeria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bangladesh": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Egypt": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|India": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Morocco": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Saudi Arabia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|South Africa": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-amieo": {
+    "Batch A:V2 Offers|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Australia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|New Zealand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-asean": {
+    "MO PIM|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM PaceAuthorization|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM DataAuthoring|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Authorization|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Data|Hong Kong": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Authorization|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Americas:UserRecognition Data|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM PaceAuthorization|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM:PIM DataAuthoring|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan GuestServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan FinancialServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan FinanceSimulation|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan OwnerServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan OwnerServicesVehicles|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan LocationServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan LoginServices|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO Japan:Japan MyNissan|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:VegaCRM Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:VegaCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SugarCRM Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SugarCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Salesforce Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Salesforce Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:ZohoCRM Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:ZohoCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:MS Dynamics Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:MS Dynamics Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:NNA Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:NNA Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:CEBIP|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:Nissan Europe ESB|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch G:SCV Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Leads V2|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Adobe Campaign Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Adobe Campaign Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:MS Dynamics Yana Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:MS Dynamics Yana Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Datadise Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Datadise Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Lead Mgmt WR3FE11|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:Lead Mgmt WRSFE10|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:NCI Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch F:NCI Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Login|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:AutoCRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:SICOP Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:LMT MS Dynamics Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:KR CRM Store|Indonesia": {
+      "status": "none",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch A:V2 Offers|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Thailand": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Philippines": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Singapore": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Hong Kong": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Indonesia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Korea": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Nissan Trading": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Malaysia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-eur": {
+    "Batch A:V2 Offers|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Kazakhstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Belgium": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Denmark": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Finland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|France": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Germany": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Italy": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Luxembourg": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Netherlands": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Norway": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Russia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Spain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Sweden": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Turkey": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Ukraine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|United Kingdom": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|KAZAKHSTAN": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-insc": {
+    "Batch A:V2 Offers|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Azerbaijan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Austria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bulgaria": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Croatia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Cyprus": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Czech Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Estonia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|French Guiana": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Georgia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Greece": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Guadeloupe": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Hungary": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Iceland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Ireland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Israel": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Latvia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Lithuania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Malta": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Martinique": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Palestine": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Poland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Portugal": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Reunion": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Romania": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Serbia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Slovakia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Slovenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Switzerland": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-latam": {
+    "Batch A:V2 Offers|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Mexico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-na": {
+    "Batch A:V2 Offers|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|United States": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Canada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-nibu": {
+    "Batch A:V2 Offers|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bahamas": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Barbados": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bolivia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Colombia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Costa Rica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Curacao": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Dominican Republic": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Ecuador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|El Salvador": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Grenada": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Guatemala": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Haiti": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Honduras": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Jamaica": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Nicaragua": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Panama": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Paraguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Puerto Rico": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Trinidad & Tobago": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Uruguay": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-nmef": {
+    "Batch A:V2 Offers|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Armenia": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|UAE Abu Dhabi": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|UAE Dubai": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Kuwait": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Bahrain": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Iraq": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Jordan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Kyrgyzstan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Lebanon": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|NMEF Hub": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Oman": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Qatar": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Middle East": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Tajikistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Turkmenistan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-nml": {
+    "Batch H|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:Workato Login|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Login|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CDR Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Login|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Login|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:EU Adobe Campaign Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Login|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:CA Opportunity Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:AutoCRM Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:SICOP Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:LMT MS Dynamics Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "Batch H:KR CRM Store|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-25"
+    },
+    "MO PIM|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-26"
+    },
+    "MO PIM:PIM PaceAuthorization|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-26"
+    },
+    "MO PIM:PIM DataAuthoring|Japan": {
+      "status": "done",
+      "note": "",
+      "updatedAt": "2026-04-26"
+    },
+    "Batch A:V2 Offers|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Japan": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  },
+  "nissan-nsam": {
+    "Batch A:V2 Offers|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Offers|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 eim2spec|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Login|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:One10 Store|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Batch A:V2 Models|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Argentina": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Brazil": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Chile": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V1 Dealer|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    },
+    "Dealer:V2 Dealer|Peru": {
+      "status": "progress",
+      "note": "",
+      "updatedAt": "2026-05-02"
+    }
+  }
+}
