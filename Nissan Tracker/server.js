@@ -14,7 +14,8 @@ const FILES = {
   regions: path.join(DATA_DIR, 'regions.json'),
   statuses: path.join(DATA_DIR, 'statuses.json'),
   history: path.join(DATA_DIR, 'history.json'),
-  phases: path.join(DATA_DIR, 'phases.json')
+  phases: path.join(DATA_DIR, 'phases.json'),
+  globalStatus: path.join(DATA_DIR, 'globalStatus.json')
 };
 
 // Bootstrap: Ensure data files exist in DATA_DIR
@@ -133,7 +134,7 @@ const server = http.createServer(async (req, res) => {
         await createBackup();
 
         for (const key in FILES) {
-          if (data[key]) {
+          if (data[key] !== undefined) {
             await writeFile(FILES[key], JSON.stringify(data[key], null, 2), 'utf8');
           }
         }
