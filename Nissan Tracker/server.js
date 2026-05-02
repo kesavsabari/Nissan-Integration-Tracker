@@ -4,17 +4,37 @@ const path = require('path');
 const zlib = require('zlib');
 const { promisify } = require('util');
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 const DIRECTORY = __dirname;
-const BACKUP_DIR = path.join(DIRECTORY, 'backups');
+const DATA_DIR = process.env.DATA_DIR || DIRECTORY;
+const BACKUP_DIR = path.join(DATA_DIR, 'backups');
 
 const FILES = {
-  integrations: path.join(DIRECTORY, 'integrations.json'),
-  regions: path.join(DIRECTORY, 'regions.json'),
-  statuses: path.join(DIRECTORY, 'statuses.json'),
-  history: path.join(DIRECTORY, 'history.json'),
-  phases: path.join(DIRECTORY, 'phases.json')
+  integrations: path.join(DATA_DIR, 'integrations.json'),
+  regions: path.join(DATA_DIR, 'regions.json'),
+  statuses: path.join(DATA_DIR, 'statuses.json'),
+  history: path.join(DATA_DIR, 'history.json'),
+  phases: path.join(DATA_DIR, 'phases.json')
 };
+
+// Bootstrap: Ensure data files exist in DATA_DIR
+async function bootstrap() {
+  if (!fs.existsSync(DATA_DIR)) {
+    await mkdir(DATA_DIR, { recursive: true });
+  }
+  
+  for (const key in FILES) {
+    const targetPath = FILES[key];
+    const fileName = path.basename(targetPath);
+    const sourcePath = path.join(DIRECTORY, fileName);
+    
+    // If file doesn't exist in DATA_DIR but exists in root, copy it
+    if (!fs.existsSync(targetPath) && fs.existsSync(sourcePath) && targetPath !== sourcePath) {
+      console.log(`Bootstrapping ${fileName} to ${DATA_DIR}...`);
+      await copyFile(sourcePath, targetPath);
+    }
+  }
+}
 
 let lastBackupTime = 0;
 const BACKUP_THROTTLE = 300000; // 5 minutes in ms
@@ -149,7 +169,9 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
-  console.log(`Nissan Integration Tracker running at http://localhost:${PORT}`);
-  console.log('100% Zero-Dependency Node.js Mode Active');
+bootstrap().then(() => {
+  server.listen(PORT, () => {
+    console.log(`Nissan Integration Tracker running at http://localhost:${PORT}`);
+    console.log('100% Zero-Dependency Node.js Mode Active');
+  });
 });
