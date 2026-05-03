@@ -4,7 +4,7 @@ const path = require('path');
 const zlib = require('zlib');
 const { promisify } = require('util');
 
-const PORT = 5001;
+const PORT = process.env.PORT || 5001;
 const DIRECTORY = __dirname;
 const BACKUP_DIR = path.join(DIRECTORY, 'backups');
 
@@ -151,7 +151,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-server.listen(PORT, () => {
+server.listen(PORT, "0.0.0.0", () => {
   console.log(`Nissan Integration Tracker running at http://localhost:${PORT}`);
   console.log('100% Zero-Dependency Node.js Mode Active');
 });
