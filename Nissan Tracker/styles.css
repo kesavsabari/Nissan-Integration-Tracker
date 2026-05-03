@@ -1370,38 +1370,53 @@ input[type="date"].activity-input {
 }
 
 @media (max-width: 768px) {
-  header { flex-direction: column; gap: 12px; padding: 12px; }
+  body { overflow: auto; height: auto; min-height: 100vh; }
+  header { flex-direction: column; gap: 10px; padding: 10px; }
   .header-left { gap: 8px; }
-  .header-title { font-size: 16px; }
-  .header-nav { gap: 6px; font-size: 13px; flex-wrap: wrap; }
+  .header-title { font-size: 14px; }
+  .header-nav { gap: 4px; font-size: 12px; flex-wrap: wrap; justify-content: center; }
   .nav-sep { display: none; }
-  .legend { gap: 8px; font-size: 11px; }
-  .legend-item { gap: 4px; }
+  .legend { gap: 6px; font-size: 10px; flex-wrap: wrap; justify-content: center; }
+  .legend-item { gap: 3px; }
 
-  main { flex-direction: column; }
+  main { flex-direction: column; overflow: visible; height: auto; }
+  #dashboard-wrap {
+    order: 1;
+    padding: 8px;
+    overflow: visible;
+    height: auto;
+    max-height: none;
+  }
   .filter-sidebar {
+    order: 2;
     width: 100%;
     border-left: none;
-    border-top: 1px solid var(--border);
-    max-height: 200px;
-    overflow-y: auto;
+    border-top: 2px solid var(--border);
     padding: 12px;
-    order: 2;
+    max-height: none;
+    overflow-y: visible;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 12px;
   }
-  #dashboard-wrap { order: 1; padding: 8px; }
+  .filter-sidebar .filter-section { flex: 1 1 calc(50% - 12px); min-width: 140px; }
+  .filter-sidebar .filter-heading { width: 100%; }
+
   .checklist-wrap { margin: 0; border-radius: 6px; }
   .checklist-header { padding: 12px 16px; }
+  .checklist-title { font-size: 16px; }
   .checklist-table { font-size: 12px; }
   .cl-th, .cl-name-cell, .cl-cell { padding: 6px 8px; font-size: 11px; }
+  .cl-status-btn { width: 22px; height: 22px; }
 
-  .filter-sidebar { display: none; }
-  .filter-sidebar.visible { display: flex; }
-
-  .side-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; border-radius: 12px 12px 0 0; max-height: 80vh; }
+  .side-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; top: auto; border-radius: 12px 12px 0 0; max-height: 85vh; }
 
   .region-block { margin: 8px 0; }
   .th-market-inner { gap: 2px; }
   .status-cell { width: 32px; padding: 4px; }
+
+  .planner-wrap { padding: 12px; }
+  .phases-grid { grid-template-columns: 1fr !important; }
 }
 
 @media (max-width: 480px) {

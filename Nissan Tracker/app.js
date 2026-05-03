@@ -1404,34 +1404,3 @@ function closePanels()    { document.getElementById('panel-overlay').classList.a
 function closeCellPanel() { cellState = null;  document.getElementById('cell-panel').classList.add('hidden'); }
 function closeIntegPanel(){ integState = null; document.getElementById('integ-panel').classList.add('hidden'); }
 
-function initMobileUI() {
-  const toggle = document.getElementById('mobile-filter-toggle');
-  const btn = document.getElementById('mobile-filter-btn');
-  if (!toggle || !btn) return;
-
-  const updateMobileView = () => {
-    const isMobile = window.innerWidth <= 768;
-    toggle.style.display = isMobile ? 'block' : 'none';
-    if (!isMobile) {
-      const dashSidebar = document.getElementById('dashboard-filter-sidebar');
-      const planSidebar = document.getElementById('planner-filter-sidebar');
-      if (dashSidebar) dashSidebar.classList.remove('visible');
-      if (planSidebar) planSidebar.classList.remove('visible');
-    }
-  };
-
-  btn.onclick = () => {
-    const dashSidebar = document.getElementById('dashboard-filter-sidebar');
-    const planSidebar = document.getElementById('planner-filter-sidebar');
-    if (currentView === 'dashboard' && dashSidebar) {
-      dashSidebar.classList.toggle('visible');
-    } else if (currentView === 'planner' && planSidebar) {
-      planSidebar.classList.toggle('visible');
-    }
-  };
-
-  window.addEventListener('resize', updateMobileView);
-  updateMobileView();
-}
-
-setTimeout(initMobileUI, 100);
