@@ -346,8 +346,12 @@ function renderDashboard() {
   const container = document.getElementById('dashboard'); if (!container) return;
   const gs = data.globalStatus || {};
 
-  // Filter integrations based on dashboard filters
+  // Filter integrations based on brand and dashboard filters
   const filteredIntegrations = data.integrations.filter(integ => {
+    // Brand filter (default missing brand to Nissan)
+    const integBrand = integ.brand || 'Nissan';
+    if (integBrand !== activeBrand) return false;
+
     const st = gs[integ.name] || 'none';
     // Apply status filters
     if (dashboardFilterStatuses.size > 0 && !dashboardFilterStatuses.has(st)) return false;
@@ -1345,7 +1349,7 @@ function commitEdit(raw) {
   else if (type === 'edit-market-group') { const r = data.regions.find(reg => reg.id === regionId); if (r) { const m = r.markets.find(m => m.name === marketName); if (m) m.group = value || null; } }
   else if (type === 'add-region') data.regions.push({ id: slug(value), brand: activeBrand, name: value, markets: [] });
   else if (type === 'add-market') { const r = data.regions.find(reg => reg.id === regionId); if (r && !r.markets.find(m => m.name.toLowerCase() === value.toLowerCase())) r.markets.push({ name: value, group: null }); }
-  else if (type === 'add-integ') { if (!data.integrations.find(i => i.name.toLowerCase() === value.toLowerCase())) data.integrations.push({ name: value, subItems: [], description: '', createdAt: today(), updatedAt: today() }); }
+  else if (type === 'add-integ') { if (!data.integrations.find(i => i.name.toLowerCase() === value.toLowerCase() && (i.brand || 'Nissan') === activeBrand)) data.integrations.push({ name: value, subItems: [], description: '', brand: activeBrand, createdAt: today(), updatedAt: today() }); }
   saveData().then(() => render());
 }
 
