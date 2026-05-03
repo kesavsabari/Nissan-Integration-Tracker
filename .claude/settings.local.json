@@ -45,7 +45,17 @@
       "Bash(git commit -m 'Restore full batch data from backup *)",
       "Bash(git commit -m 'Add mobile-responsive design for phone support *)",
       "Bash(git commit -m 'Force mobile layout with !important for reliable phone rendering *)",
-      "Bash(git commit -m 'Prevent horizontal overflow that was scaling mobile viewport *)"
+      "Bash(git commit -m 'Prevent horizontal overflow that was scaling mobile viewport *)",
+      "Bash(xargs -r kill -9)",
+      "Bash(curl -s http://localhost:5001/styles.css)",
+      "Bash(cp 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\.claude\\\\worktrees\\\\heuristic-albattani-b2afbf\\\\Nissan Tracker/styles.css' 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\Nissan Tracker/styles.css')",
+      "Bash(cp 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\.claude\\\\worktrees\\\\heuristic-albattani-b2afbf\\\\Nissan Tracker/app.js' 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\Nissan Tracker/app.js')",
+      "Bash(cp 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\.claude\\\\worktrees\\\\heuristic-albattani-b2afbf\\\\Nissan Tracker/index.html' 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\Nissan Tracker/index.html')",
+      "Bash(cp 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\.claude\\\\worktrees\\\\heuristic-albattani-b2afbf\\\\Nissan Tracker/server.js' 'C:\\\\Users\\\\kesav\\\\OneDrive\\\\Documents\\\\Nissan Tracker\\\\Nissan Tracker/server.js')",
+      "Bash(cd \"C:\\\\\\\\Users\\\\\\\\kesav\\\\\\\\OneDrive\\\\\\\\Documents\\\\\\\\Nissan Tracker\\\\\\\\Nissan Tracker\")",
+      "Bash(grep -c '\"name\": \"' integrations.json)",
+      "Bash(echo \"\")",
+      "Bash(echo \"init\\(\\);\")"
     ]
   }
 }

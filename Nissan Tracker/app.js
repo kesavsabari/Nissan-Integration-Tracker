@@ -497,13 +497,13 @@ function renderPlannerView() {
       <div class="phase-progress-bar">
         <div class="phase-progress-fill" style="width:${progress}%"></div>
       </div>
-      <div style="margin-bottom:8px;">
-        <div style="font-size:11px; font-weight:600; color:var(--muted); margin-bottom:6px;">INTEGRATIONS (${integCount})</div>
-        <div class="phase-integ-pills">${integPills || '<span class="phase-no-integ">No integrations</span>'}</div>
+      <div style="display:flex; align-items:flex-start; gap:8px; margin-bottom:6px;">
+        <div style="font-size:11px; font-weight:600; color:var(--muted); flex-shrink:0; min-width:90px; padding-top:4px;">INTEGRATIONS (${integCount})</div>
+        <div class="phase-integ-pills" style="flex:1;">${integPills || '<span class="phase-no-integ">No integrations</span>'}</div>
       </div>
-      <div style="margin-bottom:8px;">
-        <div style="font-size:11px; font-weight:600; color:var(--muted); margin-bottom:6px;">REGIONS</div>
-        <div class="phase-regions-row">${regionTiles || '<span class="phase-no-integ">No regions assigned</span>'}</div>
+      <div style="display:flex; align-items:flex-start; gap:8px; margin-bottom:6px;">
+        <div style="font-size:11px; font-weight:600; color:var(--muted); flex-shrink:0; min-width:90px; padding-top:4px;">REGIONS</div>
+        <div class="phase-regions-row" style="flex:1;">${regionTiles || '<span class="phase-no-integ">No regions assigned</span>'}</div>
       </div>
     </div>`;
   };
@@ -1404,3 +1404,5 @@ function closePanels()    { document.getElementById('panel-overlay').classList.a
 function closeCellPanel() { cellState = null;  document.getElementById('cell-panel').classList.add('hidden'); }
 function closeIntegPanel(){ integState = null; document.getElementById('integ-panel').classList.add('hidden'); }
 
+
+init();
