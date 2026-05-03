@@ -352,7 +352,7 @@ function renderDashboard() {
     const integBrand = integ.brand || 'Nissan';
     if (integBrand !== activeBrand) return false;
 
-    const st = gs[integ.name] || 'none';
+    const st = gs[gsKey(integ.name)] || 'none';
     // Apply status filters
     if (dashboardFilterStatuses.size > 0 && !dashboardFilterStatuses.has(st)) return false;
     // Apply special filters
@@ -362,13 +362,13 @@ function renderDashboard() {
   });
 
   const totalSubs = filteredIntegrations.reduce((a, i) => a + (i.subItems?.length || 0), 0);
-  const doneCount = filteredIntegrations.filter(i => gs[i.name] === 'done').length;
+  const doneCount = filteredIntegrations.filter(i => gs[gsKey(i.name)] === 'done').length;
   let rows = '';
   filteredIntegrations.forEach(integ => {
     const overdue = isOverdue(integ.prodDate, 'none');
     const subCnt = integ.subItems?.length || 0;
     const isExp = expandedBatches.has(`cl|${integ.name}`);
-    const st = gs[integ.name] || 'none';
+    const st = gs[gsKey(integ.name)] || 'none';
     rows += `<tr class="cl-row${overdue ? ' cl-row-overdue' : ''}">
       <td class="cl-status-cell">
         <button class="cl-status-btn ${st}" data-action="cycle-status" data-integ="${esc(integ.name)}" title="${STATUS_LABELS[st]}"></button>
@@ -388,7 +388,7 @@ function renderDashboard() {
     if (isExp && subCnt > 0) {
       integ.subItems.forEach(sub => {
         const subKey = `${integ.name}:${sub}`;
-        const subSt = gs[subKey] || 'none';
+        const subSt = gs[gsKey(subKey)] || 'none';
         rows += `<tr class="cl-sub-row">
           <td class="cl-status-cell"><button class="cl-status-btn ${subSt} cl-status-sm" data-action="cycle-status" data-integ="${esc(subKey)}" title="${STATUS_LABELS[subSt]}"></button></td>
           <td class="cl-name-cell" colspan="5"><div class="cl-name-inner" style="padding-left:36px"><span class="sub-item-label" data-action="open-integ" data-region="" data-integ="${esc(subKey)}">${esc(sub)}</span></div></td>
@@ -741,18 +741,21 @@ function deletePhaseFromPanel() {
 
 function closePhasePanel() { phaseState = null; const el = document.getElementById('phase-panel'); if (el) el.classList.add('hidden'); }
 
+function gsKey(name) { return `${activeBrand}|${name}`; }
+
 function cycleDashboardStatus(key) {
   if (!data.globalStatus) data.globalStatus = {};
-  const cur = data.globalStatus[key] || 'none';
+  const fullKey = gsKey(key);
+  const cur = data.globalStatus[fullKey] || 'none';
   const next = STATUSES[(STATUSES.indexOf(cur) + 1) % STATUSES.length];
-  if (next === 'none') delete data.globalStatus[key];
-  else data.globalStatus[key] = next;
+  if (next === 'none') delete data.globalStatus[fullKey];
+  else data.globalStatus[fullKey] = next;
 
   // If batch with sub-items, update all sub-items to match
-  const batch = data.integrations.find(i => i.name === key);
+  const batch = data.integrations.find(i => i.name === key && (i.brand || 'Nissan') === activeBrand);
   if (batch && batch.subItems?.length) {
     batch.subItems.forEach(sub => {
-      const subKey = `${key}:${sub}`;
+      const subKey = gsKey(`${key}:${sub}`);
       if (next === 'none') delete data.globalStatus[subKey];
       else data.globalStatus[subKey] = next;
     });
@@ -768,7 +771,7 @@ function cycleDashboardStatus(key) {
 }
 
 function updateBatchStatusFromGlobal(batchName) {
-  const batch = data.integrations.find(i => i.name === batchName);
+  const batch = data.integrations.find(i => i.name === batchName && (i.brand || 'Nissan') === activeBrand);
   if (!batch || !batch.subItems?.length) return;
 
   if (!data.globalStatus) data.globalStatus = {};
@@ -777,7 +780,7 @@ function updateBatchStatusFromGlobal(batchName) {
 
   // Check all sub-items in global status
   batch.subItems.forEach(sub => {
-    const subKey = `${batchName}:${sub}`;
+    const subKey = gsKey(`${batchName}:${sub}`);
     const st = data.globalStatus[subKey] || 'none';
     if (st === 'blocked') hasBlocked = true;
     if (st === 'progress') hasProgress = true;
@@ -792,8 +795,9 @@ function updateBatchStatusFromGlobal(batchName) {
   else if (hasProgress) rollupStatus = 'progress';
 
   // Update global status
-  if (rollupStatus === 'none') delete data.globalStatus[batchName];
-  else data.globalStatus[batchName] = rollupStatus;
+  const batchKey = gsKey(batchName);
+  if (rollupStatus === 'none') delete data.globalStatus[batchKey];
+  else data.globalStatus[batchKey] = rollupStatus;
 }
 
 function toggleChecklistBatch(integName) {
