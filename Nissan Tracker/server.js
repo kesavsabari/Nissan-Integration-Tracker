@@ -4,38 +4,18 @@ const path = require('path');
 const zlib = require('zlib');
 const { promisify } = require('util');
 
-const PORT = process.env.PORT || 5001;
+const PORT = 5001;
 const DIRECTORY = __dirname;
-const DATA_DIR = process.env.DATA_DIR || DIRECTORY;
-const BACKUP_DIR = path.join(DATA_DIR, 'backups');
+const BACKUP_DIR = path.join(DIRECTORY, 'backups');
 
 const FILES = {
-  integrations: path.join(DATA_DIR, 'integrations.json'),
-  regions: path.join(DATA_DIR, 'regions.json'),
-  statuses: path.join(DATA_DIR, 'statuses.json'),
-  history: path.join(DATA_DIR, 'history.json'),
-  phases: path.join(DATA_DIR, 'phases.json'),
-  globalStatus: path.join(DATA_DIR, 'globalStatus.json')
+  integrations: path.join(DIRECTORY, 'integrations.json'),
+  regions: path.join(DIRECTORY, 'regions.json'),
+  statuses: path.join(DIRECTORY, 'statuses.json'),
+  history: path.join(DIRECTORY, 'history.json'),
+  globalStatus: path.join(DIRECTORY, 'globalStatus.json'),
+  phases: path.join(DIRECTORY, 'phases.json')
 };
-
-// Bootstrap: Ensure data files exist in DATA_DIR
-async function bootstrap() {
-  if (!fs.existsSync(DATA_DIR)) {
-    await mkdir(DATA_DIR, { recursive: true });
-  }
-  
-  for (const key in FILES) {
-    const targetPath = FILES[key];
-    const fileName = path.basename(targetPath);
-    const sourcePath = path.join(DIRECTORY, fileName);
-    
-    // If file doesn't exist in DATA_DIR but exists in root, copy it
-    if (!fs.existsSync(targetPath) && fs.existsSync(sourcePath) && targetPath !== sourcePath) {
-      console.log(`Bootstrapping ${fileName} to ${DATA_DIR}...`);
-      await copyFile(sourcePath, targetPath);
-    }
-  }
-}
 
 let lastBackupTime = 0;
 const BACKUP_THROTTLE = 300000; // 5 minutes in ms
@@ -109,8 +89,7 @@ function sendCompressed(req, res, content, contentType) {
 }
 
 const server = http.createServer(async (req, res) => {
-  let url = req.url.split('?')[0];
-  url = url === '/' ? '/index.html' : url;
+  const url = req.url === '/' ? '/index.html' : req.url;
 
   if (url === '/api/data' && req.method === 'GET') {
     const data = {};
@@ -118,7 +97,7 @@ const server = http.createServer(async (req, res) => {
       if (fs.existsSync(FILES[key])) {
         data[key] = JSON.parse(await readFile(FILES[key], 'utf8'));
       } else {
-        data[key] = key === 'statuses' ? {} : [];
+        data[key] = (key === 'statuses' || key === 'globalStatus') ? {} : [];
       }
     }
     sendCompressed(req, res, JSON.stringify(data), 'application/json');
@@ -142,6 +121,7 @@ const server = http.createServer(async (req, res) => {
         res.writeHead(200, { 'Content-Type': 'application/json' });
         res.end(JSON.stringify({ ok: true }));
       } catch (err) {
+        console.error('POST error:', err.message);
         res.writeHead(400);
         res.end(err.message);
       }
@@ -171,9 +151,7 @@ const server = http.createServer(async (req, res) => {
   }
 });
 
-bootstrap().then(() => {
-  server.listen(PORT, () => {
-    console.log(`Nissan Integration Tracker running at http://localhost:${PORT}`);
-    console.log('100% Zero-Dependency Node.js Mode Active');
-  });
+server.listen(PORT, () => {
+  console.log(`Nissan Integration Tracker running at http://localhost:${PORT}`);
+  console.log('100% Zero-Dependency Node.js Mode Active');
 });
