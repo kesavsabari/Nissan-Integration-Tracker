@@ -1164,10 +1164,10 @@ function renderSummaryView() {
 
   // --- Roadmap Section ---
   const brandIntegrations = data.integrations.filter(i => (i.brand || 'Nissan') === activeBrand);
+  const gs = data.globalStatus || {};
   const roadmapHtml = brandIntegrations.map(integ => {
     const progress = calculateGlobalBatchProgress(integ.name);
-    const regionalStatuses = getBatchRegionalStatuses(integ.name);
-    
+
     const milestones = [
       { label: 'Dev Start', p: integ.devStart, a: integ.actDevStart },
       { label: 'Dev End',   p: integ.devEnd,   a: integ.actDevEnd },
@@ -1183,11 +1183,11 @@ function renderSummaryView() {
       return `<div class="roadmap-step ${statusClass}"><div class="roadmap-dot"></div><div class="roadmap-label">${m.label}</div><div class="roadmap-date">${dateDisplay}</div>${m.a ? '<div style="font-size:8px; color:var(--done); font-weight:800; margin-top:-2px">ACTUAL</div>' : ''}</div>`;
     }).join('');
 
-    const regionsHtml = regionalStatuses.map(rs => `
-      <div class="region-mini-pill ${rs.status}">
-        <b>${esc(rs.name)}</b> ${rs.status.toUpperCase()}
-      </div>
-    `).join('');
+    // Show sub-item statuses instead of regions
+    const subItemsHtml = (integ.subItems || []).map(sub => {
+      const st = gs[`${activeBrand}|${integ.name}:${sub}`] || 'none';
+      return `<div class="region-mini-pill ${st}"><b>${esc(sub)}</b> ${(st === 'none' ? 'NOT STARTED' : st.toUpperCase())}</div>`;
+    }).join('');
 
     return `
       <div class="roadmap-card">
@@ -1201,26 +1201,11 @@ function renderSummaryView() {
             <div class="roadmap-line-fill" style="width: ${progress}%"></div>
             ${stepsHtml}
           </div>
-          <div class="roadmap-regions">
-            ${regionsHtml}
-          </div>
+          ${subItemsHtml ? `<div class="roadmap-regions">${subItemsHtml}</div>` : ''}
         </div>
       </div>`;
   }).join('');
-  const regionRows = data.regions.filter(r => r.brand === activeBrand).map(r => {
-    const statuses = data.statuses[r.id] || {};
-    let counts = { done: 0, progress: 0, blocked: 0, none: 0 };
-    brandIntegrations.forEach(integ => {
-      const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
-      items.forEach(name => { r.markets.forEach(m => { const st = getStatusObj(statuses, `${name}|${m.name}`).status; counts[st]++; }); });
-    });
-    const total = counts.done + counts.progress + counts.blocked + counts.none;
-    const getP = (val) => total === 0 ? 0 : (val / total) * 100;
-    const rPercent = total === 0 ? 0 : Math.round(getP(counts.done));
-    return `<tr><td class="rpt-name">${esc(r.name)}</td><td>${r.markets.length}</td><td class="rpt-progress-cell"><div class="status-stack"><div class="stack-segment done summary-bar" data-width="${getP(counts.done)}" style="width:0%" title="Done: ${counts.done}"></div><div class="stack-segment progress summary-bar" data-width="${getP(counts.progress)}" style="width:0%" title="In Progress: ${counts.progress}"></div><div class="stack-segment blocked summary-bar" data-width="${getP(counts.blocked)}" style="width:0%" title="Blocked: ${counts.blocked}"></div><div class="stack-segment none summary-bar" data-width="${getP(counts.none)}" style="width:0%" title="Not Started: ${counts.none}"></div></div><span class="rpt-percent">${rPercent}%</span></td></tr>`;
-  }).join('');
-  container.innerHTML = brandSwitcher + `<div class="kpi-grid"><div class="kpi-card"><div class="kpi-label">Overall Progress</div><div class="kpi-value">${stats.percent}%</div><div class="kpi-sub">${stats.done} of ${stats.total} items completed</div></div><div class="kpi-card"><div class="kpi-label">Blocked Items</div><div class="kpi-value" style="color:var(--blocked)">${stats.blocked}</div><div class="kpi-sub">Items requiring immediate attention</div></div><div class="kpi-card"><div class="kpi-label">Overdue Milestones</div><div class="kpi-value" style="color:var(--blocked)">${stats.overdue}</div><div class="kpi-sub">Batches past Planned Production date</div></div></div><div class="summary-section" style="margin-top:32px"><div class="summary-section-header"><div class="summary-section-title">Global Batch Roadmaps</div></div><div style="padding: 24px; background: var(--subtle)">${roadmapHtml}</div></div><div class="summary-section" style="margin-top:32px"><div class="summary-section-header"><div class="summary-section-title">Regional Completion Breakdown (${activeBrand})</div></div><table class="region-progress-table"><thead><tr><th>Region</th><th>Markets</th><th>Distribution Status</th></tr></thead><tbody>${regionRows}</tbody></table></div>`;
-  requestAnimationFrame(() => { container.querySelectorAll('.summary-bar').forEach(bar => { bar.style.width = bar.dataset.width + '%'; }); });
+  container.innerHTML = brandSwitcher + `<div class="kpi-grid"><div class="kpi-card"><div class="kpi-label">Overall Progress</div><div class="kpi-value">${stats.percent}%</div><div class="kpi-sub">${stats.done} of ${stats.total} items completed</div></div><div class="kpi-card"><div class="kpi-label">Blocked Items</div><div class="kpi-value" style="color:var(--blocked)">${stats.blocked}</div><div class="kpi-sub">Items requiring immediate attention</div></div><div class="kpi-card"><div class="kpi-label">Overdue Milestones</div><div class="kpi-value" style="color:var(--blocked)">${stats.overdue}</div><div class="kpi-sub">Batches past Planned Production date</div></div></div><div class="summary-section" style="margin-top:32px"><div class="summary-section-header"><div class="summary-section-title">Global Batch Roadmaps</div></div><div style="padding: 24px; background: var(--subtle)">${roadmapHtml}</div></div>`;
 }
 
 function debounce(fn, delay) {
