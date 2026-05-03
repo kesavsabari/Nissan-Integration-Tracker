@@ -1098,30 +1098,31 @@ function saveIntegPanel() {
 // ── Reporting & Filters ───────────────────────────
 
 function getGlobalStats() {
+  // Use dashboard globalStatus for stats
+  const gs = data.globalStatus || {};
+  const brandIntegs = data.integrations.filter(i => (i.brand || 'Nissan') === activeBrand);
   let total = 0, done = 0, blocked = 0, overdueCount = 0;
-  const regions = data.regions.filter(r => r.brand === activeBrand);
-  regions.forEach(r => {
-    const statuses = data.statuses[r.id] || {};
-    data.integrations.forEach(integ => {
-      const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
-      items.forEach(name => { r.markets.forEach(m => { total++; const st = getStatusObj(statuses, `${name}|${m.name}`).status; if (st === 'done') done++; if (st === 'blocked') blocked++; }); });
-      if (integ.prodDate && isOverdue(integ.prodDate, 'none')) overdueCount++;
-    });
+  brandIntegs.forEach(integ => {
+    total++;
+    const st = gs[`${activeBrand}|${integ.name}`] || 'none';
+    if (st === 'done') done++;
+    if (st === 'blocked') blocked++;
+    if (integ.prodDate && isOverdue(integ.prodDate, 'none') && st !== 'done') overdueCount++;
   });
   return { percent: total === 0 ? 0 : Math.round((done / total) * 100), done, blocked, overdue: overdueCount, total };
 }
 
 function calculateGlobalBatchProgress(integName) {
-  let total = 0, done = 0;
-  const regions = data.regions.filter(r => r.brand === activeBrand);
-  regions.forEach(r => {
-    const statuses = data.statuses[r.id] || {};
-    const integ = data.integrations.find(i => i.name === integName);
-    if (!integ) return;
-    const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
-    items.forEach(name => { r.markets.forEach(m => { total++; if (getStatusObj(statuses, `${name}|${m.name}`).status === 'done') done++; }); });
-  });
-  return total === 0 ? 0 : Math.round((done / total) * 100);
+  // Use dashboard globalStatus for batch progress
+  const gs = data.globalStatus || {};
+  const integ = data.integrations.find(i => i.name === integName && (i.brand || 'Nissan') === activeBrand);
+  if (!integ) return 0;
+  if (!integ.subItems?.length) {
+    return gs[`${activeBrand}|${integName}`] === 'done' ? 100 : 0;
+  }
+  const total = integ.subItems.length;
+  const done = integ.subItems.filter(s => gs[`${activeBrand}|${integName}:${s}`] === 'done').length;
+  return Math.round((done / total) * 100);
 }
 
 function getBatchRegionalStatuses(integName) {
@@ -1162,7 +1163,8 @@ function renderSummaryView() {
   </div>`;
 
   // --- Roadmap Section ---
-  const roadmapHtml = data.integrations.map(integ => {
+  const brandIntegrations = data.integrations.filter(i => (i.brand || 'Nissan') === activeBrand);
+  const roadmapHtml = brandIntegrations.map(integ => {
     const progress = calculateGlobalBatchProgress(integ.name);
     const regionalStatuses = getBatchRegionalStatuses(integ.name);
     
@@ -1208,7 +1210,7 @@ function renderSummaryView() {
   const regionRows = data.regions.filter(r => r.brand === activeBrand).map(r => {
     const statuses = data.statuses[r.id] || {};
     let counts = { done: 0, progress: 0, blocked: 0, none: 0 };
-    data.integrations.forEach(integ => {
+    brandIntegrations.forEach(integ => {
       const items = integ.subItems?.length ? integ.subItems.map(s => `${integ.name}:${s}`) : [integ.name];
       items.forEach(name => { r.markets.forEach(m => { const st = getStatusObj(statuses, `${name}|${m.name}`).status; counts[st]++; }); });
     });
