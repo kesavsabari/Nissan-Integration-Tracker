@@ -43,7 +43,8 @@
       "Bash(git commit -m 'Remove button emojis, keep icon emojis for visual hierarchy *)",
       "Bash(kill -9 1547)",
       "Bash(git commit -m 'Restore full batch data from backup *)",
-      "Bash(git commit -m 'Add mobile-responsive design for phone support *)"
+      "Bash(git commit -m 'Add mobile-responsive design for phone support *)",
+      "Bash(git commit -m 'Force mobile layout with !important for reliable phone rendering *)"
     ]
   }
 }

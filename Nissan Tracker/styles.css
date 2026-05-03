@@ -1369,9 +1369,9 @@ input[type="date"].activity-input {
   .checklist-wrap { border-radius: 8px; }
 }
 
-@media (max-width: 768px) {
-  body { overflow: auto; height: auto; min-height: 100vh; }
-  header { flex-direction: column; gap: 10px; padding: 10px; }
+@media (max-width: 900px) {
+  html, body { overflow: auto !important; height: auto !important; min-height: 100vh; }
+  header { flex-direction: column !important; gap: 10px; padding: 10px; height: auto !important; }
   .header-left { gap: 8px; }
   .header-title { font-size: 14px; }
   .header-nav { gap: 4px; font-size: 12px; flex-wrap: wrap; justify-content: center; }
@@ -1379,25 +1379,33 @@ input[type="date"].activity-input {
   .legend { gap: 6px; font-size: 10px; flex-wrap: wrap; justify-content: center; }
   .legend-item { gap: 3px; }
 
-  main { flex-direction: column; overflow: visible; height: auto; }
+  main {
+    flex-direction: column !important;
+    overflow: visible !important;
+    height: auto !important;
+    display: flex !important;
+  }
   #dashboard-wrap {
-    order: 1;
-    padding: 8px;
-    overflow: visible;
-    height: auto;
-    max-height: none;
+    order: 1 !important;
+    padding: 8px !important;
+    overflow: visible !important;
+    height: auto !important;
+    max-height: none !important;
+    width: 100% !important;
+    flex: none !important;
   }
   .filter-sidebar {
-    order: 2;
-    width: 100%;
-    border-left: none;
-    border-top: 2px solid var(--border);
-    padding: 12px;
-    max-height: none;
-    overflow-y: visible;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 12px;
+    order: 2 !important;
+    width: 100% !important;
+    border-left: none !important;
+    border-top: 2px solid var(--border) !important;
+    padding: 12px !important;
+    max-height: none !important;
+    overflow-y: visible !important;
+    flex-direction: row !important;
+    flex-wrap: wrap !important;
+    gap: 12px !important;
+    flex-shrink: 1 !important;
   }
   .filter-sidebar .filter-section { flex: 1 1 calc(50% - 12px); min-width: 140px; }
   .filter-sidebar .filter-heading { width: 100%; }
@@ -1409,7 +1417,7 @@ input[type="date"].activity-input {
   .cl-th, .cl-name-cell, .cl-cell { padding: 6px 8px; font-size: 11px; }
   .cl-status-btn { width: 22px; height: 22px; }
 
-  .side-panel { width: 100%; position: fixed; bottom: 0; left: 0; right: 0; top: auto; border-radius: 12px 12px 0 0; max-height: 85vh; }
+  .side-panel { width: 100% !important; position: fixed !important; bottom: 0 !important; left: 0 !important; right: 0 !important; top: auto !important; border-radius: 12px 12px 0 0 !important; max-height: 85vh; }
 
   .region-block { margin: 8px 0; }
   .th-market-inner { gap: 2px; }
